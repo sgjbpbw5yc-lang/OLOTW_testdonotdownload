@@ -1,0 +1,859 @@
+[
+	//Armor
+	{
+		"name": "Conquer Terrain",
+		"prerequisites": ["Maneuver"],
+		"uniques": ["[+1] Movement", "Ignores terrain cost",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Armor"],
+		"column": 8,
+		"row": 7
+	},
+	{
+		"name": "Active Protection System",
+		"uniques": ["[+33]% Strength <vs [Air] units> <when defending>",
+			"[+33]% Strength <vs [Helicopter] units> <when defending>",
+			"[+33]% Strength <vs [Siege] units> <when defending>",
+			"Only available <if [Armor Production Line] is constructed>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Armor"],
+		"column": 8,
+		"row": 8
+	},
+
+	//Air
+	{
+		"name": "Aerial Bombardment I",
+		"uniques": ["[+33]% Strength <vs [Land] units>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Bomber"],
+		"column": 1,
+		"row": 10
+	},
+	{
+		"name": "Aerial Bombardment II",
+		"prerequisites": ["Aerial Bombardment I"],
+		"uniques": ["[+33]% Strength <vs [Land] units>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Bomber"],
+		"column": 1,
+		"row": 11
+	},
+	{
+		"name": "Aerial Bombardment III",
+		"prerequisites": ["Aerial Bombardment II"],
+		"uniques": ["[+34]% Strength <vs [Land] units>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Bomber"],
+		"column": 1,
+		"row": 12
+	},
+
+	//Faction unique
+	{
+		"name": "Cut Away the Self I",
+		"uniques": [
+			"[This Unit] takes [5] damage",
+			"Gain [10] [Culture] <upon being defeated> <(modified by game speed)>",
+			"Gain [10] [Faith] <upon being defeated> <(modified by game speed)>",
+			"Only available <for [Celestial Collective] Civilizations>",
+			"This Promotion is free"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Mounted", "Mounted Ranged"],
+		"column": 12,
+		"row": 1
+	},
+	{
+		"name": "Cut Away the Self II",
+		"prerequisites": ["Cut Away the Self I"],
+		"uniques": [
+			"Can only heal by pillaging",
+			"Gain [1] [Culture] <upon turn end> <when [Wounded]>",
+			"Gain [1] [Faith] <upon turn end> <when [Wounded]>",
+			"[This Unit] gains the [Cut Away the Self III] promotion <upon defeating a [Military] unit>",
+			"Only available <for [Celestial Collective] Civilizations> <when [Wounded]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Mounted", "Mounted Ranged"],
+		"column": 12,
+		"row": 2
+	},
+	{
+		"name": "Cut Away the Self III",
+		"uniques": [
+			"Uncapturable",
+			"Earn [10]% of killed [Military] unit's [Cost] as [Culture]",
+			"Earn [10]% of killed [Military] unit's [Cost] as [Faith]",
+			"Only available <for [Celestial Collective] Civilizations>"
+		],
+		"column": 12,
+		"row": 3
+	},
+
+	//Adjusted promotions from base scenario (mostly nerfs)
+	{
+		"name": "Heal Instantly",
+		"uniques": [
+			"[This Unit] heals [50] HP",
+			"Doing so will consume this opportunity to choose a Promotion"
+		],
+		"unitTypes": [
+			"Scrapper",
+			"Scout",
+			"Siege",
+			"Helicopter",
+			"Shooter",
+			"Armor",
+			"Melee Water",
+			"Ranged Water",
+			"Submarine",
+			"Aircraft Carrier",
+			"Fighter",
+			"Bomber",
+			"Mounted",
+			"Mounted Ranged",
+			"Purge Robot"
+		],
+		"row": 0,
+        "column": 0
+	},
+	{
+		"name": "Entrench",
+		"uniques": [
+			"[+15]% Strength <vs [Ranged] units> <when defending>",
+			"[+5]% Strength <when defending>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Scrapper", "Shooter"],
+		"column": 1,
+        "row": 1
+	},
+	{
+		"name": "Forage",
+		"uniques": [
+			"Earn [33]% of killed [Military] unit's [Strength] as [Science]",
+			"[+5] HP when healing <in [Forest] tiles>",
+			"[+5] HP when healing <in [Jungle] tiles>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter"],
+		"column": 1,
+		"row": 2
+	},
+	{
+		"name": "Skirmish",
+		"uniques": [
+			"Withdraws before melee combat <with [50]% chance>",
+			"[25]% XP gained from combat",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scout"],
+		"column": 1,
+		"row": 3
+	},
+	{
+		"name": "Shock",
+		"uniques": ["[+25]% Strength <when fighting in [Open terrain] tiles>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Mounted", "Armor"],
+		"column": 1,
+		"row": 4
+	},
+	{
+		"name": "Loose Formation",
+		"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>",
+			"Withdraws before melee combat <with [25]% chance>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Mounted", "Armor"],
+		"column": 1,
+        "row": 5
+	},
+	{
+		"name": "Bombardment",
+		"uniques": ["[+33]% Strength <vs [Land] units>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Ranged Water"],
+		"column": 1,
+		"row": 9
+	},
+	{
+		"name": "Targeting",
+		"uniques": ["[+33]% Strength <vs [Water] units>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Ranged Water", "Fighter", "Bomber"],
+		"column": 1,
+		"row": 13
+	},
+	{
+		"name": "Urban Warfare I",
+		"uniques": [
+			"Double movement in [Forest]",
+			"Double movement in [Jungle]",
+			"[+10]% Strength <when fighting in [Forest] tiles>",
+			"[+10]% Strength <when fighting in [Jungle] tiles>",
+			"[+10]% Strength <vs cities>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Mounted", "Mounted Ranged"],
+		"column": 2,
+		"row": 1
+	},
+	{
+		"name": "Urban Warfare II",
+		"prerequisites": ["Urban Warfare I"],
+		"uniques": [
+			"[+30]% Strength <when fighting in [Forest] tiles>",
+			"[+30]% Strength <when fighting in [Jungle] tiles>",
+			"[+30]% Strength <vs cities>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Mounted", "Mounted Ranged"],
+		"column": 2,
+		"row": 2
+	},
+	{
+		"name": "Guerilla Warfare I",
+		"uniques": [
+			"[+10]% Strength <when fighting in [Rough terrain] tiles>",
+			"Can move after attacking",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Mounted", "Mounted Ranged"],
+		"column": 2,
+		"row": 3
+	},
+	{
+		"name": "Guerilla Warfare II",
+		"prerequisites": ["Guerilla Warfare I"],
+		"uniques": [
+			"[+30]% Strength <when fighting in [Hill] tiles>",
+			"[+10]% Strength <when attacking>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Mounted", "Mounted Ranged"],
+		"column": 2,
+		"row": 4
+	},
+	{
+		"name": "Accuracy",
+		"uniques": [
+			"[+20]% Strength <when fighting in [Open terrain] tiles> <when attacking>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Siege", "Helicopter", "Mounted Ranged"],
+		"column": 3,
+		"row": 1
+	},
+	{
+		"name": "Combat Drill",
+		"uniques": [
+			"[+20]% Strength <when defending>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Siege", "Helicopter", "Mounted Ranged"],
+		"column": 3,
+		"row": 2
+	},
+	{
+		"name": "Chemical Weapons",
+		"uniques": ["Chemical Weapons",
+			"[+50]% Strength <vs [Low Tech] units>",
+			"[+50]% Strength <vs [Personnel] units>",
+			"[+33]% Strength <vs cities>",
+			"Only available <if [Chemical Weapons Laboratory] is constructed>"],
+		"unitTypes": ["Siege", "Fighter", "Bomber", "Helicopter", "Ranged Water"],
+		"column": 3,
+		"row": 9
+	},
+	{
+		"name": "Siege I",
+		"uniques": ["[+33]% Strength <vs cities>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Bomber"],
+		"column": 4,
+		"row": 1
+	},
+	{
+		"name": "Siege II",
+		"prerequisites": ["Siege I"],
+		"uniques": ["[+33]% Strength <vs cities>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Bomber"],
+		"column": 4,
+		"row": 2
+	},
+	{
+		"name": "Siege III",
+		"prerequisites": ["Siege II"],
+		"uniques": ["[+34]% Strength <vs cities>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Bomber"],
+		"column": 4,
+		"row": 3
+	},
+	{
+		"name": "Interception I",
+		"uniques": ["[+33]% Damage when intercepting",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Fighter"],
+		"column": 4,
+		"row": 4
+	},
+	{
+		"name": "Interception II",
+		"prerequisites": ["Interception I"],
+		"uniques": ["[+33]% Damage when intercepting",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Fighter"],
+		"column": 4,
+		"row": 5
+	},
+	{
+		"name": "Interception III",
+		"prerequisites": ["Interception II"],
+		"uniques": ["[+34]% Damage when intercepting",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Fighter"],
+		"column": 4,
+		"row": 6
+	},
+	{
+		"name": "Reconnaissance I",
+		"uniques": ["Ignores terrain cost",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Mounted", "Mounted Ranged"],
+		"column": 5,
+		"row": 1
+	},
+	{
+		"name": "Reconnaissance II",
+		"prerequisites": ["Reconnaissance I"],
+		"uniques": ["[+50]% Strength <vs [Siege] units>",
+			"Ignores Zone of Control",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Mounted", "Mounted Ranged"],
+		"column": 5,
+		"row": 2
+	},
+	{
+		"name": "Reconnaissance III",
+		"prerequisites": ["Reconnaissance II"],
+		"uniques": ["[+1] Movement", 
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Mounted", "Mounted Ranged"],
+		"column": 5,
+		"row": 3
+	},
+	{
+		"name": "Smokescreen",
+		"prerequisites": ["Entrench", "Forage"],
+		"uniques": [
+			"[+15]% Strength <vs [Ranged] units> <when defending>",
+			"[+10]% Strength <vs [Low Tech] units>",
+			"[+10]% Strength <vs cities>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper"],
+		"column": 5,
+		"row": 4
+	},
+	{
+		"name": "Pursuit",
+		"prerequisites": ["Loose Formation", "Shock"],
+		"uniques": ["[+25]% Strength <vs [Wounded] units>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Mounted", "Armor"],
+		"column": 5,
+		"row": 6
+	},
+	{
+		"name": "Hazard Pay",
+		"uniques": ["Earn [10]% of killed [Military] unit's [Cost] as [Gold]"],
+		"column": 5,
+		"row": 9
+	},
+	{
+		"name": "Precision",
+		"prerequisites": ["Entrench", "Forage"],
+		"uniques": ["[+25]% Strength <vs [Wounded] units>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Shooter"],
+		"column": 6,
+		"row": 5
+	},
+	{
+		"name": "Suppression",
+		"prerequisites": ["Entrench", "Forage"],
+		"uniques": ["[+25]% Strength <vs [Melee] units>",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Shooter"],
+		"column": 6,
+		"row": 6
+	},
+	{
+		"name": "Barrage",
+		"prerequisites": ["Accuracy", "Combat Drill"],
+		"uniques": [
+			"[+20]% Strength <when fighting in [Rough terrain] tiles> <when attacking>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Siege", "Helicopter", "Mounted Ranged"],
+		"column": 7,
+		"row": 1
+	},
+	{
+		"name": "Resupply",
+		"prerequisites": ["Accuracy", "Combat Drill", "Awe", "Maneuver"],
+		"uniques": [
+			"[+10] HP when healing",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Armor", "Siege", "Helicopter", "Mounted Ranged"],
+		"column": 7,
+		"row": 2
+	},
+	{
+		"name": "Flank Speed",
+		"prerequisites": [
+			"Littoral Warfare",
+			"Exploit Weakness",
+			"Damage Control",
+			"Close-In Weapons System",
+			"Sentry",
+			"Flight Deck II",
+			"Wolfpack I"
+		],
+		"uniques": ["[+1] Movement", "[+25]% to Flank Attack bonuses",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": [
+			"Melee Water",
+			"Ranged Water",
+			"Aircraft Carrier",
+			"Submarine"
+		],
+		"column": 7,
+		"row": 8
+	},
+	{
+		"name": "Convoy",
+		"prerequisites": ["Littoral Warfare",
+			"Exploit Weakness",
+			"Damage Control",
+			"Close-In Weapons System",
+			"Flight Deck II",
+			"Wolfpack II"],
+		"uniques": ["[+10] HP when healing", "May heal outside of friendly territory",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Melee Water", "Ranged Water", "Aircraft Carrier", "Submarine"],
+		"column": 7,
+		"row": 9
+	},
+	{
+		"name": "Sentry",
+		"prerequisites": [
+			"Skirmish",
+			"Entrench",
+			"Forage",
+			"Loose Formation",
+			"Shock",
+			"Guerilla Warfare I",
+			"Urban Warfare I",
+			"Reconnaissance I",
+			"Bombardment",
+			"Targeting",
+			"Littoral Warfare",
+			"Exploit Weakness"
+		],
+		"uniques": ["[+1] Sight", "Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Scrapper", "Scout", "Ranged Water", "Melee Water", "Mounted", "Mounted Ranged"],
+		"column": 8,
+		"row": 1
+	},
+	{
+		"name": "March",
+		"prerequisites": [
+			"Smokescreen",
+			"Assault",
+			"Pursuit",
+			"Precision",
+			"Suppression",
+			"Barrage",
+			"Resupply",
+			"Formation",
+			"Ambush",
+			"Sentry",
+			"Reconnaissance III",
+			"Medic II"
+		],
+		"uniques": [
+			"Unit will heal every turn, even if it performs an action",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Mounted", "Mounted Ranged"],
+		"column": 8,
+		"row": 3
+	},
+	{
+		"name": "Extended Range",
+		"prerequisites": [
+			"Precision",
+			"Suppression",
+			"Sentry",
+			"Barrage",
+			"Resupply",
+			"Flank Speed",
+			"Convoy"
+		],
+		"uniques": [
+			"[+1] Range",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Shooter", "Siege", "Helicopter", "Ranged Water", "Mounted Ranged"],
+		"column": 8,
+		"row": 4
+	},
+	{
+		"name": "Operational Range",
+		"prerequisites": ["Interception III",
+			"Dogfighting III",
+			"Siege III",
+			"Aerial Bombardment III"],
+		"uniques": ["[+2] Range",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Fighter", "Bomber"],
+		"column": 9,
+		"row": 1
+	},
+	{
+		"name": "Sortie",
+		"prerequisites": ["Interception II"],
+		"uniques": ["[1] extra interceptions may be made per turn",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Fighter"],
+		"column": 9,
+		"row": 2
+	},
+	{
+		"name": "Evasive Maneuvers",
+		"prerequisites": ["Interception II", "Dogfighting II", "Siege II", "Aerial Bombardment II"],
+		"uniques": ["Damage taken from interception reduced by [50]%",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Fighter", "Bomber"],
+		"column": 9,
+		"row": 3
+	},
+	{
+		"name": "Air Repair",
+		"prerequisites": ["Logistics"],
+		"uniques": ["Unit will heal every turn, even if it performs an action",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Fighter", "Bomber", "Helicopter"],
+		"column": 9,
+		"row": 4
+	},
+	{
+		"name": "Logistics",
+		"prerequisites": [
+			"Mobility",
+			"Extended Range",
+			"March",
+			"Flank Speed",
+			"Convoy",
+			"Wolfpack III",
+			"Interception III",
+			"Dogfighting III",
+			"Siege III",
+			"Aerial Bombardment III"
+		],
+		"uniques": ["[1] additional attacks per turn",
+			"Can move after attacking",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Shooter", "Siege", "Helicopter", "Mounted Ranged", "Melee Water", "Ranged Water", "Submarine", "Fighter", "Bomber"],
+		"column": 9,
+		"row": 5
+	},
+	{
+		"name": "Medic I",
+		"prerequisites": [
+			"Smokescreen",
+			"Assault",
+			"Pursuit",
+			"Formation",
+			"Ambush",
+			"Precision",
+			"Suppression",
+			"Sentry",
+			"Guerilla Warfare II",
+			"Urban Warfare II",
+			"Reconnaissance I"
+		],
+		"uniques": [
+			"[+5] HP when healing",
+			"All adjacent units heal [+5] HP when healing",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Scout", "Mounted"],
+		"column": 10,
+		"row": 1
+	},
+	{
+		"name": "Medic II",
+		"prerequisites": ["Medic I"],
+		"uniques": [
+			"[+5] HP when healing",
+			"All adjacent units heal [+5] HP when healing",
+			"[+5] HP when healing <in [Foreign Land] tiles>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Scout", "Mounted"],
+		"column": 10,
+		"row": 2
+	},
+	{
+		"name": "Survivalism",
+		"prerequisites": ["Medic II", "Resupply", "March"],
+		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>",
+			"[+25]% Strength <when defending>",
+			"[-50]% maintenance costs",
+			"Only available <for units without [Promotion Nullifier]>"],
+		"unitTypes": ["Scrapper", "Scout", "Shooter", "Mounted", "Mounted Ranged"],
+		"column": 10,
+		"row": 3
+	},
+
+	//Deciv 2 promotion list
+	{
+		"name": "Mountaineer",
+		"uniques": ["Can pass through impassable tiles"]
+	},
+	{
+		"name": "[Khan] ability",
+		"uniques": [
+			"Great General",
+			"[+20]% Strength bonus for [Military] units within [1] tiles",
+			"[+15]% Strength bonus for [Military] units within [2] tiles",
+			"[+10]% Strength bonus for [Military] units within [3] tiles",
+			"Can instantly construct a [Citadel] improvement <by consuming this unit>",
+			"Uncapturable"
+		]
+	},
+	{
+		"name": "Doom Talisman",
+		"uniques": [
+			"[-20]% Strength <when defending>",
+			"[This Unit] heals [25] HP <upon defeating a [Military] unit>",
+			"Uncapturable"
+		]
+	},
+
+	//Purge Robots
+	{
+		"name": "Augmented Vision",
+		"uniques": ["[+1] Sight"]
+	},
+	{
+		"name": "Overcome Obstructions",
+		"uniques": ["Ignores terrain cost", "Ignores Zone of Control"]
+	},
+	{
+		"name": "Self-Repair",
+		"uniques": ["Unit will heal every turn, even if it performs an action"]
+	},
+
+	//Barbarians
+	{
+		"name": "Unable to pillage tiles",
+		"uniques": ["Unable to pillage tiles"]
+	},
+
+	//Other mods
+	{
+		"name": "Ghillie Suit",
+		"uniques": ["Invisible to non-adjacent units"]
+	},
+	{
+		"name": "Oceanic Mutation",
+		"uniques": ["[+1] Movement"]
+	},
+
+	//Other special promotions ('abilities' or otherwise 'exclusive to one UU', granted by beliefs/ruins/policies/etc., and so on)
+	{
+		"name": "Healing Hands",
+		"uniques": ["All adjacent units heal [+10] HP when healing"]
+	},
+	{
+		"name": "Zeal",
+		"uniques": ["Can Spread Religion <[1] additional time(s)>", "Ignores terrain cost"]
+	},
+	{
+		"name": "Prospector",
+		"uniques": [
+			"[+15]% Strength <when stacked with a [Civilian] unit>",
+			"Can build [Land] improvements on tiles",
+			"[-25]% construction time for [All] improvements <after discovering [Replaceable Parts]>",
+			"Gain [1]-[10] [Gold] <upon ending a turn in a [Forest] tile>",
+			"Gain [1]-[10] [Gold] <upon ending a turn in a [Jungle] tile>",
+			"[+5] HP when healing",
+			"[+1] Sight"
+		]
+	},
+	{
+		"name": "Oath of Vengeance",
+		"uniques": ["[+20]% Strength <when fighting units from a Civilization with more Cities than you>"]
+	},
+	{
+		"name": "Ballistic Weave",
+		"uniques": ["[+10]% Strength <when defending>", "[+25]% Strength <vs [Ranged] units> <when defending>"]
+	},
+	{
+		"name": "Combat Armor",
+		"uniques": ["[+20]% Strength <when defending>"]
+	},
+	{
+		"name": "AI Implant",
+		"uniques": ["[+10] HP when healing",
+			"[+10]% Strength <when attacking>",
+			"No damage penalty for wounded units"]
+	},
+	{
+		"name": "Sea Raider",
+		"uniques": ["Earn [25]% of the damage done to [All] units as [Gold]",
+			"[+25]% Strength <vs [Wounded] units>",
+			"Heals [25] damage if it kills a unit"]
+	},
+	{
+		"name": "Reinforced Hull",
+		"uniques": ["[+20]% Strength <when defending>"]
+	},
+	{
+		"name": "Know Your History",
+		"uniques": ["[+50]% XP gained from combat"]
+	},
+	{
+		"name": "Sky Shield",
+		"uniques": [
+			"[+2] Air Interception Range",
+			"[1] extra interceptions may be made per turn"
+		]
+	},
+	{
+		"name": "Terrascape",
+		"uniques": [
+			"Turn this tile into a [Badlands] tile <in [{non-[Natural Wonder]} {non-[resource]} {non-[Badlands]} {Land}] tiles> <for all movement> <[2] times> <after which this unit is consumed>",
+			"Turn this tile into a [Wasteland] tile <in [{non-[Natural Wonder]} {non-[resource]} {non-[Wasteland]} {Land}] tiles> <for all movement> <[2] times> <after which this unit is consumed>",
+			"Turn this tile into a [Desert] tile <in [{non-[Natural Wonder]} {non-[resource]} {non-[Desert]} {Land}] tiles> <for all movement> <[2] times> <after which this unit is consumed>",
+			"Turn this tile into a [Tundra] tile <in [{non-[Natural Wonder]} {non-[resource]} {non-[Tundra]} {Land}] tiles> <for all movement> <[2] times> <after which this unit is consumed>",
+			"Turn this tile into a [Hill] tile <in [{non-[Natural Wonder]} {non-[resource]} {non-[Hill]} {Land}] tiles> <for all movement> <[2] times> <after which this unit is consumed>",
+			"Turn this tile into a [Mountain Tunnel] tile <in [{non-[Natural Wonder]} {Mountain}] tiles> <for all movement> <[2] times> <after which this unit is consumed>",
+			"Turn this tile into a [Coast] tile <in [{non-[Natural Wonder]} {Ocean}] tiles> <for all movement> <[2] times> <after which this unit is consumed>",
+			"Turn this tile into a [Ocean] tile <in [{non-[Natural Wonder]} {Coast}] tiles> <for all movement> <[2] times> <after which this unit is consumed>",
+			"Turn this tile into a [Desert] tile <in [{non-[Natural Wonder]} {non-[resource]} {Coast}] tiles> <for all movement> <[2] times> <after which this unit is consumed>",
+			"Turn this tile into a [Desert] tile <in [{non-[Natural Wonder]} {Lakes}] tiles> <for all movement> <[2] times> <after which this unit is consumed>",
+			"Turn this tile into a [Lakes] tile <in [{non-[Natural Wonder]} {non-[resource]} {Land}] tiles> <for all movement> <[2] times> <after which this unit is consumed>",
+			"Turn this tile into a [Coast] tile <in [{non-[Natural Wonder]} {non-[resource]} {Land}] tiles> <for all movement> <[2] times> <after which this unit is consumed>"
+		]
+	},
+	{
+		"name": "Airlift",
+		"uniques": [
+			"May Paradrop to [{Friendly} {City center}] tiles up to [30] tiles away <in [{Friendly} {City center}] tiles>"
+		]
+	},
+	{
+		"name": "[Wayfarer] ability",
+		"uniques": ["May enter foreign tiles without open borders"]
+	},
+	{
+		"name": "Valor of Aztlán",
+		"uniques": [
+			"[+25]% Strength <vs [Wounded] units>",
+			"[This Unit] upgrades for free <upon defeating a [Military] unit>",
+			"Comment [This Promotion becomes Fury of Aztlán after this unit upgrades to Shorn One]",
+			"[This Unit] loses the [Valor of Aztlán] promotion <for [non-[Aztlán]] Civilizations> <hidden from users>"
+		]
+	},
+	{
+		"name": "Fury of Aztlán",
+		"uniques": [
+			"[+33]% Strength <when attacking>",
+			"Heals [25] damage if it kills a unit",
+			"[This Unit] loses the [Valor of Aztlán] promotion <hidden from users>"
+		]
+    },
+	{
+		"name": "[Cursed Soldier] ability",
+		"uniques": ["[+20]% Strength <when fighting units from a Civilization with more Cities than you>"]
+	},
+	{
+		"name": "Homeland Guardian",
+		"uniques": ["[+25]% Strength <when fighting in [Friendly Land] tiles>"]
+	},
+	{
+		"name": "Great Generals",
+		"uniques": ["[Great General] is earned [100]% faster"]
+	},
+	{
+		"name": "Golden Age from Victories",
+		"uniques": ["Earn [100]% of killed [Military] unit's [Strength] as [Golden Age points]"]
+	},
+	{
+		"name": "[Continental General] ability",
+		"uniques": [
+			"Great General",
+			"[+15]% Strength bonus for [Military] units within [2] tiles",
+			"[+50]% XP gained from combat",
+			"[+50]% Strength <after discovering [Combined Arms]>",
+			"[+50]% Strength <after discovering [Advanced Materials]>",
+			"Can instantly construct a [Citadel] improvement <once> <for [2] movement>",
+			"[This Unit] gains [1] XP <upon ending a turn in a [Citadel] tile>",
+			"Gain [5]-[30] [Gold] <upon ending a turn in a [Settlement] tile>",
+			"Uncapturable"
+		]
+	},
+	{
+		"name": "[Dragon of the Four Truths] ability",
+		"uniques": [
+			"Earn [50]% of killed [Military] unit's [Strength] as [Culture]",
+			"Earn [25]% of killed [Military] unit's [Strength] as [Faith]",
+			"Gain [50] [Culture] <upon being defeated> <(modified by game speed)>",
+			"Gain [25] [Faith] <upon being defeated> <(modified by game speed)>"
+		]
+	},
+	{
+		"name": "Commitment to the Four Truths",
+		"uniques": ["Can Spread Religion <[2] additional time(s)>"]
+	},
+	{
+		"name": "Enforcement of the Four Truths",
+		"uniques": ["Can remove other religions from cities <in [Friendly] tiles> <[2] additional time(s)>"]
+	},
+	{
+		"name": "[Lawkeeper] ability",
+		"uniques": [
+			"Great General",
+			"[+15]% Strength bonus for [Military] units within [2] tiles",
+			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+			"[+50]% XP gained from combat",
+			"Heals [25] damage if it kills a unit",
+			"Can build [All Road] improvements on tiles",
+			"Can build [Fort] improvements on tiles",
+			"Can build [Trench] improvements on tiles",
+			"[-25]% construction time for [All] improvements <after discovering [Replaceable Parts]>",
+			"Uncapturable"
+		]
+	},
+	{
+		"name": "Will of Tellus",
+		"uniques": ["[+20]% Strength <within [2] tiles of a [Tree plantation]>",
+			"[+10] HP when healing <within [2] tiles of a [Tree plantation]>"]
+	},
+	{
+		"name": "Line Brawl",
+		"uniques": ["Double movement in [Tundra]", "Double movement in [Permafrost]",
+			"Earn [100]% of killed [Military] unit's [Strength] as [Culture]"]
+	},
+	{
+		"name": "Heroic Resolve",
+		"uniques": ["All healing effects doubled",
+			"[+50]% XP gained from combat",
+			"[+15]% Strength bonus for [Military] units within [2] tiles"]
+	}
+]
