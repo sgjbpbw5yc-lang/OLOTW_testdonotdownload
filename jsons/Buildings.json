@@ -466,7 +466,7 @@
 		"isWonder": true,
 		"culture": 1,
 		"uniques": [
-			"[+15]% growth [in all cities] <within [6] tiles of a [Capital Marker]>",
+			"[+15]% growth [in all cities] <within [6] tiles of a [City center]>",
 			"Comment [+2 Food from every Farm tile that is not improving a resource]",
 			"[+2 Food] from [Farm] tiles [in all cities] <in tiles without [Grain]> <in tiles without [Tubers]> <in tiles without [Maize]> <in tiles without [Cactus]> <hidden from users>"
 		],
@@ -5119,7 +5119,7 @@
 		"maintenance": 1,
 		"hurryCostModifier": 25,
 		"uniques": [
-			"Totem",
+			"Comment [Totem]",
 			"All newly-trained [Military] units [in this city] receive the [Ghillie Suit] promotion",
 			"Removes extra unhappiness from annexed cities",
 			"[+20]% spy effectiveness [in this city]",
