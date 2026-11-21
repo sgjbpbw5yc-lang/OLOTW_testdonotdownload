@@ -1,338 +1,426 @@
 [
-	{
-		"columnNumber": 2,
-		"era": "Decivilized era",
-		"techCost": 65,
-		"buildingCost": 75,
-		"wonderCost": 185,
-		"techs": [
-			{
-				"name": "Optics",
-				"row": 1,
-				"prerequisites": ["Sailing"],
-				"uniques": ["Enables embarkation for land units"],
-				"quote": "One doesn't discover new lands without losing sight of the shore."
-			}
-		]
-	},
-	{
-		"columnNumber": 3,
-		"era": "Rediscovering era",
-		"techCost": 105,
-		"buildingCost": 100,
-		"wonderCost": 250,
-		"techs": [
-			{
-				"name": "Navigation",
-				"row": 1,
-				"prerequisites": ["Optics"],
-				"uniques": [
-					"[+1] Movement <for [Embarked] units>",
-					"Enables [Embarked] units to enter ocean tiles"
-				],
-				"quote": "'When you have no landmarks to navigate by, you have to get creative.' - Captain Ray Decca"
-			},
-			{
-				"name": "Mountain Exploration",
-				"row": 2,
-				"prerequisites": ["Redomestication", "Optics"],
-				"uniques": [
-					"Comment [Enables Scout and Mounted units to enter Mountain tiles]",
-					"[Scout] units gain the [Mountaineer] promotion <hidden from users>",
-					"[Mounted] units gain the [Mountaineer] promotion <hidden from users>",
-					"[Mounted Ranged] units gain the [Mountaineer] promotion <hidden from users>"
-				],
-				"quote": "Each generation makes of the world more or less the kind of place they dream it should be; and each when its day is done is often in a mood to regret the work of its own hands and to praise the conditions that obtained when it was young."
-			},
-			{
-				"name": "Record Keeping",
-				"row": 4,
-				"prerequisites": ["Writing"],
-				"quote": "'And if you believe that drivel, I've got a prime piece of radioactive swampland to sell you!' - Rozalia Nowakalska, Nowa Polska diplomat"
-			},
-			{
-				"name": "Chemistry",
-				"row": 6,
-				"prerequisites": ["Writing"],
-				"quote": "'For my days are consumed like smoke, and my bones are burned as an hearth.' - The Holy Bible, Psalms 102:3"
-			}
-		]
-	},
-	{
-		"columnNumber": 4,
-		"era": "Rediscovering era",
-		"techCost": 250,
-		"buildingCost": 120,
-		"wonderCost": 300,
-		"techs": [
-			{
-				"name": "Education",
-				"row": 4,
-				"prerequisites": ["Record Keeping"],
-				"uniques": ["Enables Research agreements"],
-				"quote": "Hereby it is manifest that during the time men live without a common Power to keep them all in awe, they are in that condition which is called War; and such a war as is of every man against every man."
-			},
-			{
-				"name": "Moisture Harvesting",
-				"row": 6,
-				"prerequisites": ["Chemistry", "Machinery"],
-				"uniques": ["Enables conversion of city production to [Gold]"],
-				"quote": "'For a brief window in history, we controlled all of this world's water and thus, we controlled the world itself. In this era, we must repurpose our methods to aid those who remain in this world - if they will even accept our aid.' - Yuri Vengerov"
-			}
-		]
-	},
-	{
-		"columnNumber": 5,
-		"era": "Neofeudal era",
-		"techCost": 435,
-		"buildingCost": 160,
-		"wonderCost": 400,
-		"techs": [
-			{
-				"name": "Ecology",
-				"row": 3,
-				"prerequisites": ["Mountain Exploration", "Education", "Botany"],
-				"uniques": [
-					"[+1 Food] from every [Wasteland] <with [1] to [6] neighboring [Lakes] tiles>",
-					"[+1 Food] from every [Badlands] <with [1] to [6] neighboring [Lakes] tiles>"
-				],
-				"quote": "Modern industrial farming is largely a strategy for turning fossil fuels into food."
-			},
-			{
-				"name": "Biology",
-				"row": 5,
-				"prerequisites": ["Chemistry", "Education"],
-				"quote": "If the brain were so simple we could understand it, we would be so simple we couldn't."
-			},
-			{
-				"name": "Steam Power",
-				"row": 7,
-				"prerequisites": ["Moisture Harvesting", "Steel"],
-				"uniques": ["[+1] Movement <for [Embarked] units>"],
-				"quote": "It is arguable whether the human race have been gainers by the march of science beyond the steam engine."
-			},
-			{
-				"name": "Rifling",
-				"row": 8,
-				"prerequisites": ["Steel"],
-				"quote": "There is no struggle for life but, rather, life is lived for struggle. Thus, pacifism is trafficking with the enemy."
-			}
-		]
-	},
-	{
-		"columnNumber": 6,
-		"era": "Neofeudal era",
-		"techCost": 650,
-		"buildingCost": 200,
-		"wonderCost": 500,
-		"techs": [
-			{
-				"name": "Hoplology",
-				"row": 8,
-				"prerequisites": ["Civil Service", "Rifling"],
-				"quote": "Much as the bleeding hearts may dislike the fact, war and its culture form an integral part of human history and human life and are likely to do so for all future to come."
-			}
-		]
-	},
-	{
-		"columnNumber": 7,
-		"era": "Rebuilding era",
-		"techCost": 950,
-		"buildingCost": 250,
-		"wonderCost": 625,
-		"techs": [
-			{
-				"name": "Replaceable Parts",
-				"row": 7,
-				"prerequisites": ["Manufacturing", "Hoplology"],
-				"quote": "Nothing is particularly hard if you divide it into small jobs."
-			},
-			{
-				"name": "Munitions",
-				"row": 8,
-				"prerequisites": ["Manufacturing", "Hoplology"],
-				"quote": "As soon as men decide that all means are permitted to fight an evil, then their good becomes indistinguishable from the evil that they set out to destroy."
-			}
-		]
-	},
-	{
-		"columnNumber": 8,
-		"era": "Rebuilding era",
-		"techCost": 1300,
-		"buildingCost": 300,
-		"wonderCost": 750,
-		"techs": [
-			{
-				"name": "Ecotheory",
-				"row": 3,
-				"prerequisites": ["Laboratory"],
-				"quote": "Nature, to be commanded, must be obeyed."
-			}
-		]
-	},
-	{
-		"columnNumber": 9,
-		"era": "Industrial era",
-		"techCost": 1800,
-		"buildingCost": 360,
-		"wonderCost": 920,
-		"techs": [
-			{
-				"name": "Re-Utilization",
-				"row": 3,
-				"prerequisites": ["Ecotheory", "Plastics"],
-				"quote": "The incomplete becomes complete; the crooked becomes straight; the empty becomes full; the worn out becomes new."
-			},
-			{
-				"name": "Computers",
-				"row": 4,
-				"prerequisites": ["Plastics", "Electronics"],
-				"quote": "This has been a challenging quarter with falls in demand from states and agencies. Blackwarden Associates has recalibrated its operations across geographies, moving away from security and relief operations in Asia and divesting from the radiological remediation sector. By focusing on core domestic operations for private sector clients, we have successfully generated free cashflows despite adverse market conditions."
-			},
-			{
-				"name": "Radar",
-				"row": 10,
-				"prerequisites": ["Radio", "Electronics"],
-				"quote": "'Talent hits a target no one else can hit; Genius hits a target no one else can see.'"
-			}
-		]
-	},
-	{
-		"columnNumber": 10,
-		"era": "Industrial era",
-		"techCost": 2350,
-		"buildingCost": 500,
-		"wonderCost": 1060,
-		"techs": [
-			{
-				"name": "Land Remediation",
-				"row": 2,
-				"prerequisites": ["Hydroponics", "Re-Utilization"],
-				"quote": "The nation that destroys its soil destroys itself."
-			}
-		]
-	},
-	{
-		"columnNumber": 12,
-		"era": "Postmodern era",
-		"techCost": 3800,
-		"buildingCost": 500,
-		"wonderCost": 1250,
-		"techs": [
-			{
-				"name": "Full-Spectrum Dominance",
-				"row": 8,
-				"prerequisites": ["Avionics", "Combined Arms", "Decryption"],
-				"quote": "I have said earlier that the United States is now totally frank about putting its cards on the table. That is the case. Its official declared policy is now defined as 'full spectrum dominance'. That is not my term, it is theirs."
-			}
-		]
-	},
-	{
-		"columnNumber": 13,
-		"era": "Information era",
-		"techCost": 5100,
-		"buildingCost": 500,
-		"wonderCost": 1250,
-		"techs": [
-			{
-				"name": "Nuclear Fission",
-				"row": 4,
-				"prerequisites": ["Full-Spectrum Dominance"],
-				"quote": "We knew the world would not be the same. A few people laughed, a few people cried. Most people were silent. I remembered the line from the Hindu scripture, the Bhagavad Gita; Vishnu is trying to persuade the Prince that he should do his duty and, to impress him, takes on his multi-armed form and says, 'Now I am become Death, the destroyer of worlds.' I suppose we all thought that, one way or another."
-			},
-			{
-				"name": "Advanced Materials",
-				"row": 8,
-				"prerequisites": ["Full-Spectrum Dominance"],
-				"quote": "Bunkers were spaces of exception, where democratic states could morph into autocracies in times of war by making the decision to sacrifice the polis from this space of protection."
-			}
-		]
-	},
-	{
-		"columnNumber": 14,
-		"era": "Information era",
-		"techCost": 6400,
-		"buildingCost": 750,
-		"wonderCost": 2000,
-		"techs": [
-			{
-				"name": "Atmosphere Remediation",
-				"row": 1,
-				"prerequisites": ["Ocean Remediation"],
-				"quote": "But the truth is that the alleged climate change crisis is just another cog in a concealed depopulation agenda, skilfully engineered by the powers that be. And the only carbon footprint they want to eliminate, is you."
-			},
-			{
-				"name": "Energy Weapons",
-				"row": 6,
-				"prerequisites": ["Lasers", "Advanced Materials"],
-				"quote": "I believe that man will not merely endure: he will prevail. He is immortal, not because he alone among creatures has an inexhaustible voice, but because he has a soul, a spirit capable of compassion and sacrifice and endurance."
-			},
-			{
-				"name": "Astrogation",
-				"row": 9,
-				"prerequisites": ["Advanced Materials", "Satellites"],
-				"uniques": ["[+2] Range <for [Air] units>", "[+1] Sight <for [Water] units>"],
-				"quote": "Mankind was born on Earth. It was never meant to die here."
-			}
-		]
-	},
-	{
-		"columnNumber": 15,
-		"era": "New Future era",
-		"techCost": 12000,
-		"buildingCost": 750,
-		"wonderCost": 2000,
-		"techs": [
-			{
-				"name": "Rewilding",
-				"row": 1,
-				"prerequisites": ["Atmosphere Remediation", "Human Genome"],
-				"quote": "In wilderness I sense the miracle of life, and behind it our scientific accomplishments fade to trivia."
-			},
-			{
-				"name": "Stealth",
-				"row": 4,
-				"prerequisites": ["Particle Physics", "Advanced Materials"],
-				"quote": "Be extremely subtle, even to the point of formlessness, be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate."
-			}
-		]
-	},
-	{
-		"columnNumber": 16,
-		"era": "New Future era",
-		"techCost": 16000,
-		"buildingCost": 750,
-		"wonderCost": 2000,
-		"techs": [
-			{
-				"name": "Geo Engineering",
-				"row": 2,
-				"prerequisites": ["Rewilding"],
-				"quote": "It always seems impossible until it's done."
-			}
-		]
-	},
-	{
-		"columnNumber": 17,
-		"era": "Singularity era",
-		"techCost": 20000,
-		"buildingCost": 750,
-		"wonderCost": 2000,
-		"techs": [
-			{
-				"name": "Future Tech",
-				"row": 5,
-				"prerequisites": [
-					"Geo Engineering",
-					"Future Power",
-					"Future Materials",
-					"Stealth",
-					"Astrogation",
-					"Globalization"
-				],
-				"uniques": ["Can be continually researched"],
-				"quote": "There is nothing like a dream to create the future."
-			}
-		]
-	}
+  {
+    "columnNumber": 2,
+    "era": "Decivilized era",
+    "techCost": 65,
+    "buildingCost": 75,
+    "wonderCost": 185,
+    "techs": [
+      {
+        "name": "Optics",
+        "row": 1,
+        "prerequisites": [
+          "Sailing"
+        ],
+        "uniques": [
+          "Enables embarkation for land units"
+        ],
+        "quote": "One doesn't discover new lands without losing sight of the shore."
+      }
+    ]
+  },
+  {
+    "columnNumber": 3,
+    "era": "Rediscovering era",
+    "techCost": 105,
+    "buildingCost": 100,
+    "wonderCost": 250,
+    "techs": [
+      {
+        "name": "Navigation",
+        "row": 1,
+        "prerequisites": [
+          "Optics"
+        ],
+        "uniques": [
+          "[+1] Movement <for [Embarked] units>",
+          "Enables [Embarked] units to enter ocean tiles"
+        ],
+        "quote": "'When you have no landmarks to navigate by, you have to get creative.' - Captain Ray Decca"
+      },
+      {
+        "name": "Mountain Exploration",
+        "row": 2,
+        "prerequisites": [
+          "Redomestication",
+          "Optics"
+        ],
+        "uniques": [
+          "Comment [Enables Scout and Mounted units to enter Mountain tiles]",
+          "[Scout] units gain the [Mountaineer] promotion <hidden from users>",
+          "[Mounted] units gain the [Mountaineer] promotion <hidden from users>",
+          "[Mounted Ranged] units gain the [Mountaineer] promotion <hidden from users>"
+        ],
+        "quote": "Each generation makes of the world more or less the kind of place they dream it should be; and each when its day is done is often in a mood to regret the work of its own hands and to praise the conditions that obtained when it was young."
+      },
+      {
+        "name": "Record Keeping",
+        "row": 4,
+        "prerequisites": [
+          "Writing"
+        ],
+        "quote": "'And if you believe that drivel, I've got a prime piece of radioactive swampland to sell you!' - Rozalia Nowakalska, Nowa Polska diplomat"
+      },
+      {
+        "name": "Chemistry",
+        "row": 6,
+        "prerequisites": [
+          "Writing"
+        ],
+        "quote": "'For my days are consumed like smoke, and my bones are burned as an hearth.' - The Holy Bible, Psalms 102:3"
+      }
+    ]
+  },
+  {
+    "columnNumber": 4,
+    "era": "Rediscovering era",
+    "techCost": 250,
+    "buildingCost": 120,
+    "wonderCost": 300,
+    "techs": [
+      {
+        "name": "Education",
+        "row": 4,
+        "prerequisites": [
+          "Record Keeping"
+        ],
+        "uniques": [
+          "Enables Research agreements"
+        ],
+        "quote": "Hereby it is manifest that during the time men live without a common Power to keep them all in awe, they are in that condition which is called War; and such a war as is of every man against every man."
+      },
+      {
+        "name": "Moisture Harvesting",
+        "row": 6,
+        "prerequisites": [
+          "Chemistry",
+          "Machinery"
+        ],
+        "uniques": [
+          "Enables conversion of city production to [Gold]"
+        ],
+        "quote": "'For a brief window in history, we controlled all of this world's water and thus, we controlled the world itself. In this era, we must repurpose our methods to aid those who remain in this world - if they will even accept our aid.' - Yuri Vengerov"
+      }
+    ]
+  },
+  {
+    "columnNumber": 5,
+    "era": "Neofeudal era",
+    "techCost": 435,
+    "buildingCost": 160,
+    "wonderCost": 400,
+    "techs": [
+      {
+        "name": "Ecology",
+        "row": 3,
+        "prerequisites": [
+          "Mountain Exploration",
+          "Education",
+          "Botany"
+        ],
+        "uniques": [
+          "[+1 Food] from every [Wasteland] <with [1] to [6] neighboring [Lakes] tiles>",
+          "[+1 Food] from every [Badlands] <with [1] to [6] neighboring [Lakes] tiles>"
+        ],
+        "quote": "Modern industrial farming is largely a strategy for turning fossil fuels into food."
+      },
+      {
+        "name": "Biology",
+        "row": 5,
+        "prerequisites": [
+          "Chemistry",
+          "Education"
+        ],
+        "quote": "If the brain were so simple we could understand it, we would be so simple we couldn't."
+      },
+      {
+        "name": "Steam Power",
+        "row": 7,
+        "prerequisites": [
+          "Moisture Harvesting",
+          "Steel"
+        ],
+        "uniques": [
+          "[+1] Movement <for [Embarked] units>"
+        ],
+        "quote": "It is arguable whether the human race have been gainers by the march of science beyond the steam engine."
+      },
+      {
+        "name": "Rifling",
+        "row": 8,
+        "prerequisites": [
+          "Steel"
+        ],
+        "quote": "There is no struggle for life but, rather, life is lived for struggle. Thus, pacifism is trafficking with the enemy."
+      }
+    ]
+  },
+  {
+    "columnNumber": 6,
+    "era": "Neofeudal era",
+    "techCost": 650,
+    "buildingCost": 200,
+    "wonderCost": 500,
+    "techs": [
+      {
+        "name": "Hoplology",
+        "row": 8,
+        "prerequisites": [
+          "Civil Service",
+          "Rifling"
+        ],
+        "quote": "Much as the bleeding hearts may dislike the fact, war and its culture form an integral part of human history and human life and are likely to do so for all future to come."
+      }
+    ]
+  },
+  {
+    "columnNumber": 7,
+    "era": "Rebuilding era",
+    "techCost": 950,
+    "buildingCost": 250,
+    "wonderCost": 625,
+    "techs": [
+      {
+        "name": "Replaceable Parts",
+        "row": 7,
+        "prerequisites": [
+          "Manufacturing",
+          "Hoplology"
+        ],
+        "quote": "Nothing is particularly hard if you divide it into small jobs."
+      },
+      {
+        "name": "Munitions",
+        "row": 8,
+        "prerequisites": [
+          "Manufacturing",
+          "Hoplology"
+        ],
+        "quote": "As soon as men decide that all means are permitted to fight an evil, then their good becomes indistinguishable from the evil that they set out to destroy."
+      }
+    ]
+  },
+  {
+    "columnNumber": 8,
+    "era": "Rebuilding era",
+    "techCost": 1300,
+    "buildingCost": 300,
+    "wonderCost": 750,
+    "techs": [
+      {
+        "name": "Ecotheory",
+        "row": 3,
+        "prerequisites": [
+          "Laboratory"
+        ],
+        "quote": "Nature, to be commanded, must be obeyed."
+      }
+    ]
+  },
+  {
+    "columnNumber": 9,
+    "era": "Industrial era",
+    "techCost": 1800,
+    "buildingCost": 360,
+    "wonderCost": 920,
+    "techs": [
+      {
+        "name": "Re-Utilization",
+        "row": 3,
+        "prerequisites": [
+          "Ecotheory",
+          "Plastics"
+        ],
+        "quote": "The incomplete becomes complete; the crooked becomes straight; the empty becomes full; the worn out becomes new."
+      },
+      {
+        "name": "Computers",
+        "row": 4,
+        "prerequisites": [
+          "Plastics",
+          "Electronics"
+        ],
+        "quote": "This has been a challenging quarter with falls in demand from states and agencies. Blackwarden Associates has recalibrated its operations across geographies, moving away from security and relief operations in Asia and divesting from the radiological remediation sector. By focusing on core domestic operations for private sector clients, we have successfully generated free cashflows despite adverse market conditions."
+      },
+      {
+        "name": "Radar",
+        "row": 10,
+        "prerequisites": [
+          "Radio",
+          "Electronics"
+        ],
+        "quote": "'Talent hits a target no one else can hit; Genius hits a target no one else can see.'"
+      }
+    ]
+  },
+  {
+    "columnNumber": 10,
+    "era": "Industrial era",
+    "techCost": 2350,
+    "buildingCost": 500,
+    "wonderCost": 1060,
+    "techs": [
+      {
+        "name": "Land Remediation",
+        "row": 2,
+        "prerequisites": [
+          "Hydroponics",
+          "Re-Utilization"
+        ],
+        "quote": "The nation that destroys its soil destroys itself."
+      }
+    ]
+  },
+  {
+    "columnNumber": 12,
+    "era": "Postmodern era",
+    "techCost": 3800,
+    "buildingCost": 500,
+    "wonderCost": 1250,
+    "techs": [
+      {
+        "name": "Full-Spectrum Dominance",
+        "row": 8,
+        "prerequisites": [
+          "Avionics",
+          "Combined Arms",
+          "Decryption"
+        ],
+        "quote": "I have said earlier that the United States is now totally frank about putting its cards on the table. That is the case. Its official declared policy is now defined as 'full spectrum dominance'. That is not my term, it is theirs."
+      }
+    ]
+  },
+  {
+    "columnNumber": 13,
+    "era": "Information era",
+    "techCost": 5100,
+    "buildingCost": 500,
+    "wonderCost": 1250,
+    "techs": [
+      {
+        "name": "Nuclear Fission",
+        "row": 4,
+        "prerequisites": [
+          "Full-Spectrum Dominance"
+        ],
+        "quote": "We knew the world would not be the same. A few people laughed, a few people cried. Most people were silent. I remembered the line from the Hindu scripture, the Bhagavad Gita; Vishnu is trying to persuade the Prince that he should do his duty and, to impress him, takes on his multi-armed form and says, 'Now I am become Death, the destroyer of worlds.' I suppose we all thought that, one way or another."
+      },
+      {
+        "name": "Advanced Materials",
+        "row": 8,
+        "prerequisites": [
+          "Full-Spectrum Dominance"
+        ],
+        "quote": "Bunkers were spaces of exception, where democratic states could morph into autocracies in times of war by making the decision to sacrifice the polis from this space of protection."
+      }
+    ]
+  },
+  {
+    "columnNumber": 14,
+    "era": "Information era",
+    "techCost": 6400,
+    "buildingCost": 750,
+    "wonderCost": 2000,
+    "techs": [
+      {
+        "name": "Atmosphere Remediation",
+        "row": 1,
+        "prerequisites": [
+          "Ocean Remediation"
+        ],
+        "quote": "But the truth is that the alleged climate change crisis is just another cog in a concealed depopulation agenda, skilfully engineered by the powers that be. And the only carbon footprint they want to eliminate, is you."
+      },
+      {
+        "name": "Energy Weapons",
+        "row": 6,
+        "prerequisites": [
+          "Lasers",
+          "Advanced Materials"
+        ],
+        "quote": "I believe that man will not merely endure: he will prevail. He is immortal, not because he alone among creatures has an inexhaustible voice, but because he has a soul, a spirit capable of compassion and sacrifice and endurance."
+      },
+      {
+        "name": "Astrogation",
+        "row": 9,
+        "prerequisites": [
+          "Advanced Materials",
+          "Satellites"
+        ],
+        "uniques": [
+          "[+2] Range <for [Air] units>",
+          "[+1] Sight <for [Water] units>"
+        ],
+        "quote": "Mankind was born on Earth. It was never meant to die here."
+      }
+    ]
+  },
+  {
+    "columnNumber": 15,
+    "era": "New Future era",
+    "techCost": 12000,
+    "buildingCost": 750,
+    "wonderCost": 2000,
+    "techs": [
+      {
+        "name": "Rewilding",
+        "row": 1,
+        "prerequisites": [
+          "Atmosphere Remediation",
+          "Human Genome"
+        ],
+        "quote": "In wilderness I sense the miracle of life, and behind it our scientific accomplishments fade to trivia."
+      },
+      {
+        "name": "Stealth",
+        "row": 4,
+        "prerequisites": [
+          "Particle Physics",
+          "Advanced Materials"
+        ],
+        "quote": "Be extremely subtle, even to the point of formlessness, be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate."
+      }
+    ]
+  },
+  {
+    "columnNumber": 16,
+    "era": "New Future era",
+    "techCost": 16000,
+    "buildingCost": 750,
+    "wonderCost": 2000,
+    "techs": [
+      {
+        "name": "Geo Engineering",
+        "row": 2,
+        "prerequisites": [
+          "Rewilding"
+        ],
+        "quote": "It always seems impossible until it's done."
+      }
+    ]
+  },
+  {
+    "columnNumber": 17,
+    "era": "Singularity era",
+    "techCost": 20000,
+    "buildingCost": 750,
+    "wonderCost": 2000,
+    "techs": [
+      {
+        "name": "Future Tech",
+        "row": 5,
+        "prerequisites": [
+          "Geo Engineering",
+          "Future Power",
+          "Future Materials",
+          "Stealth",
+          "Astrogation",
+          "Globalization"
+        ],
+        "uniques": [
+          "Can be continually researched"
+        ],
+        "quote": "There is nothing like a dream to create the future."
+      }
+    ]
+  }
 ]

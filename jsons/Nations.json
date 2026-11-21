@@ -1,1455 +1,2390 @@
 [
-	//New factions
-	{
-		"name": "Deseret2", //Deseret Nation in playable form
-		"leaderName": "Keith Graham",
-		"adjective": ["Deseretian"],
-		"startBias": ["Hill"],
-		"preferredVictoryType": "Cultural",
-		"personality": "Warchief of Deseret",
-		"favoredReligion": "Mormonism",
-
-		"startIntroPart1": "Every day, we fall. Some days are harder than others. The day the nukes were launched... was the hardest fall yet for mankind. In the earliest days after the fallout settled, I tried to mete out vengeance against those responsible for the Cataclysm, unaware that I was setting myself up for my own great fall. I rallied many survivors, broken and disillusioned as I was, and set out on a brutal campaign, forgetting all I had been taught in the desire for revenge. The need to make my wrath into God's wrath. And sure enough, that disastrous journey led to my fall, and I found myself at Hell's gates.",
-		"startIntroPart2": "Yet in my darkest hour, I found my way again. I rediscovered my faith and my tribe, and realized why I'm still here, able to rise despite having fallen so far. A fire burns inside me, brighter than the fires that burned the world around me. But whether that fire is of undying love or unappeased rage... Whether I show my people's enemies mercy or become once more the instrument of vengeance... That's up to them. And to you, I suppose.",
-		"declaringWar": "I don't enjoy killing, but when done righteously, it's just a chore, like any other.",
-		"attacked": "We warned you, and you persisted. Like the dogs you are, you followed us to Zion.\nAnd now you stand on holy ground, a temple to God's glory on earth.\nBut the only use for an animal in a temple is sacrifice!",
-		"defeated": "Yea, we wept when we remembered Zion. But your time will come.",
-		"introduction": "It's good to meet you. Welcome to Deseret. If you shall be a good neighbor and treat us with brotherly respect, we shall do so in turn.",
-		"neutralHello": "May God be with you.",
-		"hateHello": "If you harm any of my people, I will find you. Make no mistake. God willing, you will not leave this valley.",
-		"denounced": "Your cries are like those of a mad beast in a thicket.",
-		"neutralDenouncing": "Judgment is coming. But it's not too late for you to repent.",
-		"hateDenouncing": "Now you've done it. You've called down our wrath. Time will run out for you - and soon.",
-		"acceptingDemand": "Yes, of course.",
-		"neutralRejectingDemand": "I don't think so.",
-		"hateRejectingDemand": "Sorry, but that's not going to happen.",
-		"afterPeace": "Waging war against good people is bad for the soul.",
-		"declaringFriendship": "In times of darkness, we can turn to the Lord, but it would be good to have you as a friend.",
-		"tradeRequest": "We are happy to share with you anything you might need.",
-
-		"outerColor": [191, 128, 6],
-		"innerColor": [252, 255, 218],
-		"style": "Deseret",
-		"uniqueName": "Blood of the Prophets",
-		"uniques": [
-			"[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
-			"Gain control over [4] tiles [in this city] <upon founding a city>",
-			"Starts with [Secrets of the Past]",
-			"Starts with [Botany]",
-			"May choose [1] additional [Enhancer] beliefs when [founding] a religion",
-			"Cannot build [Enslaved] units"
-		],
-		"cities": ["Zion Valley", "New Canaan", "Provorem", "Grand Staircase", "Cueva Guarache", "Fort Walker", "Vermilion Cliffs",
-			"Dead Horse Point", "Angel's Landing", "Traverse City", "New Tooele", "New Nephi", "Patriarchs' Court", "Urim and Thummim",
-			"Malki Tzedek", "Maeserville", "Pine Creek", "Silver Canyon", "Fort Browning", "Kobol", "Anamani", "Old Rockville", "Van Buren",
-			"Burham Springs", "Nuevo Vicios", "Salt Town", "Irvington"],
-		"spyNames": ["Daniel", "Mordecai", "Waking Cloud", "Judah", "Two-Bears-High-Fiving", "Emmaline", "Bonnie", "Jeremiah", "Dancing Flame", "Quiet Shadow"],
-		"civilopediaText": [
-			{
-				"text": "Every day, we fall. Some days are harder than others. The day the nukes were launched... was the hardest fall yet for mankind. In the earliest days after the fallout settled, I tried to mete out vengeance against those responsible for the Cataclysm, unaware that I was setting myself up for my own great fall. I rallied many survivors, broken and disillusioned as I was, and set out on a brutal campaign, forgetting all I had been taught in the desire for revenge. The need to make my wrath into God's wrath. And sure enough, that disastrous journey led to my fall, and I found myself at Hell's gates."
-			},
-			{
-				"text": "Yet in my darkest hour, I found my way again. I rediscovered my faith and my tribe, and realized why I'm still here, able to rise despite having fallen so far. A fire burns inside me, brighter than the fires that burned the world around me. But whether that fire is of undying love or unappeased rage... Whether I show my people's enemies mercy or become once more the instrument of vengeance... That's up to them. And to you, I suppose."
-			}
-		]
-	},
-	{
-		"name": "Camelot Foundation",
-		"leaderName": "Arthur",
-		"adjective": ["Briton"],
-		"startBias": ["Coast"],
-		"preferredVictoryType": "Scientific",
-		"personality": "Arthur",
-		"favoredReligion": "Anglicanism",
-
-		// "startIntroPart1": "",
-		// "startIntroPart2": "",
-		"declaringWar": "Your days of oppressing the common people are at an end.",
-		"attacked": "I see that peaceful reform is not possible. Inciting revolution is our only recourse now.",
-		"defeated": "Like my legendary namesake, I shall retire to my last sanctuary, until the day comes when the people need me once more.",
-		"introduction": "Hail, stranger. I am Arthur, and I welcome you to Camelot, the last redoubt of liberty. Let us set aside the burdens of the past and forge a brighter future together.",
-		"neutralHello": "Welcome.",
-		"hateHello": "What brings you here?",
-		"denounced": "I advise you to abandon the falsehoods you cling to, if you are even capable.",
-		"neutralDenouncing": "Your recent actions have placed great strain on our political relationship.",
-		"hateDenouncing": "Because we stand for liberty, we must stand against your darkness and deceit.",
-		"acceptingDemand": "We find this agreeable.",
-		"neutralRejectingDemand": "Unfortunately, we must decline.",
-		"hateRejectingDemand": "The Round Table has voiced unanimous disapproval.",
-		"declaringFriendship": "Let us stand united against those who still pursue evil ends.",
-		"tradeRequest": "The Round Table offers this arrangement. Are you interested?",
-
-		"outerColor": [189,90,80],
-		"innerColor": [10,52,45],
-		"style": "Camelot",
-		"uniqueName": "Restoration of the Round Table",
-		"uniques": [
-			"[Low Tech] units gain the [Powered Armor] promotion",
-			"[Personnel] units gain the [Powered Armor] promotion",
-			"Starts with [Writing]",
-			"Starts with [Redomestication]",
-			"Starts with [Iron Working]",
-			"Starts with [Steel]",
-			"Starts with [Constitution] adopted",
-			"[-2 Science] [in all cities] <before discovering [Education]>",
-			"Cannot build [Enslaved] units"
-		],
-		"cities": ["Avalon", "Caerleon", "New Troy", "Tristram", "Caer Danwyn", "Trevena", "Alderley", "Gwalchmai",
-			"Laundsallyn", "Gyanhumara", "Pellaeon", "Caerbannog", "Ambrose", "Cambria", "Sutcliff", "The Eildons",
-			"Stirling", "Brodick", "Benwick", "Eletti", "Alba Sarum", "Carhaix", "Carduel", "Enez-Aval",
-			"Portwenn", "Montsegur", "Joyeuse Garde", "Glatisant"],
-		"spyNames": ["Merlin", "Elaine", "Vivian", "Randall", "Hector", "Owain", "Anna", "Lyonesse", "Tennyson", "Lockheed"]
-	},
-	{
-		"name": "The Harbingers",
-		"leaderName": "Yuri Vengerov",
-		"adjective": ["Harbinger"],
-		"startBias": ["River"],
-		"preferredVictoryType": "Diplomatic",
-		"personality": "Vengerov",
-		"favoredReligion": "Church of the Water Tsaritsa",
-
-		"startIntroPart1": "The years before the Cataclysm were worse than the survivors realize. Humanity came dangerously close to being permanently enslaved by a handful of oligarchs. Some of our ancestors were among those evil elite, and even among that group they wielded exceptional power, having devised a means to control our planet's dwindling water supply. Anyone who dared to oppose them had their minds reformatted... or worse. Now we are left to handle the fallout from their actions. Shunned by the rest of the world, atonement for many of us may simply be a matter of practicality, but we must at least try to atone regardless, and use our resources for the benefit of man as we should have done in the last days of our former civilization.",
-		"startIntroPart2": "We were Harbingers of the old world's downfall. Perhaps, given the chance, we might set things right, becoming Harbingers of man's triumph and ushering in a new, better world.",
-		"declaringWar": "You have demonstrated that you cannot be trusted to maintain control over your precious resources.",
-		"attacked": "You desire control over our water as we once desired control over yours. Very well. Let us remind you why we are known as the Harbingers.",
-		"defeated": "On this day, we pay in full the price of our corporation's sins...",
-		"introduction": "We know you are displeased to see us. An understandable reaction given our past history.",
-		"neutralHello": "Greetings, comrade.",
-		"hateHello": "You tempt us to revert to old practices in our dealings with you.",
-		"denounced": "In the Old World, that insult would have mandated the death of your personality.",
-		"neutralDenouncing": "Trust is even more precious than water. Yet you squander it so easily.",
-		"hateDenouncing": "You're heading for an even greater downfall than we suffered.",
-		"declaringFriendship": "Friends are exceedingly difficult for us to come by. Can we count you among those rare few?",
-		"acceptingDemand": "Deal.",
-		"neutralRejectingDemand": "I cannot accept.",
-		"hateRejectingDemand": "This is bad for business. Even for someone like you.",
-		"tradeRequest": "Come, let us do business.",
-
-		"outerColor": [2, 46, 89],
-		"innerColor": [113, 233, 248],
-		"style": "Corporate",
-		"uniqueName": "Custodians of the World's Water",
-		"uniques": [
-			"Comment [Russian Unifier]",
-			"[+50]% Production when constructing [Gold] buildings [in all cities]",
-			"[+100]% Yield from every [Moisture trap]",
-			"[+100]% Yield from every [Water pump]",
-			"Starts with [Iron Working]",
-			"Starts with [Trade]",
-			"Starts with [Currency]",
-			"Starts with [Monopoly] adopted",
-			"[Gold] cost of purchasing items in cities [-20]%",
-			"[-33]% Production when constructing [Military] units [in all cities]",
-			"[-67]% Gold from Great Merchant trade missions",
-			"[+100]% unhappiness from the number of cities"
-		],
-		"cities": ["Vodagrad", "Prava", "Nevesk", "Kyovashad", "Snezhnaya", "Prekrasnaya", "Zapolyarny", "Ubezhishche", "Nostrava",
-			"Grad Sysevich", "Istochnik", "Mirny", "Uspekh", "Khrabrost", "Stradaniy", "Taina", "Margrave", "Yelesna", "Menestad"],
-		"spyNames": ["Sergey", "Iosef", "Leonid", "Mikhail", "Tatiana", "Veronika", "Alexei", "Anastasia", "Nikita", "Fyodor"],
-		"civilopediaText": [
-			{
-				"text": "The years before the Cataclysm were worse than the survivors realize. Humanity came dangerously close to being permanently enslaved by a handful of oligarchs. Some of our ancestors were among those evil elite, and even among that group they wielded exceptional power, having devised a means to control our planet's dwindling water supply. Anyone who dared to oppose them had their minds reformatted... or worse. Now we are left to handle the fallout from their actions. Shunned by the rest of the world, atonement for many of us may simply be a matter of practicality, but we must at least try to atone regardless, and use our resources for the benefit of man as we should have done in the last days of our former civilization."
-			},
-			{
-				"text": "We were Harbingers of the old world's downfall. Perhaps, given the chance, we might set things right, becoming Harbingers of man's triumph and ushering in a new, better world."
-			}
-		]
-	},
-	{
-		"name": "Crimson Line",
-		"leaderName": "Aleksei Moskvin",
-		"adjective": ["Soviet"],
-		"startBias": ["Tundra"],
-		"preferredVictoryType": "Domination",
-		"personality": "Moskvin",
-		"favoredReligion": "Stalinism",
-
-		// "startIntroPart1": "TBA",
-		// "startIntroPart2": "TBA",
-		"declaringWar": "It's time to liberate your stations and integrate them into the Line!",
-		"attacked": "Only a fool with a death wish would jump into the path of a train.",
-		"defeated": "It looks like the end of the line...",
-		"introduction": "I am General Secretary Moskvin of the Crimson Line, and I'm overjoyed to meet a fellow survivor of the Cataclysm. I believe there is much we have to offer one another.",
-		"neutralHello": "Welcome to the Line.",
-		"hateHello": "Save your words. You are but another ghost who doesn't realize he is dead.",
-		"denounced": "Why should we fear your threats, when our homeland is more dangerous than you could ever hope to become?",
-		"neutralDenouncing": "So, you would bring greater ruin upon your people? You should be ashamed.",
-		"hateDenouncing": "Which side of your head would you prefer me to press the barrel of my gun to?",
-		"acceptingDemand": "Let's make it so.",
-		"neutralRejectingDemand": "An undesirable proposal. As a good Communist, I must reject it.",
-		"hateRejectingDemand": "Are you mad?",
-		"afterPeace": "It was a fight over nothing. Let's settle it with a drink.",
-		"declaringFriendship": "We would be pleased if we could officially call you our comrade.",
-		"tradeRequest": "Shall we come to an arrangement in the pursuit of solidarity?",
-
-		"outerColor": [100, 0, 0],
-		"innerColor": [200, 200, 200],
-		"style": "Military",
-		"uniqueName": "One Party, One Leader, One Ideology",
-		"uniques": [
-			"Comment [Russian Unifier]",
-			"[-50]% construction time for [All Road] improvements",
-			"[-25]% maintenance on road & railroads",
-			"[+15]% [Production] [in all cities] <for [10] turns> <upon declaring war on [Major] Civilizations>",
-			"Starts with [Machinery]",
-			"Starts with [Collectivism] adopted"
-		],
-		"cities": ["Semyonovskaya", "Chistye Prudy", "Okhotny Ryad", "Lubyanka", "D-6", "Ploschad Revolyutsii", "Krasnye Vorota",
-			"Biblioteka Imeni Lenina", "Ulitsa Podbelskogo", "Sokolniki", "Sportivnaya", "Kuznetsky Most", "Dinamo", "Tverskaya",
-			"Park Kultury", "Park Pobedy", "Kommunarka", "Potapovo", "Komsomolskaya", "Krasnoselskaya", "Kropotkinskaya",
-			"Preobrazhenskaya Ploschad", "Frunzenskya", "Cherikovskaya", "Arbatskaya", "Kievskaya", "Teatralnaya", "Taganskaya",
-			"Alekseyevskaya", "Sukharevskaya", "Shabolovskaya", "Pushkinskaya", "Taganskaya", "Marksistskaya", "Aviamotornaya",
-			"Timiryazevskaya", "Chekhovskaya", "Okhruznaya", "Maryina Roscha", "Dubrovka", "Savyolovskaya"],
-		"spyNames": ["Korbut", "Lesnitsky", "Nastya", "Pavel", "Dmitri", "Anatoly", "Irina", "Ramilya", "Grigory", "Igor"]
-	},
-	{
-		"name": "Aztlán",
-		"leaderName": "Yesenia Aztlánl",
-		"adjective": ["Aztláner"],
-		"preferredVictoryType": "Domination",
-		"personality": "Great Speaker",
-		"favoredReligion": "Order of Tlaloc",
-
-		// "startIntroPart1": "",
-		// "startIntroPart2": "",
-		"declaringWar": "Let the red flood rise and spread, drowning everything in its path!",
-		"attacked": "You mean to subjugate us like the conquistadors, or worse. But I won't let that dark future come to pass. Now die!",
-		"defeated": "I only ever did what was necessary for my people to survive. But it wasn't enough...",
-		"introduction": "I am the Great Speaker Yesenia, daughter of the Lifebringer who reestablished the mighty nation of Aztlán, and the savior of its people. I wonder, will you sacrifice as much as I have...?",
-		"neutralHello": "Welcome.",
-		"hateHello": "What are you after now?",
-		"denounced": "It's always the weakest who speak loudest.",
-		"neutralDenouncing": "You didn't heed my counsel before. You'll think twice about failing to heed it again now that you've angered me.",
-		"hateDenouncing": "Your venomous words fill the veins of all Aztláners with white-hot rage.",
-		"acceptingDemand": "Very well. It is settled.",
-		"neutralRejectingDemand": "Not this time.",
-		"hateRejectingDemand": "Must you insist on testing my patience?",
-		"declaringFriendship": "Stand with me as a friend of Aztlán.",
-		"tradeRequest": "Here are my terms. It would be an unfriendly gesture for you to refuse.",
-
-		"outerColor": [0, 0, 0],
-		"innerColor": [255, 255, 255],
-		"style": "Aztlán",
-		"uniqueName": "Resurgence Under the Sixth Sun",
-		"uniques": [
-			"[+30]% Strength <vs [City-States]>",
-			"Earn [100]% of killed [Military] unit's [Strength] as [Culture]",
-			"When defeating a [{Military} {Land}] unit, earn [25] Gold and recruit it <with [25]% chance>",
-			"Starts with [Iron Working]"
-		],
-		"cities": ["Xochicalco", "Cuentepec", "Nueva Tula", "Tepic", "Tlahtoloyan", "Acapulco", "Calimaya", "Xochimilco",
-			"Huaxyacac", "Ecatepec", "Mazatlán", "Malinalco", "Sahuayo", "Xicotepec", "Colhuacán", "Nueva Cholula", "Ixtapan",
-			"Otompan", "Neza", "Tepeyac", "Xalixko", "Jilotzingo", "Xoconochco", "Coalcomán", "Yanhuitlán", "Cempoala"],
-		"spyNames": ["Armando", "Alejandro", "Rosado", "Yaretzi", "Luminosa", "Tlacotl", "Chimalma", "Cozamalotl", "Xochitl", "Xilonen"]
-	},
-	{
-		"name": "The Caliphate",
-		"leaderName": "Mostafa Beshay",
-		"adjective": ["Muslim"],
-		"preferredVictoryType": "Domination",
-		"personality": "Triumphant Caliph",
-		"favoredReligion": "Islam",
-
-		// "startIntroPart1": ".",
-		// "startIntroPart2": ".",
-		"declaringWar": "Hell lives to claim your vile souls. Down with the infidel pigs!",
-		"attacked": "We must drive the unbelievers into the deepest pits of hell!",
-		"defeated": "We may be driven from these lands for now, but we will yet subvert your order and force your people to submit to Allah's will. Islam and the jihad will never die, and your Day of Judgment will still come to pass.",
-		"introduction": "Welcome to the last worthwhile homeland of the chosen. This is the Caliphate of Western Europe and North Africa, destined to emerge triumphant over the devils infesting this fractured world.",
-		"neutralHello": "Allah's people are listening.",
-		"hateHello": "Silence, infidel!",
-		"denounced": "Effrontry is expected from those who are surrounded by ruin. But it will only be tolerated for so long.",
-		"neutralDenouncing": "Your insolence will serve as a lesson on how not to treat the chosen.",
-		"hateDenouncing": "Everyone will know of your blasphemous acts and deeds and recognize how you bring yourself to ruin.",
-		"acceptingDemand": "For once, you have shown a hint of righteousness?",
-		"neutralRejectingDemand": "You lead your people further astray with this.",
-		"hateRejectingDemand": "Who are you to make this demand of me?",
-		"declaringFriendship": "You defied my expectations. You possess Allah's wisdom. Because of that, I would grant you the friendship of the chosen.",
-		"tradeRequest": "We have little reason to show generosity when the world has become the house of tyrants. You should regard this rare opportunity as a blessing.",
-
-		"outerColor": [21, 108, 49],
-		"innerColor": [248, 217, 2],
-		"style": "Caliphate",
-		"uniqueName": "The Last Worthwhile Homeland",
-		"uniques": [
-			"[+100]% Natural religion spread [in annexed cities]",
-			"[+100]% Natural religion spread [in puppeted cities]",
-			"[+100]% to Flank Attack bonuses",
-			"[Faith] cost of purchasing items in cities [-33]%",
-			"Free [Great Sage] appears <upon discovering [Education] technology>",
-			"Starts with [Theocracy] adopted",
-			"Starts with [Supremacy] adopted",
-			"[-25]% [Culture] [in all cities]"
-		],
-		"cities": ["Bruksil", "Jirmānyah el-Kharab", "Munastir al-Kitz", "Guzlanham", "Usullu", "Malaga", "al-Munikh", "Wādī Al-Kharda",
-			"Madinat al-Nurum", "Klaylanham", "Qalal al-Liss", "Qalat Hajar al-Ram", "Madinah Aš-Šadūna", "Baraka", "Mudainah an-Nessel",
-			"Alba Sarum", "Ḥiṣn Bulāy", "Madīnat al-Mariyya", "Qabr Mirza", "Nsara", "Turi"],
-		"spyNames": ["Rashid", "Saleh", "Mashouf", "Ismail", "Mahmoud", "Fudail", "Ghalib", "Latif", "Rustam", "Zahid"]
-	},
-	{
-		"name": "Aurelian Group",
-		"leaderName": "Genevieve Aurelia",
-		"adjective": ["Aurelian"],
-		"startBias": ["Mountain"],
-		"preferredVictoryType": "Scientific",
-		"personality": "Aurelia",
-		// "favoredReligion": "TBA",
-
-		"startIntroPart1": "Here at Aurelian Group, we specialize not only in efficient extraction and refining of metals and minerals, but also in repurposing depleted mines to meet various other demands. It is through our expertise in the latter that we were able to save over a million people when the Cataclysm struck Australia. As the only surviving major entity from before the Cataclysm left standing in this land, it falls to us to take charge and lift our fallen nation out of the ashes.",
-		"startIntroPart2": "The Aurelian Group will rebuild Australia's future.",
-		"declaringWar": "For the good of these lands and the people residing in them, you must be liquidated.",
-		"attacked": "The Aurelian Group will not stand idly by while the wasteland is under siege. All workers are called to arms!",
-		"defeated": "Have all our rebuilding efforts gone to waste? This is bloody unacceptable!",
-		"introduction": "It brings me comfort to see another outpost of civilization in these savage lands. I'm Genevieve Aurelia, CEO of the Aurelian Group, and it's a pleasure to make your acquaintance.",
-		"neutralHello": "Good day to you, friend.",
-		"hateHello": "Step forward, vile savage, but keep your distance all the same.",
-		"denounced": "Baseless slander built on a crumbling foundation.",
-		"neutralDenouncing": "This incident is a most unwelcome turn. It will take some time to repair relations.",
-		"hateDenouncing": "The Aurelian Group will not abide your vile actions. Expect to face severe consequences in short order.",
-		"acceptingDemand": "I suppose this deal is as agreeable as they come.",
-		"neutralRejectingDemand": "We can't commit to this course of action at this time. I hope you'll understand.",
-		"hateRejectingDemand": "No. We refuse to acknowledge your terms.",
-		"declaringFriendship": "We share a mutual interest in maintaining stability and protecting those in need. Aurelian Group would like to forge a lasting friendship with you.",
-		"tradeRequest": "Shall we make a deal?",
-
-		"outerColor": [245, 245, 245],
-		"innerColor": [179, 135, 0],
-		"style": "Corporate",
-		"uniqueName": "Enduring Engineering",
-		"uniques": [
-			"[+10]% Strength <for [{Military} {Land}] units> <when fighting in [Rough terrain] tiles>",
-			"[+1 Production, +1 Science] from every [Forge]",
-			"[+1 Production, +1 Science] from every [Blast Furnace]",
-			"[+1 Production, +1 Science] from every [Factory]",
-			"[+1 Production, +1 Science] from every [Materials Recovery Facility]",
-			"[Great Engineer] is earned [33]% faster",
-			"Starts with [Construction]",
-			"Starts with [Iron Working]",
-			"Starts with [Machinery]",
-			"[-2 Happiness] [in all cities]"
-		],
-		"cities": ["Broken Hill", "Lightning Ridge", "Coober Pedy", "Andamooka", "Mintabee", "Cairn Hill", "Kotara", "Fassifern",
-			"Morriset", "Quilpie", "Lymington", "Waratah", "Awaba", "Jesmond", "Burwood", "Duckenfield", "Glebe End", "Hartley Vale",
-			"Wallsend", "Stockrington", "New Lambton", "Blackhill", "Ironbank", "Mandalong", "Myuna", "Swansea", "Wiluna", "Wyee",
-			"Seahampton", "Newstan", "Worsley"],
-		"spyNames": ["Donaldson", "Marheine", "Leigh", "Nott", "Macquarie", "Wickham", "Fernleigh", "Eales", "McCormack", "Stockton"]
-	},
-	{
-		"name": "The Oathsworn",
-		"leaderName": "Ada Hemings",
-		"adjective": ["Oathsworn"],
-		"startBias": ["Avoid [Desert]"],
-		"preferredVictoryType": "Diplomatic",
-		"personality": "Hemings",
-		"favoredReligion": "Methodism",
-
-		"startIntroPart1": "Like the Founding Fathers, we were outlaws, branded as such by an oppressive government. That government was the United States government, and our crime was trying to preserve, protect, and defend the Constitution which it held in contempt. As the 21st Century progressed, it became evident that the corrupt regime which had stolen power and stolen the rights of the American people would never give them back. It was time to refresh the tree of liberty by spilling the blood of these tyrants. Against all odds, we managed to awaken most of our fellow countrymen to their evil and rallied them to our cause. But just when it looked like we might have had a shot at victory, America was destroyed by nuclear hellfire. Had those tyrants truly grown so depraved as to annihilate their own people? We don't know. All we know is that we failed to save our nation. We failed to keep our oath. And we have to live with that failure.",
-		"startIntroPart2": "But when we emerged into the wastelands, we saw a glimmer of hope. The destruction was not as complete as we feared. More people survived than we expected. And we can still protect them as they lay the foundation for the rebirth of liberty. We have a second chance to get things right. To bring back America as it should have been. Our nation has fallen, but our oath still stands. We are the Oathsworn, and we must keep the American ideal alive.",
-		"declaringWar": "We've endured your oppression for too long, as have your people. It ends now.",
-		"attacked": "You would treat us as terrorists just as the tyrannical regimes of pre-Cataclysm America's last days once did. So be it.",
-		"defeated": "For the second and last time, we have failed to uphold our oath...",
-		"introduction": "I don't know who you are, but I welcome you to our territories. I'm General Ada Hemings, chief of the Oathsworn defense forces, and so long as you leave the good people living under my protection in peace, we should get along just fine.",
-		"neutralHello": "Carry on.",
-		"hateHello": "Tread carefully, lest you invite retaliation.",
-		"denounced": "With all due respect, you don't know what the hell you're talking about.",
-		"neutralDenouncing": "You've got to do better than that if you want to keep your people on your side.",
-		"hateDenouncing": "If you'd seen half of what we've seen, you wouldn't be so quick to give everyone reasons to hate you.",
-		"acceptingDemand": "Alright, let's cut a deal.",
-		"neutralRejectingDemand": "Sorry, but we'll have to veto your proposal. You understand why, right?",
-		"hateRejectingDemand": "You didn't actually believe we'd accept this, did you?",
-		"declaringFriendship": "You've done a lot of good for the people of the wasteland. The Oathsworn would be proud to call you our friend.",
-		"tradeRequest": "We hope this arrangement is of mutual benefit to our peoples.",
-
-		"outerColor": [255,255,255],
-		"innerColor": [28,51,119],
-		"style": "Military",
-		"uniqueName": "Oath to a Fallen Nation",
-		"uniques": [
-			"Comment [Each city owned increases resting point for influence with City-States by 5, up to a maximum of 30]",
-			"Resting point for Influence with City-States is increased by [5] <for every [[Your] Cities]> <when number of [[Your] Cities] is between [0] and [6]> <hidden from users>",
-			"Resting point for Influence with City-States is increased by [30] <when number of [[Your] Cities] is more than [6]> <hidden from users>",
-			"City-State territory always counts as friendly territory",
-			"[+1] Movement <for [All] units> <in [City-States] tiles>",
-			"[+25]% Great Person generation [in all cities]",
-			"Starts with [Construction]",
-			"Starts with [Constitution] adopted",
-			"Cannot build [Enslaved] units",
-			"Comment [Cannot build Prison Camp, Work Camp, or Council buildings]"
-		],
-		"cities": ["Century City", "Soldier Field", "Brandon Falls", "Libertyville", "Fort Independence", "Sanctuary Hills",
-			"Foundation", "Heritage", "Covenant", "Vanguard", "New Albany", "Hackettstown", "Taffington", "Concord", "Anabol",
-			"Quincy", "Bradbury", "Fort Constantine", "Orwell", "Wellesley", "Somerville", "Murkwater", "Cape Oath"],
-		"spyNames": ["Preston", "Harriet", "Beckett", "Bryce", "Murphy", "Nathaniel", "Wilhelmena", "Horatio", "Hailey", "Ted"]
-	},
-	{
-		"name": "Nowa Polska",
-		"leaderName": "Aleksandra Mielżyńska",
-		"adjective": ["Polish"],
-		"startBias": ["Badlands"],
-		"preferredVictoryType": "Cultural",
-		"personality": "Mielżyńska",
-		"favoredReligion": "Rodnovery",
-
-		// "startIntroPart1": "TBA",
-		// "startIntroPart2": "TBA",
-		"declaringWar": "We didn't want to go this far. But we must ensure that we keep our independence.",
-		"attacked": "You will not trample over us as so many others have done!",
-		"defeated": "Though we fought with everything we had, Poland is lost. Perhaps this time, forever...",
-		"introduction": "Welcome to New Poland, wastelander. We are still one of the finest nations on Earth in spite of all that has been thrown at us.",
-		"neutralHello": "Good day.",
-		"hateHello": "What do demons like you expect to find among our ever vigilant people?",
-		"denounced": "Clearly, your people are in greater need of healing than ours.",
-		"neutralDenouncing": "We might forgive your slander against New Poland this time. Think twice before you slander us again.",
-		"hateDenouncing": "Now, and until the bitter end, all Poles will fervently resist your evil pursuits. Poland will not be lost, least of all to the likes of you.",
-		"acceptingDemand": "Of course we'll agree.",
-		"neutralRejectingDemand": "Unacceptable.",
-		"hateRejectingDemand": "You actually thought we would let you mock us. Ha ha ha.",
-		"declaringFriendship": "Through adversity, we have forged a strong bond. I would have that bond be known to the world.",
-		"tradeRequest": "I have sent a delegation to your capital. Treat them kindly.",
-
-		"outerColor": [228, 117, 116],
-		"innerColor": [121, 0, 2],
-		"uniqueName": "Sanation",
-		"uniques": [
-			"[-10]% Culture cost of adopting new Policies",
-			"[+30]% Production when constructing [Military] units [in all cities] <for [10] turns> <upon being declared war on by [All] Civilizations>",
-			"[+50]% XP gained from combat <when fighting units from a Civilization with more Cities than you>",
-			"Starts with [Redomestication]"
-		],
-		"cities": ["Zamość", "Chwala", "Borne Sulinowo", "Nowe Tychy", "Jelenia Góra", "Bereza Kartusha", "Ostrołęka", "Sława",
-			"Nowogród", "Zwonowice", "Jasna Góra", "Zakopane", "Rzeczka", "Łysa Góra", "Bochnia", "Wieliczka", "Rembertów",
-			"Jastarnia", "Władysławowo", "Świnoujście", "Mikołajki"],
-		"spyNames": ["Stefan", "Malina", "Kazimierz", "Bronislaw", "Ewa", "Jan", "Marzena", "Henryk", "Artur", "Rozalia"]
-	},
-	{
-		"name": "Celestial Collective",
-		"leaderName": "Heavenly Father",
-		"adjective": ["Collectivist"],
-		"startBias": ["River"],
-		"preferredVictoryType": "Domination",
-		"favoredReligion": "Death Worship",
-		"personality": "Heavenly Father",
-
-		// "startIntroPart1": "TBA",
-		// "startIntroPart2": "TBA",
-		"declaringWar": "It has become apparent you refuse to accept the truth. Now we must force you to realize it.",
-		"attacked": "You still hold on to the belief that your past sins are forgiven?",
-		"defeated": "We now go to join Yánluó. The Collective endures forever in his embrace, while you, who reject his teachings, will crumble from within...",
-		"introduction": "You will soon come to learn the Four Truths...",
-		"neutralHello": "The Four Truths are all that matter in this world.",
-		"hateHello": "You continue to suffer because you continue to reject our father in Death.",
-		"denounced": "Truth will dispel your falsehoods with merciless harshness.",
-		"neutralDenouncing": "You have fallen far into error. Rectify it at once.",
-		"hateDenouncing": "You continue to spiral down into an abyss of self-delusion. And we shall seal it off with our truth.",
-		"acceptingDemand": "Knowing when to yield is its own truth...",
-		"neutralRejectingDemand": "There is no truth to be found here. Learn from our rejection.",
-		"hateRejectingDemand": "You dare try to impose such barbaric terms upon us?",
-		"declaringFriendship": "I am building a coalition of the enlightened. Will you take part?",
-		"tradeRequest": "This may help your people achieve enlightenment.",
-
-		"outerColor": [137, 89, 163],
-		"innerColor": [233, 233, 233],
-		"style": "Collective",
-		"uniqueName": "Obliteration of the Self",
-		"uniques": [
-			"Comment [Low Tech and Personnel units gain access to a special promotion when Wounded]",
-			"[+10]% Strength <for [Wounded] units>",
-			"[+10]% Strength <for [Wounded] units> <when below [50] HP>",
-			"No damage penalty for wounded units",
-			"[+1 Production] per [5] population [in all cities]",
-			"[-10]% Unhappiness from [Population] [in all cities] <when at war>",
-			"[-1] Happiness from each type of luxury resource",
-			"Starts with [Secrets of the Past]",
-			"Starts with [Collectivism] adopted"
-		],
-		"cities": ["Yōudū", "Chéngshi Yī", "Chéngshi Èr", "Chéngshi Sān", "Chéngshi Sì", "Chéngshi Wǔ", "Chéngshi Liù", "Chéngshi Qī",
-			"Chéngshi Bā", "Chéngshi Jiǔ", "Chéngshi Shí", "Chéngshi Shí Yī", "Chéngshi Shí Èr", "Chéngshi Shí Sān", "Chéngshi Shí Sì",
-			"Chéngshi Shí Wǔ", "Chéngshi Shí Liù", "Chéngshi Shí Qī", "Chéngshi Shí Bā", "Chéngshi Shí Jiǔ", "Chéngshi Èr Shí",
-			"Chéngshi Èr Shí Yī", "Chéngshi Èr Shí èr", "Chéngshi Èr Shí Sān", "Chéngshi Èr Shí Sì", "Chéngshi Èr Shí Wǔ",
-			"Chéngshi Èr Shí Liù", "Chéngshi Èr Shí Qī", "Chéngshi Èr Shí Bā", "Chéngshi Èr Shí Jiǔ", "Chéngshi Sān Shí"],
-		"spyNames": ["Commissar Li", "Commissar Wu", "Commissar Yun", "Commissar Qu", "Commissar Tao", "Commissar Zhang", "Commissar Sun", "Commissar Deng", "Commissar Jiang", "Commissar Xi"]
-	},
-
-	//Adjusted factions
-	{
-		"name": "New Star",
-		"leaderName": "Willand Keiji",
-		"adjective": ["Star"],
-		"startBias": ["Wasteland"],
-		"preferredVictoryType": "Diplomatic",
-		"personality": "Keiji",
-		"favoredReligion": "Humanism",
-
-		"startIntroPart1": "'When the Cataclysm happened, there were many that felt lost. Like the world was too far gone. I always had hope, but sometimes it's hard to keep it. Ever since we came out, the world has felt like a jungle. Ruled by wild beasts.'",
-		"startIntroPart2": "'But I got lucky. I found my platoon. My family. I think people seem to forget it, but fundamental rights? Democracy? Those were the result of natural progress. Of us seeing what worked, and what didn't. And as long as we keep marching backwards like this, we will never be better. The world had given me a second chance. And so I give you one as well. We go around the world gathering people like us. That see the world not for what it is now. But for what it can be. A New Star.'",
-		"declaringWar": "Let's go!",
-		"attacked": "Everyone! Defense Positions!",
-		"defeated": "This is... not the end.",
-		"introduction": "A dream. That's all it takes to keep going.",
-		"neutralHello": "Hello.",
-		"hateHello": "What do you want?",
-		"denounced": "We just wanted to help...",
-		"neutralDenouncing": "Sorry, but rumors from the roads say bad things about you. We'll have to put some distance between us.",
-		"hateDenouncing": "We would rather move away from you, but you're stickier than glue.",
-		"acceptingDemand": "Yes, this is helpful!",
-		"neutralRejectingDemand": "I'm sorry, but this won't help.",
-		"hateRejectingDemand": "Sorry, this hurts us more than it hurts you.",
-		"declaringFriendship": "Us survivors have to stick together, yeah?",
-		"tradeRequest": "We both stand to gain from this.",
-
-		"outerColor": [0, 0, 0],
-		"innerColor": [255, 165, 0],
-		"style": "Military",
-		"uniqueName": "Determination",
-		"uniques": [
-			"Gain [15] Influence with a [Civilian] gift to a City-State",
-			"Gain [15] Influence with a [Support] gift to a City-State",
-			"[Civilian] units gain the [Thermoptic Camouflage] promotion",
-			"[Support] units gain the [Thermoptic Camouflage] promotion",
-			"[+15]% Strength <for [Wounded] units>",
-			"[+1] Sight <for [{Wounded} {Support}] units>",
-			"Cannot build [Enslaved] units"
-		],
-		"cities": ["Hope", "Starling City", "Newbay", "Ballenderg", "San Lourn", "Drimere", "Highnimon", "Inford",
-			"Melderk", "Thallas", "Nedaleck", "Douridas Pier", "Silverman Port", "Dalbete", "Light Otis", "Meckenberg"],
-		"spyNames": ["Henry", "Jim", "Clarice", "Juliet", "Ashlee", "Robyn", "Ben", "Jodie", "Harvey", "Juno"]
-	},
-	{
-		"name": "Hexlock",
-		"leaderName": "Aura",
-		"adjective": ["Hexlock"],
-		"startBias": ["Fissure"],
-		"preferredVictoryType": "Domination",
-		"personality": "Aura",
-		"favoredReligion": "Objectivism",
-
-		"startIntroPart1": "'I will admit. There were times were even I felt stumped. Science is supposed to be free. To let you discover things to your heart's content without a single care. But for every step forward, there are some who wish to take two steps backwards. With their arbitrary regulations and limits. They had a system meant to hinder your progress. They... are gone now.'",
-		"startIntroPart2": "'For Hexlock, this new world is a paradise. Free to research whatever you want, however you want. No limits. Tell me. What will you bring this world next?'",
-		"declaringWar": "Congratulations. You will help me test my new advancements.",
-		"attacked": "Now isn't that interesting?",
-		"defeated": "Will this be the end? I wonder",
-		"introduction": "Hello-o. Anyone to spare for a science experiment?",
-		"neutralHello": "Yeah?",
-		"hateHello": "Quite an interesting person...",
-		"denounced": "An acceptable risk in new world industry.",
-		"neutralDenouncing": "Hexlock no longer views you as a profitable neighbor.",
-		"hateDenouncing": "Every day your nation exists, it looks more and more like a failed experiment.",
-		"acceptingDemand": "Interesting! I accept.",
-		"neutralRejectingDemand": "Mmm, no. Too many unknown variables.",
-		"hateRejectingDemand": "No! Have you even run a risk analysis on this deal?",
-		"declaringFriendship": "Ooh, you're an interesting one! Want to be my lab partner?",
-		"tradeRequest": "This Shipment was brought to you by Hexlock Technologies.",
-		
-		"outerColor": [64, 8, 114],
-		"innerColor": [255, 40, 255],
-		"style": "Hexlock",
-		"uniqueName": "Adaptive Systems",
-		"uniques": [
-			"Comment [Can Mix Unique Strategic Resources to generate a Great Person]",
-			"[+100]% [Encrypted Data] resource production",
-			"[+20]% Production when constructing [National] wonders [in all cities]",
-			"Starts with [Writing]",
-			"Starts with [Chemistry]",
-			"[-2 Happiness] [in all cities]"
-		],
-		"cities": [
-			"Halimax",
-			"Darkfield",
-			"Nightcity",
-			"Aella",
-			"Cybellia Complex",
-			"Vannell",
-			"L-T",
-			"Hemfield",
-			"Chaoslance",
-			"Nicord",
-			"Slyphis",
-			"Stradival",
-			"Eblaizal",
-			"Qrephel",
-			"Mabelcut",
-			"Prawrie"
-		],
-		"spyNames": ["Claude", "Eliza", "Watson", "Kismet", "Siri", "Asimo", "Bert", "Neil", "Alice", "Nadine"]
-	},
-	{
-		"name": "Children of Rust",
-		"leaderName": "Scarlett",
-		"adjective": ["Scavenger"],
-		"startBias": ["Forest"],
-		"preferredVictoryType": "Cultural",
-		"personality": "Scarlett",
-		"favoredReligion": "Ghost Dance",
-
-		// "startIntroPart1": "TBA",
-		// "startIntroPart2": "TBA",
-		"declaringWar": "Now you will reap what you have sown.",
-		"attacked": "We never expected that you could leave us to live in peace. Destruction is in your blood.",
-		"defeated": "Your legacy is nothing but death.",
-		"introduction": "So, you have returned! While the world died, what hole did you hide in? The cities you left behind are our inheritance.",
-		"neutralHello": "I speak for the Children.",
-		"hateHello": "What will it take? When the last tree has burned and the last child has starved, will you then be satisfied, great leader?",
-		"denounced": "The forked tongue of your ancestors has shown itself in you.",
-		"neutralDenouncing": "The street spirits are uneasy around you, and warned us not to get too close to you.",
-		"hateDenouncing": "Hark, it has been revealed that you are the two-faced one that Viracocha warned us about! May many curses fall upon you.",
-		"acceptingDemand": "Hm! Acceptable.",
-		"neutralRejectingDemand": "Hmph. This deal would offend many of the Children were we to be tricked into acceptance.",
-		"hateRejectingDemand": "The spirits are angered by your presence. Begone!",
-		"afterPeace": "Viracocha has frowned upon our war, and has agreed to our peace agreements.",
-		"declaringFriendship": "You've proven your trustworthiness. Let us share the peace pipe, and let the spirits bear witness.",
-		"tradeRequest": "This is the property now of the Children. What price will you pay?",
-
-		"outerColor": [116, 67, 5],
-		"innerColor": [219, 219, 126],
-		"uniqueName": "Rubble Runners",
-		"uniques": [
-			"[Civilian] units gain the [Urban Warfare I] promotion",
-			"[Low Tech] units gain the [Urban Warfare I] promotion",
-			"[Personnel] units gain the [Urban Warfare I] promotion",
-			"[+1 Faith] [in all cities] <with [1] to [2] neighboring [{unimproved} {Jungle}] tiles>",
-			"[+2 Faith] [in all cities] <with [3] to [6] neighboring [{unimproved} {Jungle}] tiles>",
-			"All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel."
-		],
-		"cities": [
-			"Phoenix",
-			"Rust City",
-			"The Boneyard",
-			"Old Forest",
-			"Dogtown",
-			"Soft Rains",
-			"Ashville",
-			"Condor Creek",
-			"Hazard",
-			"Radium Springs",
-			"Osprey",
-			"Vulture Bend",
-			"Dark Skies",
-			"Pistolville",
-			"Headstone",
-			"Firesteel",
-			"Broken Hills",
-			"Deadwood",
-			"Hopeville",
-			"Buzzard Vista",
-			"Dustbowl",
-			"Rakeville",
-			"Rock Falls",
-			"Kismet",
-			"Waterville"
-		]
-	},
-	{
-		"name": "Blackwarden",
-		"leaderName": "Eric Price",
-		"adjective": ["Mercenary"],
-		"preferredVictoryType": "Domination",
-		"personality": "Price",
-		"favoredReligion": "Capitalism",
-
-		"startIntroPart1": "With over 250,000 employees across 40 nations, Blackwarden Associates is the first choice for any situation requiring a professional and discreet security solution. Our friendly, highly trained personnel are always ready to help  - from your local bank or supermarket, to immigration processing centers and border defense at home, to fallout remediation and nuclear site security in the Indus Exclusion Zone.",
-		"startIntroPart2": "Blackwarden. Securing Your Future.",
-		"declaringWar": "It's time for you to join the Blackwarden family.",
-		"attacked": "Competitiveness? It's one of our core values.",
-		"defeated": "I'm sure we can come to an agreement. Let me send you my resume.",
-		"introduction": "You've reached the office of Eric Price, VP of mergers and acquisitions, Blackwarden, incorporated. Here at Blackwarden, the comfort and security of our shareholders is our number one priority.",
-		"neutralHello": "Greetings!",
-		"hateHello": "What?",
-		"denounced": "Heh. We'll just beat you up harder.",
-		"neutralDenouncing": "I see you've fallen out of the competition.",
-		"hateDenouncing": "Yeah, we figured out that you're even weaker than we think you are, which is saying something.",
-		"acceptingDemand": "Yeah sure, I agree.",
-		"neutralRejectingDemand": "No, this is a liability to Blackwarden.",
-		"hateRejectingDemand": "I've seen better slave contracts than this. Our word is no.",
-		"declaringFriendship": "Nice to see another tough face in the wasteland. You have the balls, I can tell.",
-		"tradeRequest": "This is a great opportunity for you. It would be unwise to refuse.",
-
-		"outerColor": [100, 170, 210],
-		"innerColor": [42, 42, 70],
-		"style": "Corporate",
-		"uniqueName": "Limited Liability",
-		"uniques": [
-			"[+10]% Strength <for [All] units> <when fighting in [Foreign Land] tiles>",
-			"City-State Influence recovers at twice the normal rate",
-			"Starts with [Writing]",
-			"Starts with [Trade]",
-			"Starts with [Currency]",
-			"[-2 Science] [in all cities] <before discovering [Education]>",
-			"Starts with [Monopoly] adopted",
-			"Can spend Gold to annex or puppet a City-State that has been your Ally for [5] turns <after adopting [Monopoly Complete]>"
-		],
-		"cities": [
-			"Ark One",
-			"Vanguard",
-			"New Haven",
-			"Competitor View",
-			"Prosperity Plaza",
-			"Break Even",
-			"Spearhead",
-			"Profit Margin",
-			"Searchlight",
-			"Carte Blanche",
-			"Jackalsville",
-			"Horwich Green",
-			"Laissez's Fair",
-			"Hard Cash",
-			"Innovation",
-			"Conflict of Interest",
-			"Sunk Cost",
-			"Forbes",
-			"Cornucopia"
-		],
-		"spyNames": ["Al", "Cofer", "Richer", "Ashcroft", "Quinn", "Bonfiglio", "Danielle", "Inman", "Robinson", "Folsom"],
-		"civilopediaText": [
-			{ "text": "With over 250,000 employees across 40 nations, Blackwarden Associates is the first choice for any situation requiring a professional and discreet security solution. Our friendly, highly trained personnel are always ready to help  - from your local bank or supermarket, to immigration processing centers and border defense at home, to fallout remediation and nuclear site security in the Indus Exclusion Zone." },
-			{ "text": "Blackwarden. Securing Your Future." }
-		]
-	},
-	{
-		"name": "Atlas",
-		"leaderName": "John Kruger",
-		"adjective": ["Atlesian"],
-		"startBias": ["Mountain"],
-		"preferredVictoryType": "Scientific",
-		"personality": "Kruger",
-		"favoredReligion": "Objectivism",
-
-		"startIntroPart1": "At the Refuge, I am creating more than a town, more even than a polity; it is a new world, where individuals will be free to act without the burden of taxation or the specter of injustice. Here, I have created a truly voluntary society, where the citizens associate in rational self interest; from love, not from fear of punishment. I have sent you this invitation because you have greatness within you; think of all you have achieved in your life, and how much more you could do, if you were not held back.",
-		"startIntroPart2": "Choose something different. Choose Atlas.",
-		"declaringWar": "All that is required for the triumph of evil is for good men to do nothing.",
-		"attacked": "You're breaking the non-aggression principle!",
-		"defeated": "It is our wealth that you use while destroying us.",
-		"introduction": "I'm John Kruger, CEO of the Atlas Corporation. I thought we were the sole outpost of civilization in a world ruled by barbarism.",
-		"neutralHello": "This is John Kruger speaking.",
-		"hateHello": "I do not share your evil or sink to your concept of morality.",
-		"denounced": "You stand in the way of progress, and that makes you a threat to the future of humanity.",
-		"neutralDenouncing": "Your development worries us, it seems that you are regressing too far for our taste.",
-		"hateDenouncing": "If this is what you call progress, than I'd hate to see what happens when the inevitable fall happens.",
-		"acceptingDemand": "Yes, this is good for all of us.",
-		"neutralRejectingDemand": "Apologies, but this agreement lacks some key points we'd like to see.",
-		"hateRejectingDemand": "Your proposal disappoints me greatly. We refuse.",
-		"declaringFriendship": "You are a prime example of a thriving civilization. I'd like to seek closer relations.",
-		"tradeRequest": "Free trade is the only fair trade.",
-
-		"outerColor": [0, 255, 255],
-		"innerColor": [45, 60, 120],
-		"style": "Corporate",
-		"uniqueName": "Creative Leadership",
-		"uniques": [
-			"[{non-[Mounted]} {Melee} {Personnel}] units gain the [[Surveyor] ability] promotion",
-			"Free [Great Scientist] appears <upon discovering [Education] technology>",
-			"[Great Scientist] is earned [30]% faster",
-			"Starts with [Rationalism] adopted",
-			"Cannot build [Enslaved] units",
-			"Comment [Cannot build Work Camp buildings]"
-		],
-		"cities": ["Atlas Canyon", "Praxis", "Opportunity", "Enterprise Gardens", "Pareto Estates", "Hanlon College", "The Reservation", "Zakharov Campus",
-			"Curiosity", "Progress Estates", "New Horizon", "Dunning Institute", "Kruger Laboratories", "Apogee", "Hypothesis", "Axiom",
-			"Euclid Center", "Prometheus Laboratories", "Zenith", "Von Neumann Institute"],
-			"spyNames": ["Dagny", "Rearden", "Wyatt", "Akston", "Danagger", "Midas", "Kay", "Quentin", "Halley", "Allen"],
-		"civilopediaText": [
-			{
-				"text": "At the Refuge, I am creating more than a town, more even than a polity; it is a new world, where individuals will be free to act without the burden of taxation or the specter of injustice. Here, I have created a truly voluntary society, where the citizens associate in rational self interest; from love, not from fear of punishment. I have sent you this invitation because you have greatness within you; think of all you have achieved in your life, and how much more you could do, if you were not held back."
-			},
-			{
-				"text": "Choose something different. Choose Atlas."
-			}
-		]
-	},
-	{
-		"name": "The Patriots",
-		"leaderName": "General Cameron",
-		"adjective": ["Patriot"],
-		"startBias": ["Avoid [Desert]"],
-		"preferredVictoryType": "Domination",
-		"personality": "Cameron",
-		"favoredReligion": "Liberty",
-
-		// "startIntroPart1": "TBA",
-		// "startIntroPart2": "TBA",
-		"declaringWar": "You're either with us, or you're with the terrorists.",
-		"attacked": "Disperse immediately. Insurrection and rebellion will be met with lethal force.",
-		"defeated": "We today have concluded an agreement to end the war and bring peace with honor.",
-		"introduction": "This is General Cameron of the Army. A state of emergency is currently in effect across the nation. Military authorities are authorized to summarily enforce order, in accordance with martial law. Maintain your shelters and await further instructions.",
-		"neutralHello": "A water tax of 25% is in place for all municipalities to support disaster relief efforts and the restoration of government.",
-		"hateHello": "A special water tax rate of 33% is in place for your municipality. You are additionally required to surrender all military weapons.",
-		"denounced": "Those are seditious words you're saying.",
-		"neutralDenouncing": "Our scouts have reported un-patriotic acts in your territory, and as such we have the right to enact an isolation protocol against you.",
-		"hateDenouncing": "This is a warning to you to cease your treasonous acts. Failure to comply will result in heavy retribution. Personally I hope you do not comply.",
-		"acceptingDemand": "Affirmative, we shall carry this out ASAP.",
-		"neutralRejectingDemand": "Negative. This deal is simply insufficient.",
-		"hateRejectingDemand": "Negatory! This violates our standing orders. Vacate yourself from the premises now.",
-		"declaringFriendship": "You have been chosen as an example of a model citizen. Additional perks will be granted to your household. Stand proud, citizen.",
-		"tradeRequest": "The Emergency Management Agency has prepared this aid package for your district.",
-
-		"outerColor": [40, 178, 0],
-		"innerColor": [100, 50, 30],
-		"style": "Military",
-		"uniqueName": "Military Secrets",
-		"uniques": [
-			"[+100]% [Encrypted Data] resource production",
-			"[+100]% [Weapons] resource production",
-			"Comment [[+1 Production, +1 Science] from all defensive buildings]",
-			"[+1 Production, +1 Science] from every [Walls] <hidden from users>",
-			"[+1 Production, +1 Science] from every [Defensive Emplacements] <hidden from users>",
-			"[+1 Production, +1 Science] from every [Choke Points] <hidden from users>",
-			"[+1 Production, +1 Science] from every [Coastal Defenses] <hidden from users>",
-			"[+1 Production, +1 Science] from every [Hardened Defenses] <hidden from users>",
-			"[+1 Production, +1 Science] from every [Battery] <hidden from users>",
-			"[+1 Production, +1 Science] from every [Bunker] <hidden from users>",
-			"[+1 Production, +1 Science] from every [Active Denial System] <hidden from users>",
-			"[+2 Production, +2 Science] from every [Citadel] <before the [Industrial era]>",
-			"[+4 Production, +4 Science] from every [Citadel] <starting from the [Industrial era]>",
-			"Cannot build [Low Tech] units"
-		],
-		"cities": [
-			"Eagle Rock",
-			"Fort Patriot",
-			"Valiant Base",
-			"Camp Fidelis",
-			"Fort Endurance",
-			"Camp Freedom",
-			"Sentinel Field",
-			"Camp Hammer",
-			"Camp Justice",
-			"Fort Victory",
-			"Fort Crockett",
-			"Sparta Base",
-			"Arclight Station",
-			"Overwatch Base",
-			"Fort Challenger",
-			"Fort Cameron",
-			"Thunder Outpost",
-			"Cobalt Base",
-			"Camp Shield",
-			"Fort Granite",
-			"Liberator Station",
-			"Camp Dawn"
-		],
-		"spyNames": ["Ryan", "Dirk", "Fisher", "Kurt", "Ding", "Isaac", "Hansen", "Dorn", "Briggs", "Remi"]
-	},
-	{
-		"name": "Crimson Legion",
-		"leaderName": "Caesar",
-		"adjective": ["Legion"],
-		"preferredVictoryType": "Domination",
-		"personality": "Caesar",
-		"favoredReligion": "Imperial Cult",
-
-		"startIntroPart1": "Behold! The nations of the past have fallen, their once marvelous cities crumbled into dust. And why? Because they were weak! In their hour of necessity, they could not stand together! They turned on themselves and devoured themselves, and now they are dead. But we are alive, because we are strong! And what is the source of our strength? Our unity! Like the fasces, we are bound together, and with the strength of our bond, we shall rebuild civilization!",
-		"startIntroPart2": "Our enemies are many, but like the nations of old, they are weak and divided. They shall fall before us, and the world shall at last be united under one great banner! Hail victory! Hail Caesar!",
-		"declaringWar": "You have stood in the way of progress for too long.",
-		"attacked": "Do you really believe that you can stand against the tide of history?",
-		"defeated": "You have the strength to prevail. So be it.",
-		"introduction": "Hail. I am Caesar, son of Mars, Consul of the Crimson Legion. Have you come to pay tribute?",
-		"neutralHello": "Hail.",
-		"hateHello": "Your misplaced ideals make you weak.",
-		"denounced": "Do not think that I, Caesar, will allow you to get away with this.",
-		"neutralDenouncing": "Your deeds have made you fall out of Caesar's favor.",
-		"hateDenouncing": "Know that the full might of the Legion is against you, barbarian.",
-		"acceptingDemand": "Ave. True to Caesar.",
-		"neutralRejectingDemand": "Non. Malum negotium est.",
-		"hateRejectingDemand": "Non, this is a ridiculous proposal.",
-		"declaringFriendship": "You have earned the favor of Caesar. Stand proudly as a friend of the Legion.",
-		"tradeRequest": "I offer this, for your consideration.",
-
-		"outerColor": [153, 5, 3],
-		"innerColor": [244, 232, 54],
-		"style": "Legion",
-		"uniqueName": "One Banner",
-		"uniques": [
-			"When conquering an encampment, earn [25] Gold and recruit a Barbarian unit <with [67]% chance>",
-			"[-33]% maintenance costs <for [Land] units>",
-			"[+20]% Strength <for [Low Tech] units> <when attacking>",
-			"Starts with [Iron Working]",
-			"Starts with [Supremacy] adopted",
-			"Empire enters golden age <upon conquering a city> <after adopting [Supremacy Complete]>",
-			"Cannot build [Automated] units",
-			"Cannot build [Purge Robot] units"
-		],
-		"cities": [
-			"Postumus",
-			"Rubicon",
-			"Dies Irae",
-			"Tartarus",
-			"Aqua Vitae",
-			"Damocles",
-			"De Facto",
-			"Vae Victis",
-			"Golgotha",
-			"Mors Omnibus",
-			"Carthage",
-			"Lex Talionis",
-			"Kronos",
-			"Extrema Ratio",
-			"Igni Ferroque",
-			"Tycho",
-			"Memento Mori",
-			"Orcus",
-			"Ex Nihilo",
-			"Para Bellum",
-			"Styx",
-			"Manu Forte",
-			"Elysium",
-			"Alea Iacta Est",
-			"Corpus Vile",
-			"Canis Canem Edit",
-			"Ad Astra"
-		],
-		"spyNames": ["Vulpes", "Cato", "Alerio", "Caius", "Ulysses", "Silus", "Picus", "Aurelius", "Severus", "Livius"],
-		"civilopediaText": [
-			{
-				"text": "Behold! The nations of the past have fallen, their once marvelous cities crumbled into dust. And why? Because they were weak! In their hour of necessity, they could not stand together! They turned on themselves and devoured themselves, and now they are dead. But we are alive, because we are strong! And what is the source of our strength? Our unity! Like the fasces, we are bound together, and with the strength of our bond, we shall rebuild civilization!"
-			},
-			{
-				"text": "Our enemies are many, but like the nations of old, they are weak and divided. They shall fall before us, and the world shall at last be united under one great banner! Hail victory! Hail Caesar!"
-			}
-		]
-	},
-	{
-		"name": "Cult of Ignis",
-		"leaderName": "Ignitor Martina",
-		"adjective": ["Ignisite"],
-		"startBias": ["Desert"],
-		"preferredVictoryType": "Domination",
-		"personality": "Ignitor",
-		"favoredReligion": "Divine Engine",
-
-		"startIntroPart1": "In the beginning, the earth was without form, cold and void. And the Divine Engine moved upon the face of the earth, and brought forth humans, to serve her. And she blessed the people upon the earth with steel and holy oil, to make engines of their own. But the people of the earth forgot the Divine Engine who had blessed them. So the Engine sent forth the Flame to destroy the people who had sinned, and the earth was cleansed. But the Flame had mercy upon the people, and spared the people who repented and swore to serve the Engine. And it came to pass that Divine Engine blessed the people once more, and gave them steel and holy oil, and commanded them to multiply and replenish the earth, for the engine's glory.",
-		"startIntroPart2": "Now the people of the earth have begun to forget the Engine once more. We are called to spread the word of our god, and compel the nations of the earth to repent and serve the Engine. The wrath of the Flame goes before us, and the strength of the Engine is behind us. We are Ignis, and we cannot fail.",
-		"declaringWar": "Rejoice! Your profane forms will soon become one with the Exhaust!",
-		"attacked": "Your offering is welcome! We shall oxidize together in blessed combustion!",
-		"defeated": "Though our worldly bodies fail, our spirits soar through the skies in oxides immortal...",
-		"introduction": "The sybil has foreseen this meeting! I am Martina, Ignitor and High Priest. I serve the Divine Engine, and so too shall you.",
-		"neutralHello": "In the name of the trinity, I permit your words be heard.",
-		"hateHello": "You risk the wrath of the Flame.",
-		"denounced": "You have a mouth that spews smoke.",
-		"neutralDenouncing": "Be warned, our oracles have divined that you need to check your engine lights - for you are going towards a dark tarmac.",
-		"hateDenouncing": "O you tarnished and rusted soul! We long for the day you will become fuel for the Engine.",
-		"acceptingDemand": "Rejoice, the Engine purrs smoothly.",
-		"neutralRejectingDemand": "We see too much smoke in this, and must deny it until it runs smoothly again.",
-		"hateRejectingDemand": "Into the Flames with this proposal!",
-		"declaringFriendship": "The fire of the Engine rises in you! May we ride together, chrome and eternal.",
-		"tradeRequest": "You may yet serve the Engine...",
-
-		"outerColor": [255, 150, 0],
-		"innerColor": [0, 0, 0],
-		"style": "Ignis",
-		"uniqueName": "Road Warriors",
-		"uniques": [
-			"[-33]% maintenance costs <for [Armor] units>",
-			"[+1] Movement <for [Armor] units>",
-			"Starts with [Machinery]",
-			"Starts with [Theocracy] adopted",
-			"[+1 Culture] from every [Strategic resource]",
-			"Gain a free [Founder] belief <upon adopting [Theocracy Complete]>"
-		],
-		"cities": ["Gastown", "Blood Farm", "Trial of Sand", "Prophecy", "Thousand Cuts", "The Harrowing", "Temple of Rage", "Immortal Highway",
-			"Tohuvabohu", "Forbidden Palace", "Hanging Gardens", "Megiddo", "The Cauldron", "Traitors' Gate", "Hell Patrol", "Steel Throne",
-			"The Warren", "Well of Souls", "Hermitage", "Ceremony", "Court of Dreams", "Perpetual Ascension", "Death Race", "God Box"],
-		"spyNames": ["Rictus", "Scabrous", "Rizzdale", "Fang", "Smeg", "Nux", "Slit", "Morsov", "Wez", "Zanetti"],
-		"civilopediaText": [
-			{
-				"text": "In the beginning, the earth was without form, cold and void. And the Divine Engine moved upon the face of the earth, and brought forth humans, to serve her. And she blessed the people upon the earth with steel and holy oil, to make engines of their own. But the people of the earth forgot the Divine Engine who had blessed them. So the Engine sent forth the Flame to destroy the people who had sinned, and the earth was cleansed. But the Flame had mercy upon the people, and spared the people who repented and swore to serve the Engine. And it came to pass that Divine Engine blessed the people once more, and gave them steel and holy oil, and commanded them to multiply and replenish the earth, for the engine's glory."
-			},
-			{
-				"text": "Now the people of the earth have begun to forget the Engine once more. We are called to spread the word of our god, and compel the nations of the earth to repent and serve the Engine. The wrath of the Flame goes before us, and the strength of the Engine is behind us. We are Ignis, and we cannot fail."
-			}
-		]
-	},
-	{
-		"name": "The Mariners",
-		"leaderName": "Deacon Hopper",
-		"adjective": ["Marine"],
-		"startBias": ["Coast"],
-		"preferredVictoryType": "Domination",
-		"personality": "Deacon",
-		"favoredReligion": "Rongorongo",
-
-		// "startIntroPart1": "",
-		// "startIntroPart2": "",
-		"declaringWar": "The sea is ours, and all the dry lands shall soon be as well!",
-		"attacked": "Ha! You think to challenge us? I hope you can swim well.",
-		"defeated": "Damn you! We should never have left the protection of the sea.",
-		"introduction": "Ahoy! We are the Mariners, and we've come to reclaim the dry land from the lot of you.",
-		"neutralHello": "Greetings, land dweller.",
-		"hateHello": "What do you want?",
-		"denounced": "Feisty, aren't 'cha?",
-		"neutralDenouncing": "Best leave you alone for now, you're steering your nation into dangerous currents.",
-		"hateDenouncing": "Pah, you cannot navigate your way out of a damp canoe, let alone set a course for a nation!",
-		"acceptingDemand": "Aye, that'll do.",
-		"neutralRejectingDemand": "Nay, this deal isn't ship-shape.",
-		"hateRejectingDemand": "Nay. You land-lubbers just don't understand.",
-		"declaringFriendship": "There be plenty of fish in the sea, but a good friend like you is hard to find.",
-		"tradeRequest": "We've got the finest goods that the sea can offer! What do you say?",
-
-		"outerColor": [51, 25, 0],
-		"innerColor": [255, 255, 102],
-		"style": "Tribal",
-		"uniqueName": "People of the Sea",
-		"uniques": [
-			"Enables embarkation for land units",
-			"Enables [All] units to enter ocean tiles",
-			"[1] Movement point cost to embark",
-			"[1] Movement point cost to disembark",
-			"[+100]% Strength <when defending> <for [Embarked] units>",
-			"[+1] Sight <for [Embarked] units>",
-			"[+1] Movement <for [Water] units>",
-			"[Low Tech] units gain the [Amphibious] promotion",
-			"[Personnel] units gain the [Amphibious] promotion",
-			"[Low Tech] units gain the [Sea Raider] promotion <after adopting [Advanced Piracy]>",
-			"[Personnel] units gain the [Sea Raider] promotion <after adopting [Advanced Piracy]>",
-			"[Ranged Water] units gain the [Sea Raider] promotion <after adopting [Advanced Piracy]>",
-			"Starts with [Sailing]",
-			"Starts with [Rediscovery] adopted"
-		],
-		"cities": [
-			"Dryplace",
-			"Everest Peak",
-			"Tripplehorn Harbor",
-			"Majorino Bay",
-			"Coates Beach",
-			"LaSardo Coast",
-			"Mokae Pier",
-			"Kazann Port",
-			"Shimono Harbor",
-			"Aviles Beach",
-			"Kehler Coast",
-			"Douridas Pier",
-			"Silverman Port",
-			"Giuntoli Bay",
-			"Whalen Cove",
-			"Arenberg Fjord",
-			"Preston Quay",
-			"Spinuzza Harbor",
-			"Livdahl Promontory",
-			"Toles-Bey Atoll",
-			"Cimino Cove",
-			"Tallent Point",
-			"Cape Costner"
-		],
-		"spyNames": ["Enola", "Gregor", "Sawzall", "Priam", "Bone", "Toby", "Smitty", "Djeng", "Truan", "Ledger"]
-	},
-	{
-		"name": "New Afrika",
-		"leaderName": "Mutulu Makonnen",
-		"adjective": ["Afrikan"],
-		"startBias": ["Avoid [Tundra]"],
-		"preferredVictoryType": "Cultural",
-		"personality": "Makonnen",
-		"favoredReligion": "Rastafari",
-
-		// "startIntroPart1": "",
-		// "startIntroPart2": "",
-		"declaringWar": "We've had enough of you messing with us.",
-		"attacked": "You think you can defeat us? Fool!",
-		"defeated": "This is the end. Freedom will never be more than a dream.",
-		"introduction": "I am Mutulu, and we are New Afrika. We are here to rebuild this broken world.",
-		"neutralHello": "Greetings.",
-		"hateHello": "What the hell do you want?",
-		"denounced": "This insult to New Afrika will not slide.",
-		"neutralDenouncing": "Your recent actions have concerned us about your true motive.",
-		"hateDenouncing": "Do you think your plans that will put Afrikans under chains once more, will remain hidden forever? We see through your lies, colonizer!",
-		"acceptingDemand": "Yes, good.",
-		"neutralRejectingDemand": "No, this is not quite fair enough.",
-		"hateRejectingDemand": "This smells too much of colonialism.",
-		"declaringFriendship": "Rejoice, for New Afrika considers you as a friend.",
-		"tradeRequest": "Let's make a fair trade, as equals.",
-
-		"outerColor": [120, 120, 50],
-		"innerColor": [30, 9, 0],
-		"style": "Afrikan",
-		"uniqueName": "Community Watch",
-		"uniques": [
-			"[+10]% Strength <within [2] tiles of a [City center]>",
-			"[+20]% Strength <when fighting units from a Civilization with more Cities than you>",
-			"Enemy [Land] units must spend [1] extra movement points when inside your territory <before discovering [Railroads]> <Suppress warning [*contains a conditional on a unit movement unique*]>",
-			"Starts with [Secrets of the Past]",
-			"Cannot build [Enslaved] units",
-			"Comment [Cannot build Prison Camp or Work Camp buildings]"
-		],
-		"cities": [
-			"Gao",
-			"Tombouctu",
-			"Jenne",
-			"Taghaza",
-			"Tondibi",
-			"Kumbi Saleh",
-			"Kukia",
-			"Addis Ababa",
-			"Harar",
-			"Adwa",
-			"Lalibela",
-			"Gondar",
-			"Walata",
-			"Tegdaoust",
-			"Argungu",
-			"Gwandu",
-			"Kebbi",
-			"Boussa",
-			"Thebes",
-			"Memphis",
-			"Heliopolis",
-			"Elephantine",
-			"Alexandria",
-			"Axum",
-			"Dire Dawa",
-			"Bahir Dar",
-			"Adama",
-			"Mek'ele",
-			"Awasa",
-			"Jimma",
-			"Jijiga",
-			"Dessie",
-			"Debre Berhan",
-			"Pi-Ramesses",
-			"Giza",
-			"Byblos"
-		],
-		"spyNames": ["Mumia", "Ashanti", "Sundiata", "Kuwasi", "Dhoruba", "Safiya", "Kwaku", "Kom'boa", "Bashir", "Jamal"]
-	},
-	{
-		"name": "Proklyatyye",
-		"leaderName": "Trofim Bugorski",
-		"adjective": ["Proklyatyy"],
-		"startBias": ["Tundra"],
-		"preferredVictoryType": "Scientific",
-		"personality": "Bugorski",
-		"favoredReligion": "Rodnovery",
-	
-		"startIntroPart1": "Perhaps it would have been better if man had never split the atom. If only we could go back and make it so no one could harness nuclear energy... Maybe then, we would never have burned the world to the ground. Maybe then you would not feel the sickness in your bones. But all that is in the past. We have to live with it now, no? But here is our secret: we can live with it, and they cannot. They have no stomach for radiation. And so this curse upon the land is a blessing to us. The sickness goes before us and destroys our enemies, leaving only us alive. That is not so bad now, is it?",
-		"startIntroPart2": "This sick and dying world is our birthright. Let us go and claim it all for ourselves, and see if we cannot make a heaven out of this hell.",
-	
-		"declaringWar": "Your lands look fertile. We'll take them.",
-		"attacked": "So you think you can destroy us? Let us see if our sickness can destroy you first!",
-		"defeated": "Just promise me that you will try to heal this dying world.",
-		"introduction": "Hello, stranger! I would shake your hand, but it is better if you do not touch me.",
-	
-		"neutralHello": "Hello!",
-		"hateHello": "What do you need?!",
-
-		"denounced": "We're used to being ostracized.",
-		"neutralDenouncing": "Ah, just when we think we can have someone to really trust.",
-		"hateDenouncing": "We've had our share of being blamed, but what you're doing is loathsome even for us.",
-		"acceptingDemand": "Mm, yes. Low ticks on the Geiger.",
-		"neutralRejectingDemand": "Mmm... not 'spicy' enough for us.",
-		"hateRejectingDemand": "This is more toxic than most of the contaminants around where I'm from.",
-		"declaringFriendship": "Thank you for caring. We shall not forget your kindness.",
-
-		"tradeRequest": "How would you like it if I propose this kind of exchange?",
-	
-		"outerColor": [34,52,52],
-		"innerColor": [255,225,157],
-		"uniqueName": "Radioactivity",
-		"uniques": [
-			"Comment [Russian Unifier]",
-			"Starts with [Secrets of the Past]",
-			"Starts with [Writing]",
-			"Starts with [Construction]",
-			"Starts with [Mining]",
-			"[-1 Science] [in all cities] <before discovering [Education]>",
-			"[-10]% growth [in all cities] <before discovering [Decontamination]>",
-			"[-1 Food] [in all cities] <before discovering [Decontamination]>",
-			"[{non-[Air]} {Military}] units gain the [Radioactive] promotion",
-			"[+10]% Strength <for [All] units> <when fighting in [Fallout] tiles>",
-			"[+10]% Strength <for [All] units> <when fighting in [Toxic Waste] tiles>",
-			"No defensive terrain penalty",
-			"No movement cost to pillage"
-		],
-		"cities": ["Shchyolkovo-14","Kartaly-6","Arzamas-75","Stupino-7","Krasnoyarsk-45","Krasnoyarsk-66","Sverdlovsk-44","Murmansk-150","Bologoe-4","Krasnoyarsk-26",
-			"Beloretsk-15","Zlatoust-20","Chita-46","Zlatoust-36","Perm'-76","Yur'ya-2","Petropavlovsk-Kamchatskiy-35","Semipalatinsk-121","Shkotovo-17","Zagorsk-7",
-			"Kosulino-1","Uzhur-4","Tatishchevo-5","Kapustin Yar-1","Olovyannaya-4","Dombrovskiy-3","Petropavlovsk-Kamchatskiy-50","Nizhny-Tagil-39","Beloretsk-16",
-			"Chelyabinsk-65","Chelyabinsk-115","Alkino-2","Murmansk-60","Svobodnyy-18","Tomsk-7","Murmansk-140","Murmansk-130","Krasnoyarsk-95","Chelyabinsk-40",
-			"Sverdlovsk-45","Chelyabinsk-95","Chelyabinsk-70","Arzamas-60","Shkotovo-26","Krasnoyarsk-35","Naro-Fominsk-5","Kurchatov-21","Penza-19","Novopetrovsk-2",
-			"Arzamas-16","Golitsino-2","Semipalatinsk-16","Krasnoyarsk-25","Shkotovo-22","Yairm-210"],
-		"spyNames": ["Redrick", "Victor", "Artyom", "Kirill", "Dr. Kruglov", "Mr. Strugatsky", "Vitalik", "Lebedev", "Letyaga", "Mirsky"]
-	},
-
-	//Adjusted CS
-	{
-		"name": "Order of Jerome",
-		"adjective": ["Order"],
-		"cityStateType": "Prayer",
-		"style": "",
-		"uniques": ["Starts with [Secrets of the Past]", "Starts with [Writing]", "Starts with [Education]"],
-		"declaringWar": "You leave us no choice. War it must be.",
-		"attacked": "May you be forgiven.",
-		"defeated": "There is still time... Brother",
-		"outerColor": [0, 0, 0],
-		"innerColor": [159, 58, 83],
-		"cities": ["Jerome Abbey"]
-	},
-	{
-		"name": "Bartertown",
-		"adjective": ["Bartertown"],
-		"cityStateType": "Trading",
-		"startBias": ["Desert"],
-		"style": "Gang",
-		"uniques": ["Starts with [Redomestication]", "Starts with [Iron Working]", "Starts with [Chemistry]"],
-		"declaringWar": "Ladies and gentlemen, boys and girls, it's dyin' time!",
-		"attacked": "Two men enter, one man leaves!",
-		"defeated": "You run Bartertown.",
-		"outerColor": [0, 0, 0],
-		"innerColor": [194, 7, 255],
-		"cities": ["Bartertown"]
-	},
-	{
-		"name": "Devil's Canyon",
-		"adjective": ["Devil's Canyon"],
-		"cityStateType": "Research",
-		"style": "Corporate",
-		"uniques": ["Starts with [Writing]", "Starts with [Electronics]"],
-		"declaringWar": "You leave us no choice. War it must be.",
-		"attacked": "Very well, this shall not be forgotten.",
-		"defeated": "We never fully trusted you from the start.",
-		"outerColor": [0, 0, 0],
-		"innerColor": [224, 224, 50],
-		"cities": ["Devil's Canyon NPP"]
-	},
-	{
-		"name": "Almaty",
-		"adjective": ["Almaty"],
-		"cityStateType": "Weapons",
-		"startBias": ["Hill"],
-		"style": "Military",
-		"uniques": [
-			"[+100]% [Weapons] resource production",
-			"Cannot build [Low Tech] units"
-		],
-		"declaringWar": "The people of the Almaty Province do not abide the existence of threats.",
-		"attacked": "So be it. Our counteroffensive will bring you to ruin.",
-		"defeated": "The end of Almaty is a terrible day for everyone. Do you not have a heart?!",
-		"outerColor": [0, 0, 0],
-		"innerColor": [40, 135, 20],
-		"cities": ["Alma Base"]
-	},
-	{
-		"name": "Fo Guang",
-		"adjective": ["Fo Guang"],
-		"cityStateType": "Prayer",
-		"uniques": ["No damage penalty for wounded units"],
-		"declaringWar": "You leave us no choice. War it must be.",
-		"attacked": "Your desire for power will only bring you suffering.",
-		"defeated": "Weep not for us, for we shall be reborn.",
-		"outerColor": [0, 0, 0],
-		"innerColor": [250,128,114],
-		"cities": ["Fo Guang Shan"]
-	},
-	{
-		"name": "Tellus",
-		"adjective": ["Tellus"],
-		"cityStateType": "Culture",
-		"startBias": ["Wasteland"],
-		"uniques": [
-			"[{Military} {Land}] units gain the [Will of Tellus] promotion",
-			"Starts with [Ecology]",
-			"Starts with [Land Remediation]"
-		],
-		"declaringWar": "The plant has spoken, you must be defeated!",
-		"attacked": "We will not let you destroy our sacred Trees!",
-		"defeated": "The plants must surive... no matter what.",
-		"outerColor": [0, 0, 0],
-		"innerColor": [0,205,102],
-		"cities": ["Tellus"]
-	},
-
-	//New CS
-	{
-		"name": "Venice Beach",
-		"adjective": ["Venetian"],
-		"cityStateType": "Trading",
-		"startBias": ["Coast"],
-		"style": "Corporate",
-		"uniques": ["Starts with [Sailing]", "Starts with [Navigation]", "Starts with [Trade]"],
-		"declaringWar": "When you are gone, it will be a great boon for us!",
-		"attacked": "Heh! You revealed your purposes much too early, my friend!",
-		"defeated": "It looks like I miscalculated.",
-		"outerColor": [0, 0, 0],
-		"innerColor": [153, 204, 255],
-		"cities": ["Venice Beach"]
-	},
-	{
-		"name": "Issaquah Nation",
-		"adjective": ["Issaquah"],
-		"cityStateType": "Prayer",
-		"startBias": ["Coast"],
-		"style": "Tribal",
-		"uniques": [
-			"Starts with [Sailing]",
-			"Starts with [Iron Working]",
-			"Starts with [Steel]",
-			"[+20]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
-			"[-25]% Culture cost of natural border growth [in all cities]"
-		],
-		"declaringWar": "Kill! Kill! Kill!",
-		"attacked": "We must make the wastelanders go away!",
-		"defeated": "This is not the end of our people.",
-		"outerColor": [0, 0, 0],
-		"innerColor": [83, 99, 83],
-		"cities": ["Issaquah"]
-	},
-	{
-		"name": "Defiance",
-		"adjective": ["Defiant Few"],
-		"cityStateType": "Weapons",
-		"startBias": ["Jungle"],
-		"style": "Military",
-		"uniques": [
-			"[+25]% [Strategic] resource production",
-			"[+25]% Production when constructing [Personnel] units [in all cities]",
-			"Cannot build [Low Tech] units",
-			"Starts with [Mining]",
-			"Starts with [Machinery]"
-		],
-		"declaringWar": "Down in the ground where the dead men go. That's where you'll be soon.",
-		"attacked": "We're thoroughly unimpressed.",
-		"defeated": "It is what it is... We'll be off to better lands now.",
-		"outerColor": [0, 0, 0],
-		"innerColor": [0, 94, 171],
-		"cities": ["Defiance"]
-	},
-	{
-		"name": "Carbon",
-		"adjective": ["Carbonite"],
-		"cityStateType": "Farming",
-		"style": "Corporate",
-		"uniques": ["Starts with [Redomestication]", "Starts with [Botany]", "Starts with [Trade]"],
-		"declaringWar": "You leave us no choice. War it must be.",
-		"attacked": "Very well, this shall not be forgotten.",
-		"defeated": "We never fully trusted you from the start.",
-		"outerColor": [0, 0, 0],
-		"innerColor": [224, 224, 224],
-		"cities": ["Carbon"]
-	},
-	{
-		"name": "The Pax",
-		"adjective": ["Pax"],
-		"cityStateType": "Research",
-		"startBias": ["Desert"],
-		"style": "Corporate",
-		"uniques": [
-			"Starts with [Secrets of the Past]",
-			"Starts with [Writing]",
-			"Starts with [Electronics]",
-			"[+20]% growth [in all cities] <when not at war>",
-			"Cannot build [Enslaved] units"
-		],
-		"declaringWar": "We'd hoped we wouldn't have to compromise our principles to survive.",
-		"attacked": "Your rationale for justifying conflict is what caused the Cataclysm to happen in the first place.",
-		"defeated": "Are our ideals... our dream for peace... meant to die here?",
-		"outerColor": [0, 0, 0],
-		"innerColor": [177, 157, 63],
-		"cities": ["Pax Sanctum"]
-	},
-	{
-		"name": "Calico",
-		"adjective": ["Cali"],
-		"cityStateType": "Labor",
-		"style": "Corporate",
-		"uniques": ["Starts with [Machinery]", "Starts with [Manufacturing]"],
-		"declaringWar": "You leave us no choice. War it must be.",
-		"attacked": "Oi there mate, bit rude to be making that war declaration, innit?",
-		"defeated": "It's a shame. There was so much more we could have done.",
-		"outerColor": [0, 0, 0],
-		"innerColor": [149, 63, 63],
-		"cities": ["Calico"]
-	},
-	{
-		"name": "Hockeytown",
-		"adjective": ["Hockeytownsfolk"],
-		"cityStateType": "Culture",
-		"startBias": ["Tundra"],
-		"style": "Gang",
-		"uniques": [
-			"[+1 Food, +1 Culture] from every [Tundra]",
-			"Starts with [Electronics]",
-			"Starts with [Refrigeration]",
-			"Starts with [Social Engineering]"
-		],
-		"declaringWar": "We went to join a war and then a hockey game broke out.",
-		"attacked": "You were planning a fight, eh? Then let's have a bench-clearing brawl to remember!",
-		"defeated": "That's a game misconduct penalty for us.",
-		"outerColor": [0, 0, 0],
-		"innerColor": [51, 102, 0],
-		"cities": ["Hockeytown"]
-	},
-	{
-		"name": "Izumrydniy Gorod",
-		"adjective": ["Emerald"],
-		"cityStateType": "Research",
-		"startBias": ["Tundra"],
-		"style": "Corporate",
-		"uniques": [
-			"Earn [50]% of killed [Military] unit's [Strength] as [Science]",
-			"Starts with [Secrets of the Past]",
-			"Starts with [Writing]",
-			"Starts with [Education]"
-		],
-		"declaringWar": "Rumors of our continued existence shall be discredited - by destroying their source.",
-		"attacked": "This trespass against us will not be forgotten nor forgiven.",
-		"defeated": "We should have doubled our efforts to stay hidden from the outside world.",
-		"outerColor": [0, 0, 0],
-		"innerColor": [66, 189, 74],
-		"cities": ["Izumrydniy Gorod"]
-	},
-	{
-		"name": "Trudograd",
-		"adjective": ["Trudogradian"],
-		"cityStateType": "Trading",
-		"startBias": ["Tundra"],
-		"declaringWar": "Our paradise already has enough problems as it is. We don't need you becoming one of them.",
-		"attacked": "Very well, this shall not be forgotten.",
-		"defeated": "We were right to fear you...",
-		"outerColor": [0, 0, 0],
-		"innerColor": [0, 102, 102],
-		"cities": ["Trudograd"]
-	},
-	{
-		"name": "Powderhorn Autonomous Zone",
-		"adjective": ["Powderhorner"],
-		"cityStateType": "Culture",
-		"startBias": ["Lakes"],
-		"style": "Gang",
-		"uniques": ["[+1 Food, +2 Gold] from all [Culture] buildings"],
-		"declaringWar": "We won't stand for your injustice!",
-		"attacked": "Lookin' to cause trouble? You're about to run into a lot more than you can handle.",
-		"defeated": "We were never terrorists. It was you and your kind who brought terror here.",
-		"outerColor": [0, 0, 0],
-		"innerColor": [232, 95, 221],
-		"cities": ["Powderhorn"]
-	},
-	{
-		"name": "Tự Do",
-		"adjective": ["Tự Do"],
-		"cityStateType": "Weapons",
-		"startBias": ["Coast"],
-		"style": "",
-		"uniques": [
-			"All newly-trained [relevant] units [in all cities] receive the [Reconnaissance I] promotion",
-			"All newly-trained [relevant] units [in all cities] receive the [Urban Warfare I] promotion",
-			"All newly-trained [relevant] units [in all cities] receive the [Urban Warfare II] promotion"
-		],
-		"declaringWar": "You are at war with freedom itself. You cannot hold back the forces of liberation.",
-		"attacked": "Today begins the war that will end in your destruction.",
-		"defeated": "You think you have defeated us? The spirit of resistance is immortal and will haunt your people for the rest of their days.",
-		"outerColor": [0, 0, 0],
-		"innerColor": [51, 51, 255],
-		"cities": ["Tự Do"]
-	},
-
-	//Barbarian
-	{
-		"name": "Barbarians",
-		"style": "Barbarians",
-		"outerColor": [0,0,0],
-		"innerColor": [185,12,12],
-		"uniques": [
-			"[-33]% Strength <vs cities> <before discovering [Steam Power]>",
-			"[Water] units gain the [Unable to pillage tiles] promotion",
-			"[+1] Sight <for [Scout] units>",
-			"[+1] Movement <for [Scout] units>",
-			"[+33]% Strength <vs [Military] units> <when attacking>",
-			"[+33]% Strength <within [2] tiles of a [Barbarian encampment]>"
-		]
-	}
+  {
+    "name": "Deseret2",
+    "leaderName": "Keith Graham",
+    "adjective": [
+      "Deseretian"
+    ],
+    "startBias": [
+      "Hill"
+    ],
+    "preferredVictoryType": "Cultural",
+    "personality": "Warchief of Deseret",
+    "favoredReligion": "Mormonism",
+    "startIntroPart1": "Every day, we fall. Some days are harder than others. The day the nukes were launched... was the hardest fall yet for mankind. In the earliest days after the fallout settled, I tried to mete out vengeance against those responsible for the Cataclysm, unaware that I was setting myself up for my own great fall. I rallied many survivors, broken and disillusioned as I was, and set out on a brutal campaign, forgetting all I had been taught in the desire for revenge. The need to make my wrath into God's wrath. And sure enough, that disastrous journey led to my fall, and I found myself at Hell's gates.",
+    "startIntroPart2": "Yet in my darkest hour, I found my way again. I rediscovered my faith and my tribe, and realized why I'm still here, able to rise despite having fallen so far. A fire burns inside me, brighter than the fires that burned the world around me. But whether that fire is of undying love or unappeased rage... Whether I show my people's enemies mercy or become once more the instrument of vengeance... That's up to them. And to you, I suppose.",
+    "declaringWar": "I don't enjoy killing, but when done righteously, it's just a chore, like any other.",
+    "attacked": "We warned you, and you persisted. Like the dogs you are, you followed us to Zion.\nAnd now you stand on holy ground, a temple to God's glory on earth.\nBut the only use for an animal in a temple is sacrifice!",
+    "defeated": "Yea, we wept when we remembered Zion. But your time will come.",
+    "introduction": "It's good to meet you. Welcome to Deseret. If you shall be a good neighbor and treat us with brotherly respect, we shall do so in turn.",
+    "neutralHello": "May God be with you.",
+    "hateHello": "If you harm any of my people, I will find you. Make no mistake. God willing, you will not leave this valley.",
+    "denounced": "Your cries are like those of a mad beast in a thicket.",
+    "neutralDenouncing": "Judgment is coming. But it's not too late for you to repent.",
+    "hateDenouncing": "Now you've done it. You've called down our wrath. Time will run out for you - and soon.",
+    "acceptingDemand": "Yes, of course.",
+    "neutralRejectingDemand": "I don't think so.",
+    "hateRejectingDemand": "Sorry, but that's not going to happen.",
+    "afterPeace": "Waging war against good people is bad for the soul.",
+    "declaringFriendship": "In times of darkness, we can turn to the Lord, but it would be good to have you as a friend.",
+    "tradeRequest": "We are happy to share with you anything you might need.",
+    "outerColor": [
+      191,
+      128,
+      6
+    ],
+    "innerColor": [
+      252,
+      255,
+      218
+    ],
+    "style": "Deseret",
+    "uniqueName": "Blood of the Prophets",
+    "uniques": [
+      "[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
+      "Gain control over [4] tiles [in this city] <upon founding a city>",
+      "Starts with [Secrets of the Past]",
+      "Starts with [Botany]",
+      "May choose [1] additional [Enhancer] beliefs when [founding] a religion",
+      "Cannot build [Enslaved] units"
+    ],
+    "cities": [
+      "Zion Valley",
+      "New Canaan",
+      "Provorem",
+      "Grand Staircase",
+      "Cueva Guarache",
+      "Fort Walker",
+      "Vermilion Cliffs",
+      "Dead Horse Point",
+      "Angel's Landing",
+      "Traverse City",
+      "New Tooele",
+      "New Nephi",
+      "Patriarchs' Court",
+      "Urim and Thummim",
+      "Malki Tzedek",
+      "Maeserville",
+      "Pine Creek",
+      "Silver Canyon",
+      "Fort Browning",
+      "Kobol",
+      "Anamani",
+      "Old Rockville",
+      "Van Buren",
+      "Burham Springs",
+      "Nuevo Vicios",
+      "Salt Town",
+      "Irvington"
+    ],
+    "spyNames": [
+      "Daniel",
+      "Mordecai",
+      "Waking Cloud",
+      "Judah",
+      "Two-Bears-High-Fiving",
+      "Emmaline",
+      "Bonnie",
+      "Jeremiah",
+      "Dancing Flame",
+      "Quiet Shadow"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Every day, we fall. Some days are harder than others. The day the nukes were launched... was the hardest fall yet for mankind. In the earliest days after the fallout settled, I tried to mete out vengeance against those responsible for the Cataclysm, unaware that I was setting myself up for my own great fall. I rallied many survivors, broken and disillusioned as I was, and set out on a brutal campaign, forgetting all I had been taught in the desire for revenge. The need to make my wrath into God's wrath. And sure enough, that disastrous journey led to my fall, and I found myself at Hell's gates."
+      },
+      {
+        "text": "Yet in my darkest hour, I found my way again. I rediscovered my faith and my tribe, and realized why I'm still here, able to rise despite having fallen so far. A fire burns inside me, brighter than the fires that burned the world around me. But whether that fire is of undying love or unappeased rage... Whether I show my people's enemies mercy or become once more the instrument of vengeance... That's up to them. And to you, I suppose."
+      }
+    ]
+  },
+  {
+    "name": "Camelot Foundation",
+    "leaderName": "Arthur",
+    "adjective": [
+      "Briton"
+    ],
+    "startBias": [
+      "Coast"
+    ],
+    "preferredVictoryType": "Scientific",
+    "personality": "Arthur",
+    "favoredReligion": "Anglicanism",
+    "declaringWar": "Your days of oppressing the common people are at an end.",
+    "attacked": "I see that peaceful reform is not possible. Inciting revolution is our only recourse now.",
+    "defeated": "Like my legendary namesake, I shall retire to my last sanctuary, until the day comes when the people need me once more.",
+    "introduction": "Hail, stranger. I am Arthur, and I welcome you to Camelot, the last redoubt of liberty. Let us set aside the burdens of the past and forge a brighter future together.",
+    "neutralHello": "Welcome.",
+    "hateHello": "What brings you here?",
+    "denounced": "I advise you to abandon the falsehoods you cling to, if you are even capable.",
+    "neutralDenouncing": "Your recent actions have placed great strain on our political relationship.",
+    "hateDenouncing": "Because we stand for liberty, we must stand against your darkness and deceit.",
+    "acceptingDemand": "We find this agreeable.",
+    "neutralRejectingDemand": "Unfortunately, we must decline.",
+    "hateRejectingDemand": "The Round Table has voiced unanimous disapproval.",
+    "declaringFriendship": "Let us stand united against those who still pursue evil ends.",
+    "tradeRequest": "The Round Table offers this arrangement. Are you interested?",
+    "outerColor": [
+      189,
+      90,
+      80
+    ],
+    "innerColor": [
+      10,
+      52,
+      45
+    ],
+    "style": "Camelot",
+    "uniqueName": "Restoration of the Round Table",
+    "uniques": [
+      "[Low Tech] units gain the [Powered Armor] promotion",
+      "[Personnel] units gain the [Powered Armor] promotion",
+      "Starts with [Writing]",
+      "Starts with [Redomestication]",
+      "Starts with [Iron Working]",
+      "Starts with [Steel]",
+      "Starts with [Constitution] adopted",
+      "[-2 Science] [in all cities] <before discovering [Education]>",
+      "Cannot build [Enslaved] units"
+    ],
+    "cities": [
+      "Avalon",
+      "Caerleon",
+      "New Troy",
+      "Tristram",
+      "Caer Danwyn",
+      "Trevena",
+      "Alderley",
+      "Gwalchmai",
+      "Laundsallyn",
+      "Gyanhumara",
+      "Pellaeon",
+      "Caerbannog",
+      "Ambrose",
+      "Cambria",
+      "Sutcliff",
+      "The Eildons",
+      "Stirling",
+      "Brodick",
+      "Benwick",
+      "Eletti",
+      "Alba Sarum",
+      "Carhaix",
+      "Carduel",
+      "Enez-Aval",
+      "Portwenn",
+      "Montsegur",
+      "Joyeuse Garde",
+      "Glatisant"
+    ],
+    "spyNames": [
+      "Merlin",
+      "Elaine",
+      "Vivian",
+      "Randall",
+      "Hector",
+      "Owain",
+      "Anna",
+      "Lyonesse",
+      "Tennyson",
+      "Lockheed"
+    ]
+  },
+  {
+    "name": "The Harbingers",
+    "leaderName": "Yuri Vengerov",
+    "adjective": [
+      "Harbinger"
+    ],
+    "startBias": [
+      "River"
+    ],
+    "preferredVictoryType": "Diplomatic",
+    "personality": "Vengerov",
+    "favoredReligion": "Church of the Water Tsaritsa",
+    "startIntroPart1": "The years before the Cataclysm were worse than the survivors realize. Humanity came dangerously close to being permanently enslaved by a handful of oligarchs. Some of our ancestors were among those evil elite, and even among that group they wielded exceptional power, having devised a means to control our planet's dwindling water supply. Anyone who dared to oppose them had their minds reformatted... or worse. Now we are left to handle the fallout from their actions. Shunned by the rest of the world, atonement for many of us may simply be a matter of practicality, but we must at least try to atone regardless, and use our resources for the benefit of man as we should have done in the last days of our former civilization.",
+    "startIntroPart2": "We were Harbingers of the old world's downfall. Perhaps, given the chance, we might set things right, becoming Harbingers of man's triumph and ushering in a new, better world.",
+    "declaringWar": "You have demonstrated that you cannot be trusted to maintain control over your precious resources.",
+    "attacked": "You desire control over our water as we once desired control over yours. Very well. Let us remind you why we are known as the Harbingers.",
+    "defeated": "On this day, we pay in full the price of our corporation's sins...",
+    "introduction": "We know you are displeased to see us. An understandable reaction given our past history.",
+    "neutralHello": "Greetings, comrade.",
+    "hateHello": "You tempt us to revert to old practices in our dealings with you.",
+    "denounced": "In the Old World, that insult would have mandated the death of your personality.",
+    "neutralDenouncing": "Trust is even more precious than water. Yet you squander it so easily.",
+    "hateDenouncing": "You're heading for an even greater downfall than we suffered.",
+    "declaringFriendship": "Friends are exceedingly difficult for us to come by. Can we count you among those rare few?",
+    "acceptingDemand": "Deal.",
+    "neutralRejectingDemand": "I cannot accept.",
+    "hateRejectingDemand": "This is bad for business. Even for someone like you.",
+    "tradeRequest": "Come, let us do business.",
+    "outerColor": [
+      2,
+      46,
+      89
+    ],
+    "innerColor": [
+      113,
+      233,
+      248
+    ],
+    "style": "Corporate",
+    "uniqueName": "Custodians of the World's Water",
+    "uniques": [
+      "Comment [Russian Unifier]",
+      "[+50]% Production when constructing [Gold] buildings [in all cities]",
+      "[+100]% Yield from every [Moisture trap]",
+      "[+100]% Yield from every [Water pump]",
+      "Starts with [Iron Working]",
+      "Starts with [Trade]",
+      "Starts with [Currency]",
+      "Starts with [Monopoly] adopted",
+      "[Gold] cost of purchasing items in cities [-20]%",
+      "[-33]% Production when constructing [Military] units [in all cities]",
+      "[-67]% Gold from Great Merchant trade missions",
+      "[+100]% unhappiness from the number of cities"
+    ],
+    "cities": [
+      "Vodagrad",
+      "Prava",
+      "Nevesk",
+      "Kyovashad",
+      "Snezhnaya",
+      "Prekrasnaya",
+      "Zapolyarny",
+      "Ubezhishche",
+      "Nostrava",
+      "Grad Sysevich",
+      "Istochnik",
+      "Mirny",
+      "Uspekh",
+      "Khrabrost",
+      "Stradaniy",
+      "Taina",
+      "Margrave",
+      "Yelesna",
+      "Menestad"
+    ],
+    "spyNames": [
+      "Sergey",
+      "Iosef",
+      "Leonid",
+      "Mikhail",
+      "Tatiana",
+      "Veronika",
+      "Alexei",
+      "Anastasia",
+      "Nikita",
+      "Fyodor"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The years before the Cataclysm were worse than the survivors realize. Humanity came dangerously close to being permanently enslaved by a handful of oligarchs. Some of our ancestors were among those evil elite, and even among that group they wielded exceptional power, having devised a means to control our planet's dwindling water supply. Anyone who dared to oppose them had their minds reformatted... or worse. Now we are left to handle the fallout from their actions. Shunned by the rest of the world, atonement for many of us may simply be a matter of practicality, but we must at least try to atone regardless, and use our resources for the benefit of man as we should have done in the last days of our former civilization."
+      },
+      {
+        "text": "We were Harbingers of the old world's downfall. Perhaps, given the chance, we might set things right, becoming Harbingers of man's triumph and ushering in a new, better world."
+      }
+    ]
+  },
+  {
+    "name": "Crimson Line",
+    "leaderName": "Aleksei Moskvin",
+    "adjective": [
+      "Soviet"
+    ],
+    "startBias": [
+      "Tundra"
+    ],
+    "preferredVictoryType": "Domination",
+    "personality": "Moskvin",
+    "favoredReligion": "Stalinism",
+    "declaringWar": "It's time to liberate your stations and integrate them into the Line!",
+    "attacked": "Only a fool with a death wish would jump into the path of a train.",
+    "defeated": "It looks like the end of the line...",
+    "introduction": "I am General Secretary Moskvin of the Crimson Line, and I'm overjoyed to meet a fellow survivor of the Cataclysm. I believe there is much we have to offer one another.",
+    "neutralHello": "Welcome to the Line.",
+    "hateHello": "Save your words. You are but another ghost who doesn't realize he is dead.",
+    "denounced": "Why should we fear your threats, when our homeland is more dangerous than you could ever hope to become?",
+    "neutralDenouncing": "So, you would bring greater ruin upon your people? You should be ashamed.",
+    "hateDenouncing": "Which side of your head would you prefer me to press the barrel of my gun to?",
+    "acceptingDemand": "Let's make it so.",
+    "neutralRejectingDemand": "An undesirable proposal. As a good Communist, I must reject it.",
+    "hateRejectingDemand": "Are you mad?",
+    "afterPeace": "It was a fight over nothing. Let's settle it with a drink.",
+    "declaringFriendship": "We would be pleased if we could officially call you our comrade.",
+    "tradeRequest": "Shall we come to an arrangement in the pursuit of solidarity?",
+    "outerColor": [
+      100,
+      0,
+      0
+    ],
+    "innerColor": [
+      200,
+      200,
+      200
+    ],
+    "style": "Military",
+    "uniqueName": "One Party, One Leader, One Ideology",
+    "uniques": [
+      "Comment [Russian Unifier]",
+      "[-50]% construction time for [All Road] improvements",
+      "[-25]% maintenance on road & railroads",
+      "[+15]% [Production] [in all cities] <for [10] turns> <upon declaring war on [Major] Civilizations>",
+      "Starts with [Machinery]",
+      "Starts with [Collectivism] adopted"
+    ],
+    "cities": [
+      "Semyonovskaya",
+      "Chistye Prudy",
+      "Okhotny Ryad",
+      "Lubyanka",
+      "D-6",
+      "Ploschad Revolyutsii",
+      "Krasnye Vorota",
+      "Biblioteka Imeni Lenina",
+      "Ulitsa Podbelskogo",
+      "Sokolniki",
+      "Sportivnaya",
+      "Kuznetsky Most",
+      "Dinamo",
+      "Tverskaya",
+      "Park Kultury",
+      "Park Pobedy",
+      "Kommunarka",
+      "Potapovo",
+      "Komsomolskaya",
+      "Krasnoselskaya",
+      "Kropotkinskaya",
+      "Preobrazhenskaya Ploschad",
+      "Frunzenskya",
+      "Cherikovskaya",
+      "Arbatskaya",
+      "Kievskaya",
+      "Teatralnaya",
+      "Taganskaya",
+      "Alekseyevskaya",
+      "Sukharevskaya",
+      "Shabolovskaya",
+      "Pushkinskaya",
+      "Taganskaya",
+      "Marksistskaya",
+      "Aviamotornaya",
+      "Timiryazevskaya",
+      "Chekhovskaya",
+      "Okhruznaya",
+      "Maryina Roscha",
+      "Dubrovka",
+      "Savyolovskaya"
+    ],
+    "spyNames": [
+      "Korbut",
+      "Lesnitsky",
+      "Nastya",
+      "Pavel",
+      "Dmitri",
+      "Anatoly",
+      "Irina",
+      "Ramilya",
+      "Grigory",
+      "Igor"
+    ]
+  },
+  {
+    "name": "Aztlán",
+    "leaderName": "Yesenia Aztlánl",
+    "adjective": [
+      "Aztláner"
+    ],
+    "preferredVictoryType": "Domination",
+    "personality": "Great Speaker",
+    "favoredReligion": "Order of Tlaloc",
+    "declaringWar": "Let the red flood rise and spread, drowning everything in its path!",
+    "attacked": "You mean to subjugate us like the conquistadors, or worse. But I won't let that dark future come to pass. Now die!",
+    "defeated": "I only ever did what was necessary for my people to survive. But it wasn't enough...",
+    "introduction": "I am the Great Speaker Yesenia, daughter of the Lifebringer who reestablished the mighty nation of Aztlán, and the savior of its people. I wonder, will you sacrifice as much as I have...?",
+    "neutralHello": "Welcome.",
+    "hateHello": "What are you after now?",
+    "denounced": "It's always the weakest who speak loudest.",
+    "neutralDenouncing": "You didn't heed my counsel before. You'll think twice about failing to heed it again now that you've angered me.",
+    "hateDenouncing": "Your venomous words fill the veins of all Aztláners with white-hot rage.",
+    "acceptingDemand": "Very well. It is settled.",
+    "neutralRejectingDemand": "Not this time.",
+    "hateRejectingDemand": "Must you insist on testing my patience?",
+    "declaringFriendship": "Stand with me as a friend of Aztlán.",
+    "tradeRequest": "Here are my terms. It would be an unfriendly gesture for you to refuse.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      255,
+      255,
+      255
+    ],
+    "style": "Aztlán",
+    "uniqueName": "Resurgence Under the Sixth Sun",
+    "uniques": [
+      "[+30]% Strength <vs [City-States]>",
+      "Earn [100]% of killed [Military] unit's [Strength] as [Culture]",
+      "When defeating a [{Military} {Land}] unit, earn [25] Gold and recruit it <with [25]% chance>",
+      "Starts with [Iron Working]"
+    ],
+    "cities": [
+      "Xochicalco",
+      "Cuentepec",
+      "Nueva Tula",
+      "Tepic",
+      "Tlahtoloyan",
+      "Acapulco",
+      "Calimaya",
+      "Xochimilco",
+      "Huaxyacac",
+      "Ecatepec",
+      "Mazatlán",
+      "Malinalco",
+      "Sahuayo",
+      "Xicotepec",
+      "Colhuacán",
+      "Nueva Cholula",
+      "Ixtapan",
+      "Otompan",
+      "Neza",
+      "Tepeyac",
+      "Xalixko",
+      "Jilotzingo",
+      "Xoconochco",
+      "Coalcomán",
+      "Yanhuitlán",
+      "Cempoala"
+    ],
+    "spyNames": [
+      "Armando",
+      "Alejandro",
+      "Rosado",
+      "Yaretzi",
+      "Luminosa",
+      "Tlacotl",
+      "Chimalma",
+      "Cozamalotl",
+      "Xochitl",
+      "Xilonen"
+    ]
+  },
+  {
+    "name": "The Caliphate",
+    "leaderName": "Mostafa Beshay",
+    "adjective": [
+      "Muslim"
+    ],
+    "preferredVictoryType": "Domination",
+    "personality": "Triumphant Caliph",
+    "favoredReligion": "Islam",
+    "declaringWar": "Hell lives to claim your vile souls. Down with the infidel pigs!",
+    "attacked": "We must drive the unbelievers into the deepest pits of hell!",
+    "defeated": "We may be driven from these lands for now, but we will yet subvert your order and force your people to submit to Allah's will. Islam and the jihad will never die, and your Day of Judgment will still come to pass.",
+    "introduction": "Welcome to the last worthwhile homeland of the chosen. This is the Caliphate of Western Europe and North Africa, destined to emerge triumphant over the devils infesting this fractured world.",
+    "neutralHello": "Allah's people are listening.",
+    "hateHello": "Silence, infidel!",
+    "denounced": "Effrontry is expected from those who are surrounded by ruin. But it will only be tolerated for so long.",
+    "neutralDenouncing": "Your insolence will serve as a lesson on how not to treat the chosen.",
+    "hateDenouncing": "Everyone will know of your blasphemous acts and deeds and recognize how you bring yourself to ruin.",
+    "acceptingDemand": "For once, you have shown a hint of righteousness?",
+    "neutralRejectingDemand": "You lead your people further astray with this.",
+    "hateRejectingDemand": "Who are you to make this demand of me?",
+    "declaringFriendship": "You defied my expectations. You possess Allah's wisdom. Because of that, I would grant you the friendship of the chosen.",
+    "tradeRequest": "We have little reason to show generosity when the world has become the house of tyrants. You should regard this rare opportunity as a blessing.",
+    "outerColor": [
+      21,
+      108,
+      49
+    ],
+    "innerColor": [
+      248,
+      217,
+      2
+    ],
+    "style": "Caliphate",
+    "uniqueName": "The Last Worthwhile Homeland",
+    "uniques": [
+      "[+100]% Natural religion spread [in annexed cities]",
+      "[+100]% Natural religion spread [in puppeted cities]",
+      "[+100]% to Flank Attack bonuses",
+      "[Faith] cost of purchasing items in cities [-33]%",
+      "Free [Great Sage] appears <upon discovering [Education] technology>",
+      "Starts with [Theocracy] adopted",
+      "Starts with [Supremacy] adopted",
+      "[-25]% [Culture] [in all cities]"
+    ],
+    "cities": [
+      "Bruksil",
+      "Jirmānyah el-Kharab",
+      "Munastir al-Kitz",
+      "Guzlanham",
+      "Usullu",
+      "Malaga",
+      "al-Munikh",
+      "Wādī Al-Kharda",
+      "Madinat al-Nurum",
+      "Klaylanham",
+      "Qalal al-Liss",
+      "Qalat Hajar al-Ram",
+      "Madinah Aš-Šadūna",
+      "Baraka",
+      "Mudainah an-Nessel",
+      "Alba Sarum",
+      "Ḥiṣn Bulāy",
+      "Madīnat al-Mariyya",
+      "Qabr Mirza",
+      "Nsara",
+      "Turi"
+    ],
+    "spyNames": [
+      "Rashid",
+      "Saleh",
+      "Mashouf",
+      "Ismail",
+      "Mahmoud",
+      "Fudail",
+      "Ghalib",
+      "Latif",
+      "Rustam",
+      "Zahid"
+    ]
+  },
+  {
+    "name": "Aurelian Group",
+    "leaderName": "Genevieve Aurelia",
+    "adjective": [
+      "Aurelian"
+    ],
+    "startBias": [
+      "Mountain"
+    ],
+    "preferredVictoryType": "Scientific",
+    "personality": "Aurelia",
+    "startIntroPart1": "Here at Aurelian Group, we specialize not only in efficient extraction and refining of metals and minerals, but also in repurposing depleted mines to meet various other demands. It is through our expertise in the latter that we were able to save over a million people when the Cataclysm struck Australia. As the only surviving major entity from before the Cataclysm left standing in this land, it falls to us to take charge and lift our fallen nation out of the ashes.",
+    "startIntroPart2": "The Aurelian Group will rebuild Australia's future.",
+    "declaringWar": "For the good of these lands and the people residing in them, you must be liquidated.",
+    "attacked": "The Aurelian Group will not stand idly by while the wasteland is under siege. All workers are called to arms!",
+    "defeated": "Have all our rebuilding efforts gone to waste? This is bloody unacceptable!",
+    "introduction": "It brings me comfort to see another outpost of civilization in these savage lands. I'm Genevieve Aurelia, CEO of the Aurelian Group, and it's a pleasure to make your acquaintance.",
+    "neutralHello": "Good day to you, friend.",
+    "hateHello": "Step forward, vile savage, but keep your distance all the same.",
+    "denounced": "Baseless slander built on a crumbling foundation.",
+    "neutralDenouncing": "This incident is a most unwelcome turn. It will take some time to repair relations.",
+    "hateDenouncing": "The Aurelian Group will not abide your vile actions. Expect to face severe consequences in short order.",
+    "acceptingDemand": "I suppose this deal is as agreeable as they come.",
+    "neutralRejectingDemand": "We can't commit to this course of action at this time. I hope you'll understand.",
+    "hateRejectingDemand": "No. We refuse to acknowledge your terms.",
+    "declaringFriendship": "We share a mutual interest in maintaining stability and protecting those in need. Aurelian Group would like to forge a lasting friendship with you.",
+    "tradeRequest": "Shall we make a deal?",
+    "outerColor": [
+      245,
+      245,
+      245
+    ],
+    "innerColor": [
+      179,
+      135,
+      0
+    ],
+    "style": "Corporate",
+    "uniqueName": "Enduring Engineering",
+    "uniques": [
+      "[+10]% Strength <for [{Military} {Land}] units> <when fighting in [Rough terrain] tiles>",
+      "[+1 Production, +1 Science] from every [Forge]",
+      "[+1 Production, +1 Science] from every [Blast Furnace]",
+      "[+1 Production, +1 Science] from every [Factory]",
+      "[+1 Production, +1 Science] from every [Materials Recovery Facility]",
+      "[Great Engineer] is earned [33]% faster",
+      "Starts with [Construction]",
+      "Starts with [Iron Working]",
+      "Starts with [Machinery]",
+      "[-2 Happiness] [in all cities]"
+    ],
+    "cities": [
+      "Broken Hill",
+      "Lightning Ridge",
+      "Coober Pedy",
+      "Andamooka",
+      "Mintabee",
+      "Cairn Hill",
+      "Kotara",
+      "Fassifern",
+      "Morriset",
+      "Quilpie",
+      "Lymington",
+      "Waratah",
+      "Awaba",
+      "Jesmond",
+      "Burwood",
+      "Duckenfield",
+      "Glebe End",
+      "Hartley Vale",
+      "Wallsend",
+      "Stockrington",
+      "New Lambton",
+      "Blackhill",
+      "Ironbank",
+      "Mandalong",
+      "Myuna",
+      "Swansea",
+      "Wiluna",
+      "Wyee",
+      "Seahampton",
+      "Newstan",
+      "Worsley"
+    ],
+    "spyNames": [
+      "Donaldson",
+      "Marheine",
+      "Leigh",
+      "Nott",
+      "Macquarie",
+      "Wickham",
+      "Fernleigh",
+      "Eales",
+      "McCormack",
+      "Stockton"
+    ]
+  },
+  {
+    "name": "The Oathsworn",
+    "leaderName": "Ada Hemings",
+    "adjective": [
+      "Oathsworn"
+    ],
+    "startBias": [
+      "Avoid [Desert]"
+    ],
+    "preferredVictoryType": "Diplomatic",
+    "personality": "Hemings",
+    "favoredReligion": "Methodism",
+    "startIntroPart1": "Like the Founding Fathers, we were outlaws, branded as such by an oppressive government. That government was the United States government, and our crime was trying to preserve, protect, and defend the Constitution which it held in contempt. As the 21st Century progressed, it became evident that the corrupt regime which had stolen power and stolen the rights of the American people would never give them back. It was time to refresh the tree of liberty by spilling the blood of these tyrants. Against all odds, we managed to awaken most of our fellow countrymen to their evil and rallied them to our cause. But just when it looked like we might have had a shot at victory, America was destroyed by nuclear hellfire. Had those tyrants truly grown so depraved as to annihilate their own people? We don't know. All we know is that we failed to save our nation. We failed to keep our oath. And we have to live with that failure.",
+    "startIntroPart2": "But when we emerged into the wastelands, we saw a glimmer of hope. The destruction was not as complete as we feared. More people survived than we expected. And we can still protect them as they lay the foundation for the rebirth of liberty. We have a second chance to get things right. To bring back America as it should have been. Our nation has fallen, but our oath still stands. We are the Oathsworn, and we must keep the American ideal alive.",
+    "declaringWar": "We've endured your oppression for too long, as have your people. It ends now.",
+    "attacked": "You would treat us as terrorists just as the tyrannical regimes of pre-Cataclysm America's last days once did. So be it.",
+    "defeated": "For the second and last time, we have failed to uphold our oath...",
+    "introduction": "I don't know who you are, but I welcome you to our territories. I'm General Ada Hemings, chief of the Oathsworn defense forces, and so long as you leave the good people living under my protection in peace, we should get along just fine.",
+    "neutralHello": "Carry on.",
+    "hateHello": "Tread carefully, lest you invite retaliation.",
+    "denounced": "With all due respect, you don't know what the hell you're talking about.",
+    "neutralDenouncing": "You've got to do better than that if you want to keep your people on your side.",
+    "hateDenouncing": "If you'd seen half of what we've seen, you wouldn't be so quick to give everyone reasons to hate you.",
+    "acceptingDemand": "Alright, let's cut a deal.",
+    "neutralRejectingDemand": "Sorry, but we'll have to veto your proposal. You understand why, right?",
+    "hateRejectingDemand": "You didn't actually believe we'd accept this, did you?",
+    "declaringFriendship": "You've done a lot of good for the people of the wasteland. The Oathsworn would be proud to call you our friend.",
+    "tradeRequest": "We hope this arrangement is of mutual benefit to our peoples.",
+    "outerColor": [
+      255,
+      255,
+      255
+    ],
+    "innerColor": [
+      28,
+      51,
+      119
+    ],
+    "style": "Military",
+    "uniqueName": "Oath to a Fallen Nation",
+    "uniques": [
+      "Comment [Each city owned increases resting point for influence with City-States by 5, up to a maximum of 30]",
+      "Resting point for Influence with City-States is increased by [5] <for every [[Your] Cities]> <when number of [[Your] Cities] is between [0] and [6]> <hidden from users>",
+      "Resting point for Influence with City-States is increased by [30] <when number of [[Your] Cities] is more than [6]> <hidden from users>",
+      "City-State territory always counts as friendly territory",
+      "[+1] Movement <for [All] units> <in [City-States] tiles>",
+      "[+25]% Great Person generation [in all cities]",
+      "Starts with [Construction]",
+      "Starts with [Constitution] adopted",
+      "Cannot build [Enslaved] units",
+      "Comment [Cannot build Prison Camp, Work Camp, or Council buildings]"
+    ],
+    "cities": [
+      "Century City",
+      "Soldier Field",
+      "Brandon Falls",
+      "Libertyville",
+      "Fort Independence",
+      "Sanctuary Hills",
+      "Foundation",
+      "Heritage",
+      "Covenant",
+      "Vanguard",
+      "New Albany",
+      "Hackettstown",
+      "Taffington",
+      "Concord",
+      "Anabol",
+      "Quincy",
+      "Bradbury",
+      "Fort Constantine",
+      "Orwell",
+      "Wellesley",
+      "Somerville",
+      "Murkwater",
+      "Cape Oath"
+    ],
+    "spyNames": [
+      "Preston",
+      "Harriet",
+      "Beckett",
+      "Bryce",
+      "Murphy",
+      "Nathaniel",
+      "Wilhelmena",
+      "Horatio",
+      "Hailey",
+      "Ted"
+    ]
+  },
+  {
+    "name": "Celestial Collective",
+    "leaderName": "Heavenly Father",
+    "adjective": [
+      "Collectivist"
+    ],
+    "startBias": [
+      "River"
+    ],
+    "preferredVictoryType": "Domination",
+    "favoredReligion": "Death Worship",
+    "personality": "Heavenly Father",
+    "declaringWar": "It has become apparent you refuse to accept the truth. Now we must force you to realize it.",
+    "attacked": "You still hold on to the belief that your past sins are forgiven?",
+    "defeated": "We now go to join Yánluó. The Collective endures forever in his embrace, while you, who reject his teachings, will crumble from within...",
+    "introduction": "You will soon come to learn the Four Truths...",
+    "neutralHello": "The Four Truths are all that matter in this world.",
+    "hateHello": "You continue to suffer because you continue to reject our father in Death.",
+    "denounced": "Truth will dispel your falsehoods with merciless harshness.",
+    "neutralDenouncing": "You have fallen far into error. Rectify it at once.",
+    "hateDenouncing": "You continue to spiral down into an abyss of self-delusion. And we shall seal it off with our truth.",
+    "acceptingDemand": "Knowing when to yield is its own truth...",
+    "neutralRejectingDemand": "There is no truth to be found here. Learn from our rejection.",
+    "hateRejectingDemand": "You dare try to impose such barbaric terms upon us?",
+    "declaringFriendship": "I am building a coalition of the enlightened. Will you take part?",
+    "tradeRequest": "This may help your people achieve enlightenment.",
+    "outerColor": [
+      137,
+      89,
+      163
+    ],
+    "innerColor": [
+      233,
+      233,
+      233
+    ],
+    "style": "Collective",
+    "uniqueName": "Obliteration of the Self",
+    "uniques": [
+      "Comment [Low Tech and Personnel units gain access to a special promotion when Wounded]",
+      "[+10]% Strength <for [Wounded] units>",
+      "[+10]% Strength <for [Wounded] units> <when below [50] HP>",
+      "No damage penalty for wounded units",
+      "[+1 Production] per [5] population [in all cities]",
+      "[-10]% Unhappiness from [Population] [in all cities] <when at war>",
+      "[-1] Happiness from each type of luxury resource",
+      "Starts with [Secrets of the Past]",
+      "Starts with [Collectivism] adopted"
+    ],
+    "cities": [
+      "Yōudū",
+      "Chéngshi Yī",
+      "Chéngshi Èr",
+      "Chéngshi Sān",
+      "Chéngshi Sì",
+      "Chéngshi Wǔ",
+      "Chéngshi Liù",
+      "Chéngshi Qī",
+      "Chéngshi Bā",
+      "Chéngshi Jiǔ",
+      "Chéngshi Shí",
+      "Chéngshi Shí Yī",
+      "Chéngshi Shí Èr",
+      "Chéngshi Shí Sān",
+      "Chéngshi Shí Sì",
+      "Chéngshi Shí Wǔ",
+      "Chéngshi Shí Liù",
+      "Chéngshi Shí Qī",
+      "Chéngshi Shí Bā",
+      "Chéngshi Shí Jiǔ",
+      "Chéngshi Èr Shí",
+      "Chéngshi Èr Shí Yī",
+      "Chéngshi Èr Shí èr",
+      "Chéngshi Èr Shí Sān",
+      "Chéngshi Èr Shí Sì",
+      "Chéngshi Èr Shí Wǔ",
+      "Chéngshi Èr Shí Liù",
+      "Chéngshi Èr Shí Qī",
+      "Chéngshi Èr Shí Bā",
+      "Chéngshi Èr Shí Jiǔ",
+      "Chéngshi Sān Shí"
+    ],
+    "spyNames": [
+      "Commissar Li",
+      "Commissar Wu",
+      "Commissar Yun",
+      "Commissar Qu",
+      "Commissar Tao",
+      "Commissar Zhang",
+      "Commissar Sun",
+      "Commissar Deng",
+      "Commissar Jiang",
+      "Commissar Xi"
+    ]
+  },
+  {
+    "name": "New Star",
+    "leaderName": "Willand Keiji",
+    "adjective": [
+      "Star"
+    ],
+    "startBias": [
+      "Wasteland"
+    ],
+    "preferredVictoryType": "Diplomatic",
+    "personality": "Keiji",
+    "favoredReligion": "Humanism",
+    "startIntroPart1": "'When the Cataclysm happened, there were many that felt lost. Like the world was too far gone. I always had hope, but sometimes it's hard to keep it. Ever since we came out, the world has felt like a jungle. Ruled by wild beasts.'",
+    "startIntroPart2": "'But I got lucky. I found my platoon. My family. I think people seem to forget it, but fundamental rights? Democracy? Those were the result of natural progress. Of us seeing what worked, and what didn't. And as long as we keep marching backwards like this, we will never be better. The world had given me a second chance. And so I give you one as well. We go around the world gathering people like us. That see the world not for what it is now. But for what it can be. A New Star.'",
+    "declaringWar": "Let's go!",
+    "attacked": "Everyone! Defense Positions!",
+    "defeated": "This is... not the end.",
+    "introduction": "A dream. That's all it takes to keep going.",
+    "neutralHello": "Hello.",
+    "hateHello": "What do you want?",
+    "denounced": "We just wanted to help...",
+    "neutralDenouncing": "Sorry, but rumors from the roads say bad things about you. We'll have to put some distance between us.",
+    "hateDenouncing": "We would rather move away from you, but you're stickier than glue.",
+    "acceptingDemand": "Yes, this is helpful!",
+    "neutralRejectingDemand": "I'm sorry, but this won't help.",
+    "hateRejectingDemand": "Sorry, this hurts us more than it hurts you.",
+    "declaringFriendship": "Us survivors have to stick together, yeah?",
+    "tradeRequest": "We both stand to gain from this.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      255,
+      165,
+      0
+    ],
+    "style": "Military",
+    "uniqueName": "Determination",
+    "uniques": [
+      "Gain [15] Influence with a [Civilian] gift to a City-State",
+      "Gain [15] Influence with a [Support] gift to a City-State",
+      "[Civilian] units gain the [Thermoptic Camouflage] promotion",
+      "[Support] units gain the [Thermoptic Camouflage] promotion",
+      "[+15]% Strength <for [Wounded] units>",
+      "[+1] Sight <for [{Wounded} {Support}] units>",
+      "Cannot build [Enslaved] units"
+    ],
+    "cities": [
+      "Hope",
+      "Starling City",
+      "Newbay",
+      "Ballenderg",
+      "San Lourn",
+      "Drimere",
+      "Highnimon",
+      "Inford",
+      "Melderk",
+      "Thallas",
+      "Nedaleck",
+      "Douridas Pier",
+      "Silverman Port",
+      "Dalbete",
+      "Light Otis",
+      "Meckenberg"
+    ],
+    "spyNames": [
+      "Henry",
+      "Jim",
+      "Clarice",
+      "Juliet",
+      "Ashlee",
+      "Robyn",
+      "Ben",
+      "Jodie",
+      "Harvey",
+      "Juno"
+    ]
+  },
+  {
+    "name": "Hexlock",
+    "leaderName": "Aura",
+    "adjective": [
+      "Hexlock"
+    ],
+    "startBias": [
+      "Fissure"
+    ],
+    "preferredVictoryType": "Domination",
+    "personality": "Aura",
+    "favoredReligion": "Objectivism",
+    "startIntroPart1": "'I will admit. There were times were even I felt stumped. Science is supposed to be free. To let you discover things to your heart's content without a single care. But for every step forward, there are some who wish to take two steps backwards. With their arbitrary regulations and limits. They had a system meant to hinder your progress. They... are gone now.'",
+    "startIntroPart2": "'For Hexlock, this new world is a paradise. Free to research whatever you want, however you want. No limits. Tell me. What will you bring this world next?'",
+    "declaringWar": "Congratulations. You will help me test my new advancements.",
+    "attacked": "Now isn't that interesting?",
+    "defeated": "Will this be the end? I wonder",
+    "introduction": "Hello-o. Anyone to spare for a science experiment?",
+    "neutralHello": "Yeah?",
+    "hateHello": "Quite an interesting person...",
+    "denounced": "An acceptable risk in new world industry.",
+    "neutralDenouncing": "Hexlock no longer views you as a profitable neighbor.",
+    "hateDenouncing": "Every day your nation exists, it looks more and more like a failed experiment.",
+    "acceptingDemand": "Interesting! I accept.",
+    "neutralRejectingDemand": "Mmm, no. Too many unknown variables.",
+    "hateRejectingDemand": "No! Have you even run a risk analysis on this deal?",
+    "declaringFriendship": "Ooh, you're an interesting one! Want to be my lab partner?",
+    "tradeRequest": "This Shipment was brought to you by Hexlock Technologies.",
+    "outerColor": [
+      64,
+      8,
+      114
+    ],
+    "innerColor": [
+      255,
+      40,
+      255
+    ],
+    "style": "Hexlock",
+    "uniqueName": "Adaptive Systems",
+    "uniques": [
+      "Comment [Can Mix Unique Strategic Resources to generate a Great Person]",
+      "[+100]% [Encrypted Data] resource production",
+      "[+20]% Production when constructing [National] wonders [in all cities]",
+      "Starts with [Writing]",
+      "Starts with [Chemistry]",
+      "[-2 Happiness] [in all cities]"
+    ],
+    "cities": [
+      "Halimax",
+      "Darkfield",
+      "Nightcity",
+      "Aella",
+      "Cybellia Complex",
+      "Vannell",
+      "L-T",
+      "Hemfield",
+      "Chaoslance",
+      "Nicord",
+      "Slyphis",
+      "Stradival",
+      "Eblaizal",
+      "Qrephel",
+      "Mabelcut",
+      "Prawrie"
+    ],
+    "spyNames": [
+      "Claude",
+      "Eliza",
+      "Watson",
+      "Kismet",
+      "Siri",
+      "Asimo",
+      "Bert",
+      "Neil",
+      "Alice",
+      "Nadine"
+    ]
+  },
+  {
+    "name": "Children of Rust",
+    "leaderName": "Scarlett",
+    "adjective": [
+      "Scavenger"
+    ],
+    "startBias": [
+      "Forest"
+    ],
+    "preferredVictoryType": "Cultural",
+    "personality": "Scarlett",
+    "favoredReligion": "Ghost Dance",
+    "declaringWar": "Now you will reap what you have sown.",
+    "attacked": "We never expected that you could leave us to live in peace. Destruction is in your blood.",
+    "defeated": "Your legacy is nothing but death.",
+    "introduction": "So, you have returned! While the world died, what hole did you hide in? The cities you left behind are our inheritance.",
+    "neutralHello": "I speak for the Children.",
+    "hateHello": "What will it take? When the last tree has burned and the last child has starved, will you then be satisfied, great leader?",
+    "denounced": "The forked tongue of your ancestors has shown itself in you.",
+    "neutralDenouncing": "The street spirits are uneasy around you, and warned us not to get too close to you.",
+    "hateDenouncing": "Hark, it has been revealed that you are the two-faced one that Viracocha warned us about! May many curses fall upon you.",
+    "acceptingDemand": "Hm! Acceptable.",
+    "neutralRejectingDemand": "Hmph. This deal would offend many of the Children were we to be tricked into acceptance.",
+    "hateRejectingDemand": "The spirits are angered by your presence. Begone!",
+    "afterPeace": "Viracocha has frowned upon our war, and has agreed to our peace agreements.",
+    "declaringFriendship": "You've proven your trustworthiness. Let us share the peace pipe, and let the spirits bear witness.",
+    "tradeRequest": "This is the property now of the Children. What price will you pay?",
+    "outerColor": [
+      116,
+      67,
+      5
+    ],
+    "innerColor": [
+      219,
+      219,
+      126
+    ],
+    "uniqueName": "Rubble Runners",
+    "uniques": [
+      "[Civilian] units gain the [Urban Warfare I] promotion",
+      "[Low Tech] units gain the [Urban Warfare I] promotion",
+      "[Personnel] units gain the [Urban Warfare I] promotion",
+      "[+1 Faith] [in all cities] <with [1] to [2] neighboring [{unimproved} {Jungle}] tiles>",
+      "[+2 Faith] [in all cities] <with [3] to [6] neighboring [{unimproved} {Jungle}] tiles>",
+      "All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel."
+    ],
+    "cities": [
+      "Phoenix",
+      "Rust City",
+      "The Boneyard",
+      "Old Forest",
+      "Dogtown",
+      "Soft Rains",
+      "Ashville",
+      "Condor Creek",
+      "Hazard",
+      "Radium Springs",
+      "Osprey",
+      "Vulture Bend",
+      "Dark Skies",
+      "Pistolville",
+      "Headstone",
+      "Firesteel",
+      "Broken Hills",
+      "Deadwood",
+      "Hopeville",
+      "Buzzard Vista",
+      "Dustbowl",
+      "Rakeville",
+      "Rock Falls",
+      "Kismet",
+      "Waterville"
+    ]
+  },
+  {
+    "name": "Blackwarden",
+    "leaderName": "Eric Price",
+    "adjective": [
+      "Mercenary"
+    ],
+    "preferredVictoryType": "Domination",
+    "personality": "Price",
+    "favoredReligion": "Capitalism",
+    "startIntroPart1": "With over 250,000 employees across 40 nations, Blackwarden Associates is the first choice for any situation requiring a professional and discreet security solution. Our friendly, highly trained personnel are always ready to help  - from your local bank or supermarket, to immigration processing centers and border defense at home, to fallout remediation and nuclear site security in the Indus Exclusion Zone.",
+    "startIntroPart2": "Blackwarden. Securing Your Future.",
+    "declaringWar": "It's time for you to join the Blackwarden family.",
+    "attacked": "Competitiveness? It's one of our core values.",
+    "defeated": "I'm sure we can come to an agreement. Let me send you my resume.",
+    "introduction": "You've reached the office of Eric Price, VP of mergers and acquisitions, Blackwarden, incorporated. Here at Blackwarden, the comfort and security of our shareholders is our number one priority.",
+    "neutralHello": "Greetings!",
+    "hateHello": "What?",
+    "denounced": "Heh. We'll just beat you up harder.",
+    "neutralDenouncing": "I see you've fallen out of the competition.",
+    "hateDenouncing": "Yeah, we figured out that you're even weaker than we think you are, which is saying something.",
+    "acceptingDemand": "Yeah sure, I agree.",
+    "neutralRejectingDemand": "No, this is a liability to Blackwarden.",
+    "hateRejectingDemand": "I've seen better slave contracts than this. Our word is no.",
+    "declaringFriendship": "Nice to see another tough face in the wasteland. You have the balls, I can tell.",
+    "tradeRequest": "This is a great opportunity for you. It would be unwise to refuse.",
+    "outerColor": [
+      100,
+      170,
+      210
+    ],
+    "innerColor": [
+      42,
+      42,
+      70
+    ],
+    "style": "Corporate",
+    "uniqueName": "Limited Liability",
+    "uniques": [
+      "[+10]% Strength <for [All] units> <when fighting in [Foreign Land] tiles>",
+      "City-State Influence recovers at twice the normal rate",
+      "Starts with [Writing]",
+      "Starts with [Trade]",
+      "Starts with [Currency]",
+      "[-2 Science] [in all cities] <before discovering [Education]>",
+      "Starts with [Monopoly] adopted",
+      "Can spend Gold to annex or puppet a City-State that has been your Ally for [5] turns <after adopting [Monopoly Complete]>"
+    ],
+    "cities": [
+      "Ark One",
+      "Vanguard",
+      "New Haven",
+      "Competitor View",
+      "Prosperity Plaza",
+      "Break Even",
+      "Spearhead",
+      "Profit Margin",
+      "Searchlight",
+      "Carte Blanche",
+      "Jackalsville",
+      "Horwich Green",
+      "Laissez's Fair",
+      "Hard Cash",
+      "Innovation",
+      "Conflict of Interest",
+      "Sunk Cost",
+      "Forbes",
+      "Cornucopia"
+    ],
+    "spyNames": [
+      "Al",
+      "Cofer",
+      "Richer",
+      "Ashcroft",
+      "Quinn",
+      "Bonfiglio",
+      "Danielle",
+      "Inman",
+      "Robinson",
+      "Folsom"
+    ],
+    "civilopediaText": [
+      {
+        "text": "With over 250,000 employees across 40 nations, Blackwarden Associates is the first choice for any situation requiring a professional and discreet security solution. Our friendly, highly trained personnel are always ready to help  - from your local bank or supermarket, to immigration processing centers and border defense at home, to fallout remediation and nuclear site security in the Indus Exclusion Zone."
+      },
+      {
+        "text": "Blackwarden. Securing Your Future."
+      }
+    ]
+  },
+  {
+    "name": "Atlas",
+    "leaderName": "John Kruger",
+    "adjective": [
+      "Atlesian"
+    ],
+    "startBias": [
+      "Mountain"
+    ],
+    "preferredVictoryType": "Scientific",
+    "personality": "Kruger",
+    "favoredReligion": "Objectivism",
+    "startIntroPart1": "At the Refuge, I am creating more than a town, more even than a polity; it is a new world, where individuals will be free to act without the burden of taxation or the specter of injustice. Here, I have created a truly voluntary society, where the citizens associate in rational self interest; from love, not from fear of punishment. I have sent you this invitation because you have greatness within you; think of all you have achieved in your life, and how much more you could do, if you were not held back.",
+    "startIntroPart2": "Choose something different. Choose Atlas.",
+    "declaringWar": "All that is required for the triumph of evil is for good men to do nothing.",
+    "attacked": "You're breaking the non-aggression principle!",
+    "defeated": "It is our wealth that you use while destroying us.",
+    "introduction": "I'm John Kruger, CEO of the Atlas Corporation. I thought we were the sole outpost of civilization in a world ruled by barbarism.",
+    "neutralHello": "This is John Kruger speaking.",
+    "hateHello": "I do not share your evil or sink to your concept of morality.",
+    "denounced": "You stand in the way of progress, and that makes you a threat to the future of humanity.",
+    "neutralDenouncing": "Your development worries us, it seems that you are regressing too far for our taste.",
+    "hateDenouncing": "If this is what you call progress, than I'd hate to see what happens when the inevitable fall happens.",
+    "acceptingDemand": "Yes, this is good for all of us.",
+    "neutralRejectingDemand": "Apologies, but this agreement lacks some key points we'd like to see.",
+    "hateRejectingDemand": "Your proposal disappoints me greatly. We refuse.",
+    "declaringFriendship": "You are a prime example of a thriving civilization. I'd like to seek closer relations.",
+    "tradeRequest": "Free trade is the only fair trade.",
+    "outerColor": [
+      0,
+      255,
+      255
+    ],
+    "innerColor": [
+      45,
+      60,
+      120
+    ],
+    "style": "Corporate",
+    "uniqueName": "Creative Leadership",
+    "uniques": [
+      "[{non-[Mounted]} {Melee} {Personnel}] units gain the [[Surveyor] ability] promotion",
+      "Free [Great Scientist] appears <upon discovering [Education] technology>",
+      "[Great Scientist] is earned [30]% faster",
+      "Starts with [Rationalism] adopted",
+      "Cannot build [Enslaved] units",
+      "Comment [Cannot build Work Camp buildings]"
+    ],
+    "cities": [
+      "Atlas Canyon",
+      "Praxis",
+      "Opportunity",
+      "Enterprise Gardens",
+      "Pareto Estates",
+      "Hanlon College",
+      "The Reservation",
+      "Zakharov Campus",
+      "Curiosity",
+      "Progress Estates",
+      "New Horizon",
+      "Dunning Institute",
+      "Kruger Laboratories",
+      "Apogee",
+      "Hypothesis",
+      "Axiom",
+      "Euclid Center",
+      "Prometheus Laboratories",
+      "Zenith",
+      "Von Neumann Institute"
+    ],
+    "spyNames": [
+      "Dagny",
+      "Rearden",
+      "Wyatt",
+      "Akston",
+      "Danagger",
+      "Midas",
+      "Kay",
+      "Quentin",
+      "Halley",
+      "Allen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "At the Refuge, I am creating more than a town, more even than a polity; it is a new world, where individuals will be free to act without the burden of taxation or the specter of injustice. Here, I have created a truly voluntary society, where the citizens associate in rational self interest; from love, not from fear of punishment. I have sent you this invitation because you have greatness within you; think of all you have achieved in your life, and how much more you could do, if you were not held back."
+      },
+      {
+        "text": "Choose something different. Choose Atlas."
+      }
+    ]
+  },
+  {
+    "name": "The Patriots",
+    "leaderName": "General Cameron",
+    "adjective": [
+      "Patriot"
+    ],
+    "startBias": [
+      "Avoid [Desert]"
+    ],
+    "preferredVictoryType": "Domination",
+    "personality": "Cameron",
+    "favoredReligion": "Liberty",
+    "declaringWar": "You're either with us, or you're with the terrorists.",
+    "attacked": "Disperse immediately. Insurrection and rebellion will be met with lethal force.",
+    "defeated": "We today have concluded an agreement to end the war and bring peace with honor.",
+    "introduction": "This is General Cameron of the Army. A state of emergency is currently in effect across the nation. Military authorities are authorized to summarily enforce order, in accordance with martial law. Maintain your shelters and await further instructions.",
+    "neutralHello": "A water tax of 25% is in place for all municipalities to support disaster relief efforts and the restoration of government.",
+    "hateHello": "A special water tax rate of 33% is in place for your municipality. You are additionally required to surrender all military weapons.",
+    "denounced": "Those are seditious words you're saying.",
+    "neutralDenouncing": "Our scouts have reported un-patriotic acts in your territory, and as such we have the right to enact an isolation protocol against you.",
+    "hateDenouncing": "This is a warning to you to cease your treasonous acts. Failure to comply will result in heavy retribution. Personally I hope you do not comply.",
+    "acceptingDemand": "Affirmative, we shall carry this out ASAP.",
+    "neutralRejectingDemand": "Negative. This deal is simply insufficient.",
+    "hateRejectingDemand": "Negatory! This violates our standing orders. Vacate yourself from the premises now.",
+    "declaringFriendship": "You have been chosen as an example of a model citizen. Additional perks will be granted to your household. Stand proud, citizen.",
+    "tradeRequest": "The Emergency Management Agency has prepared this aid package for your district.",
+    "outerColor": [
+      40,
+      178,
+      0
+    ],
+    "innerColor": [
+      100,
+      50,
+      30
+    ],
+    "style": "Military",
+    "uniqueName": "Military Secrets",
+    "uniques": [
+      "[+100]% [Encrypted Data] resource production",
+      "[+100]% [Weapons] resource production",
+      "Comment [[+1 Production, +1 Science] from all defensive buildings]",
+      "[+1 Production, +1 Science] from every [Walls] <hidden from users>",
+      "[+1 Production, +1 Science] from every [Defensive Emplacements] <hidden from users>",
+      "[+1 Production, +1 Science] from every [Choke Points] <hidden from users>",
+      "[+1 Production, +1 Science] from every [Coastal Defenses] <hidden from users>",
+      "[+1 Production, +1 Science] from every [Hardened Defenses] <hidden from users>",
+      "[+1 Production, +1 Science] from every [Battery] <hidden from users>",
+      "[+1 Production, +1 Science] from every [Bunker] <hidden from users>",
+      "[+1 Production, +1 Science] from every [Active Denial System] <hidden from users>",
+      "[+2 Production, +2 Science] from every [Citadel] <before the [Industrial era]>",
+      "[+4 Production, +4 Science] from every [Citadel] <starting from the [Industrial era]>",
+      "Cannot build [Low Tech] units"
+    ],
+    "cities": [
+      "Eagle Rock",
+      "Fort Patriot",
+      "Valiant Base",
+      "Camp Fidelis",
+      "Fort Endurance",
+      "Camp Freedom",
+      "Sentinel Field",
+      "Camp Hammer",
+      "Camp Justice",
+      "Fort Victory",
+      "Fort Crockett",
+      "Sparta Base",
+      "Arclight Station",
+      "Overwatch Base",
+      "Fort Challenger",
+      "Fort Cameron",
+      "Thunder Outpost",
+      "Cobalt Base",
+      "Camp Shield",
+      "Fort Granite",
+      "Liberator Station",
+      "Camp Dawn"
+    ],
+    "spyNames": [
+      "Ryan",
+      "Dirk",
+      "Fisher",
+      "Kurt",
+      "Ding",
+      "Isaac",
+      "Hansen",
+      "Dorn",
+      "Briggs",
+      "Remi"
+    ]
+  },
+  {
+    "name": "Crimson Legion",
+    "leaderName": "Caesar",
+    "adjective": [
+      "Legion"
+    ],
+    "preferredVictoryType": "Domination",
+    "personality": "Caesar",
+    "favoredReligion": "Imperial Cult",
+    "startIntroPart1": "Behold! The nations of the past have fallen, their once marvelous cities crumbled into dust. And why? Because they were weak! In their hour of necessity, they could not stand together! They turned on themselves and devoured themselves, and now they are dead. But we are alive, because we are strong! And what is the source of our strength? Our unity! Like the fasces, we are bound together, and with the strength of our bond, we shall rebuild civilization!",
+    "startIntroPart2": "Our enemies are many, but like the nations of old, they are weak and divided. They shall fall before us, and the world shall at last be united under one great banner! Hail victory! Hail Caesar!",
+    "declaringWar": "You have stood in the way of progress for too long.",
+    "attacked": "Do you really believe that you can stand against the tide of history?",
+    "defeated": "You have the strength to prevail. So be it.",
+    "introduction": "Hail. I am Caesar, son of Mars, Consul of the Crimson Legion. Have you come to pay tribute?",
+    "neutralHello": "Hail.",
+    "hateHello": "Your misplaced ideals make you weak.",
+    "denounced": "Do not think that I, Caesar, will allow you to get away with this.",
+    "neutralDenouncing": "Your deeds have made you fall out of Caesar's favor.",
+    "hateDenouncing": "Know that the full might of the Legion is against you, barbarian.",
+    "acceptingDemand": "Ave. True to Caesar.",
+    "neutralRejectingDemand": "Non. Malum negotium est.",
+    "hateRejectingDemand": "Non, this is a ridiculous proposal.",
+    "declaringFriendship": "You have earned the favor of Caesar. Stand proudly as a friend of the Legion.",
+    "tradeRequest": "I offer this, for your consideration.",
+    "outerColor": [
+      153,
+      5,
+      3
+    ],
+    "innerColor": [
+      244,
+      232,
+      54
+    ],
+    "style": "Legion",
+    "uniqueName": "One Banner",
+    "uniques": [
+      "When conquering an encampment, earn [25] Gold and recruit a Barbarian unit <with [67]% chance>",
+      "[-33]% maintenance costs <for [Land] units>",
+      "[+20]% Strength <for [Low Tech] units> <when attacking>",
+      "Starts with [Iron Working]",
+      "Starts with [Supremacy] adopted",
+      "Empire enters golden age <upon conquering a city> <after adopting [Supremacy Complete]>",
+      "Cannot build [Automated] units",
+      "Cannot build [Purge Robot] units"
+    ],
+    "cities": [
+      "Postumus",
+      "Rubicon",
+      "Dies Irae",
+      "Tartarus",
+      "Aqua Vitae",
+      "Damocles",
+      "De Facto",
+      "Vae Victis",
+      "Golgotha",
+      "Mors Omnibus",
+      "Carthage",
+      "Lex Talionis",
+      "Kronos",
+      "Extrema Ratio",
+      "Igni Ferroque",
+      "Tycho",
+      "Memento Mori",
+      "Orcus",
+      "Ex Nihilo",
+      "Para Bellum",
+      "Styx",
+      "Manu Forte",
+      "Elysium",
+      "Alea Iacta Est",
+      "Corpus Vile",
+      "Canis Canem Edit",
+      "Ad Astra"
+    ],
+    "spyNames": [
+      "Vulpes",
+      "Cato",
+      "Alerio",
+      "Caius",
+      "Ulysses",
+      "Silus",
+      "Picus",
+      "Aurelius",
+      "Severus",
+      "Livius"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Behold! The nations of the past have fallen, their once marvelous cities crumbled into dust. And why? Because they were weak! In their hour of necessity, they could not stand together! They turned on themselves and devoured themselves, and now they are dead. But we are alive, because we are strong! And what is the source of our strength? Our unity! Like the fasces, we are bound together, and with the strength of our bond, we shall rebuild civilization!"
+      },
+      {
+        "text": "Our enemies are many, but like the nations of old, they are weak and divided. They shall fall before us, and the world shall at last be united under one great banner! Hail victory! Hail Caesar!"
+      }
+    ]
+  },
+  {
+    "name": "Cult of Ignis",
+    "leaderName": "Ignitor Martina",
+    "adjective": [
+      "Ignisite"
+    ],
+    "startBias": [
+      "Desert"
+    ],
+    "preferredVictoryType": "Domination",
+    "personality": "Ignitor",
+    "favoredReligion": "Divine Engine",
+    "startIntroPart1": "In the beginning, the earth was without form, cold and void. And the Divine Engine moved upon the face of the earth, and brought forth humans, to serve her. And she blessed the people upon the earth with steel and holy oil, to make engines of their own. But the people of the earth forgot the Divine Engine who had blessed them. So the Engine sent forth the Flame to destroy the people who had sinned, and the earth was cleansed. But the Flame had mercy upon the people, and spared the people who repented and swore to serve the Engine. And it came to pass that Divine Engine blessed the people once more, and gave them steel and holy oil, and commanded them to multiply and replenish the earth, for the engine's glory.",
+    "startIntroPart2": "Now the people of the earth have begun to forget the Engine once more. We are called to spread the word of our god, and compel the nations of the earth to repent and serve the Engine. The wrath of the Flame goes before us, and the strength of the Engine is behind us. We are Ignis, and we cannot fail.",
+    "declaringWar": "Rejoice! Your profane forms will soon become one with the Exhaust!",
+    "attacked": "Your offering is welcome! We shall oxidize together in blessed combustion!",
+    "defeated": "Though our worldly bodies fail, our spirits soar through the skies in oxides immortal...",
+    "introduction": "The sybil has foreseen this meeting! I am Martina, Ignitor and High Priest. I serve the Divine Engine, and so too shall you.",
+    "neutralHello": "In the name of the trinity, I permit your words be heard.",
+    "hateHello": "You risk the wrath of the Flame.",
+    "denounced": "You have a mouth that spews smoke.",
+    "neutralDenouncing": "Be warned, our oracles have divined that you need to check your engine lights - for you are going towards a dark tarmac.",
+    "hateDenouncing": "O you tarnished and rusted soul! We long for the day you will become fuel for the Engine.",
+    "acceptingDemand": "Rejoice, the Engine purrs smoothly.",
+    "neutralRejectingDemand": "We see too much smoke in this, and must deny it until it runs smoothly again.",
+    "hateRejectingDemand": "Into the Flames with this proposal!",
+    "declaringFriendship": "The fire of the Engine rises in you! May we ride together, chrome and eternal.",
+    "tradeRequest": "You may yet serve the Engine...",
+    "outerColor": [
+      255,
+      150,
+      0
+    ],
+    "innerColor": [
+      0,
+      0,
+      0
+    ],
+    "style": "Ignis",
+    "uniqueName": "Road Warriors",
+    "uniques": [
+      "[-33]% maintenance costs <for [Armor] units>",
+      "[+1] Movement <for [Armor] units>",
+      "Starts with [Machinery]",
+      "Starts with [Theocracy] adopted",
+      "[+1 Culture] from every [Strategic resource]",
+      "Gain a free [Founder] belief <upon adopting [Theocracy Complete]>"
+    ],
+    "cities": [
+      "Gastown",
+      "Blood Farm",
+      "Trial of Sand",
+      "Prophecy",
+      "Thousand Cuts",
+      "The Harrowing",
+      "Temple of Rage",
+      "Immortal Highway",
+      "Tohuvabohu",
+      "Forbidden Palace",
+      "Hanging Gardens",
+      "Megiddo",
+      "The Cauldron",
+      "Traitors' Gate",
+      "Hell Patrol",
+      "Steel Throne",
+      "The Warren",
+      "Well of Souls",
+      "Hermitage",
+      "Ceremony",
+      "Court of Dreams",
+      "Perpetual Ascension",
+      "Death Race",
+      "God Box"
+    ],
+    "spyNames": [
+      "Rictus",
+      "Scabrous",
+      "Rizzdale",
+      "Fang",
+      "Smeg",
+      "Nux",
+      "Slit",
+      "Morsov",
+      "Wez",
+      "Zanetti"
+    ],
+    "civilopediaText": [
+      {
+        "text": "In the beginning, the earth was without form, cold and void. And the Divine Engine moved upon the face of the earth, and brought forth humans, to serve her. And she blessed the people upon the earth with steel and holy oil, to make engines of their own. But the people of the earth forgot the Divine Engine who had blessed them. So the Engine sent forth the Flame to destroy the people who had sinned, and the earth was cleansed. But the Flame had mercy upon the people, and spared the people who repented and swore to serve the Engine. And it came to pass that Divine Engine blessed the people once more, and gave them steel and holy oil, and commanded them to multiply and replenish the earth, for the engine's glory."
+      },
+      {
+        "text": "Now the people of the earth have begun to forget the Engine once more. We are called to spread the word of our god, and compel the nations of the earth to repent and serve the Engine. The wrath of the Flame goes before us, and the strength of the Engine is behind us. We are Ignis, and we cannot fail."
+      }
+    ]
+  },
+  {
+    "name": "The Mariners",
+    "leaderName": "Deacon Hopper",
+    "adjective": [
+      "Marine"
+    ],
+    "startBias": [
+      "Coast"
+    ],
+    "preferredVictoryType": "Domination",
+    "personality": "Deacon",
+    "favoredReligion": "Rongorongo",
+    "declaringWar": "The sea is ours, and all the dry lands shall soon be as well!",
+    "attacked": "Ha! You think to challenge us? I hope you can swim well.",
+    "defeated": "Damn you! We should never have left the protection of the sea.",
+    "introduction": "Ahoy! We are the Mariners, and we've come to reclaim the dry land from the lot of you.",
+    "neutralHello": "Greetings, land dweller.",
+    "hateHello": "What do you want?",
+    "denounced": "Feisty, aren't 'cha?",
+    "neutralDenouncing": "Best leave you alone for now, you're steering your nation into dangerous currents.",
+    "hateDenouncing": "Pah, you cannot navigate your way out of a damp canoe, let alone set a course for a nation!",
+    "acceptingDemand": "Aye, that'll do.",
+    "neutralRejectingDemand": "Nay, this deal isn't ship-shape.",
+    "hateRejectingDemand": "Nay. You land-lubbers just don't understand.",
+    "declaringFriendship": "There be plenty of fish in the sea, but a good friend like you is hard to find.",
+    "tradeRequest": "We've got the finest goods that the sea can offer! What do you say?",
+    "outerColor": [
+      51,
+      25,
+      0
+    ],
+    "innerColor": [
+      255,
+      255,
+      102
+    ],
+    "style": "Tribal",
+    "uniqueName": "People of the Sea",
+    "uniques": [
+      "Enables embarkation for land units",
+      "Enables [All] units to enter ocean tiles",
+      "[1] Movement point cost to embark",
+      "[1] Movement point cost to disembark",
+      "[+100]% Strength <when defending> <for [Embarked] units>",
+      "[+1] Sight <for [Embarked] units>",
+      "[+1] Movement <for [Water] units>",
+      "[Low Tech] units gain the [Amphibious] promotion",
+      "[Personnel] units gain the [Amphibious] promotion",
+      "[Low Tech] units gain the [Sea Raider] promotion <after adopting [Advanced Piracy]>",
+      "[Personnel] units gain the [Sea Raider] promotion <after adopting [Advanced Piracy]>",
+      "[Ranged Water] units gain the [Sea Raider] promotion <after adopting [Advanced Piracy]>",
+      "Starts with [Sailing]",
+      "Starts with [Rediscovery] adopted"
+    ],
+    "cities": [
+      "Dryplace",
+      "Everest Peak",
+      "Tripplehorn Harbor",
+      "Majorino Bay",
+      "Coates Beach",
+      "LaSardo Coast",
+      "Mokae Pier",
+      "Kazann Port",
+      "Shimono Harbor",
+      "Aviles Beach",
+      "Kehler Coast",
+      "Douridas Pier",
+      "Silverman Port",
+      "Giuntoli Bay",
+      "Whalen Cove",
+      "Arenberg Fjord",
+      "Preston Quay",
+      "Spinuzza Harbor",
+      "Livdahl Promontory",
+      "Toles-Bey Atoll",
+      "Cimino Cove",
+      "Tallent Point",
+      "Cape Costner"
+    ],
+    "spyNames": [
+      "Enola",
+      "Gregor",
+      "Sawzall",
+      "Priam",
+      "Bone",
+      "Toby",
+      "Smitty",
+      "Djeng",
+      "Truan",
+      "Ledger"
+    ]
+  },
+  {
+    "name": "New Afrika",
+    "leaderName": "Mutulu Makonnen",
+    "adjective": [
+      "Afrikan"
+    ],
+    "startBias": [
+      "Avoid [Tundra]"
+    ],
+    "preferredVictoryType": "Cultural",
+    "personality": "Makonnen",
+    "favoredReligion": "Rastafari",
+    "declaringWar": "We've had enough of you messing with us.",
+    "attacked": "You think you can defeat us? Fool!",
+    "defeated": "This is the end. Freedom will never be more than a dream.",
+    "introduction": "I am Mutulu, and we are New Afrika. We are here to rebuild this broken world.",
+    "neutralHello": "Greetings.",
+    "hateHello": "What the hell do you want?",
+    "denounced": "This insult to New Afrika will not slide.",
+    "neutralDenouncing": "Your recent actions have concerned us about your true motive.",
+    "hateDenouncing": "Do you think your plans that will put Afrikans under chains once more, will remain hidden forever? We see through your lies, colonizer!",
+    "acceptingDemand": "Yes, good.",
+    "neutralRejectingDemand": "No, this is not quite fair enough.",
+    "hateRejectingDemand": "This smells too much of colonialism.",
+    "declaringFriendship": "Rejoice, for New Afrika considers you as a friend.",
+    "tradeRequest": "Let's make a fair trade, as equals.",
+    "outerColor": [
+      120,
+      120,
+      50
+    ],
+    "innerColor": [
+      30,
+      9,
+      0
+    ],
+    "style": "Afrikan",
+    "uniqueName": "Community Watch",
+    "uniques": [
+      "[+10]% Strength <within [2] tiles of a [City center]>",
+      "[+20]% Strength <when fighting units from a Civilization with more Cities than you>",
+      "Enemy [Land] units must spend [1] extra movement points when inside your territory <before discovering [Railroads]> <Suppress warning [*contains a conditional on a unit movement unique*]>",
+      "Starts with [Secrets of the Past]",
+      "Cannot build [Enslaved] units",
+      "Comment [Cannot build Prison Camp or Work Camp buildings]"
+    ],
+    "cities": [
+      "Gao",
+      "Tombouctu",
+      "Jenne",
+      "Taghaza",
+      "Tondibi",
+      "Kumbi Saleh",
+      "Kukia",
+      "Addis Ababa",
+      "Harar",
+      "Adwa",
+      "Lalibela",
+      "Gondar",
+      "Walata",
+      "Tegdaoust",
+      "Argungu",
+      "Gwandu",
+      "Kebbi",
+      "Boussa",
+      "Thebes",
+      "Memphis",
+      "Heliopolis",
+      "Elephantine",
+      "Alexandria",
+      "Axum",
+      "Dire Dawa",
+      "Bahir Dar",
+      "Adama",
+      "Mek'ele",
+      "Awasa",
+      "Jimma",
+      "Jijiga",
+      "Dessie",
+      "Debre Berhan",
+      "Pi-Ramesses",
+      "Giza",
+      "Byblos"
+    ],
+    "spyNames": [
+      "Mumia",
+      "Ashanti",
+      "Sundiata",
+      "Kuwasi",
+      "Dhoruba",
+      "Safiya",
+      "Kwaku",
+      "Kom'boa",
+      "Bashir",
+      "Jamal"
+    ]
+  },
+  {
+    "name": "Proklyatyye",
+    "leaderName": "Trofim Bugorski",
+    "adjective": [
+      "Proklyatyy"
+    ],
+    "startBias": [
+      "Tundra"
+    ],
+    "preferredVictoryType": "Scientific",
+    "personality": "Bugorski",
+    "favoredReligion": "Rodnovery",
+    "startIntroPart1": "Perhaps it would have been better if man had never split the atom. If only we could go back and make it so no one could harness nuclear energy... Maybe then, we would never have burned the world to the ground. Maybe then you would not feel the sickness in your bones. But all that is in the past. We have to live with it now, no? But here is our secret: we can live with it, and they cannot. They have no stomach for radiation. And so this curse upon the land is a blessing to us. The sickness goes before us and destroys our enemies, leaving only us alive. That is not so bad now, is it?",
+    "startIntroPart2": "This sick and dying world is our birthright. Let us go and claim it all for ourselves, and see if we cannot make a heaven out of this hell.",
+    "declaringWar": "Your lands look fertile. We'll take them.",
+    "attacked": "So you think you can destroy us? Let us see if our sickness can destroy you first!",
+    "defeated": "Just promise me that you will try to heal this dying world.",
+    "introduction": "Hello, stranger! I would shake your hand, but it is better if you do not touch me.",
+    "neutralHello": "Hello!",
+    "hateHello": "What do you need?!",
+    "denounced": "We're used to being ostracized.",
+    "neutralDenouncing": "Ah, just when we think we can have someone to really trust.",
+    "hateDenouncing": "We've had our share of being blamed, but what you're doing is loathsome even for us.",
+    "acceptingDemand": "Mm, yes. Low ticks on the Geiger.",
+    "neutralRejectingDemand": "Mmm... not 'spicy' enough for us.",
+    "hateRejectingDemand": "This is more toxic than most of the contaminants around where I'm from.",
+    "declaringFriendship": "Thank you for caring. We shall not forget your kindness.",
+    "tradeRequest": "How would you like it if I propose this kind of exchange?",
+    "outerColor": [
+      34,
+      52,
+      52
+    ],
+    "innerColor": [
+      255,
+      225,
+      157
+    ],
+    "uniqueName": "Radioactivity",
+    "uniques": [
+      "Comment [Russian Unifier]",
+      "Starts with [Secrets of the Past]",
+      "Starts with [Writing]",
+      "Starts with [Construction]",
+      "Starts with [Mining]",
+      "[-1 Science] [in all cities] <before discovering [Education]>",
+      "[-10]% growth [in all cities] <before discovering [Decontamination]>",
+      "[-1 Food] [in all cities] <before discovering [Decontamination]>",
+      "[{non-[Air]} {Military}] units gain the [Radioactive] promotion",
+      "[+10]% Strength <for [All] units> <when fighting in [Fallout] tiles>",
+      "[+10]% Strength <for [All] units> <when fighting in [Toxic Waste] tiles>",
+      "No defensive terrain penalty",
+      "No movement cost to pillage"
+    ],
+    "cities": [
+      "Shchyolkovo-14",
+      "Kartaly-6",
+      "Arzamas-75",
+      "Stupino-7",
+      "Krasnoyarsk-45",
+      "Krasnoyarsk-66",
+      "Sverdlovsk-44",
+      "Murmansk-150",
+      "Bologoe-4",
+      "Krasnoyarsk-26",
+      "Beloretsk-15",
+      "Zlatoust-20",
+      "Chita-46",
+      "Zlatoust-36",
+      "Perm'-76",
+      "Yur'ya-2",
+      "Petropavlovsk-Kamchatskiy-35",
+      "Semipalatinsk-121",
+      "Shkotovo-17",
+      "Zagorsk-7",
+      "Kosulino-1",
+      "Uzhur-4",
+      "Tatishchevo-5",
+      "Kapustin Yar-1",
+      "Olovyannaya-4",
+      "Dombrovskiy-3",
+      "Petropavlovsk-Kamchatskiy-50",
+      "Nizhny-Tagil-39",
+      "Beloretsk-16",
+      "Chelyabinsk-65",
+      "Chelyabinsk-115",
+      "Alkino-2",
+      "Murmansk-60",
+      "Svobodnyy-18",
+      "Tomsk-7",
+      "Murmansk-140",
+      "Murmansk-130",
+      "Krasnoyarsk-95",
+      "Chelyabinsk-40",
+      "Sverdlovsk-45",
+      "Chelyabinsk-95",
+      "Chelyabinsk-70",
+      "Arzamas-60",
+      "Shkotovo-26",
+      "Krasnoyarsk-35",
+      "Naro-Fominsk-5",
+      "Kurchatov-21",
+      "Penza-19",
+      "Novopetrovsk-2",
+      "Arzamas-16",
+      "Golitsino-2",
+      "Semipalatinsk-16",
+      "Krasnoyarsk-25",
+      "Shkotovo-22",
+      "Yairm-210"
+    ],
+    "spyNames": [
+      "Redrick",
+      "Victor",
+      "Artyom",
+      "Kirill",
+      "Dr. Kruglov",
+      "Mr. Strugatsky",
+      "Vitalik",
+      "Lebedev",
+      "Letyaga",
+      "Mirsky"
+    ]
+  },
+  {
+    "name": "Order of Jerome",
+    "adjective": [
+      "Order"
+    ],
+    "cityStateType": "Prayer",
+    "style": "",
+    "uniques": [
+      "Starts with [Secrets of the Past]",
+      "Starts with [Writing]",
+      "Starts with [Education]"
+    ],
+    "declaringWar": "You leave us no choice. War it must be.",
+    "attacked": "May you be forgiven.",
+    "defeated": "There is still time... Brother",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      159,
+      58,
+      83
+    ],
+    "cities": [
+      "Jerome Abbey"
+    ]
+  },
+  {
+    "name": "Bartertown",
+    "adjective": [
+      "Bartertown"
+    ],
+    "cityStateType": "Trading",
+    "startBias": [
+      "Desert"
+    ],
+    "style": "Gang",
+    "uniques": [
+      "Starts with [Redomestication]",
+      "Starts with [Iron Working]",
+      "Starts with [Chemistry]"
+    ],
+    "declaringWar": "Ladies and gentlemen, boys and girls, it's dyin' time!",
+    "attacked": "Two men enter, one man leaves!",
+    "defeated": "You run Bartertown.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      194,
+      7,
+      255
+    ],
+    "cities": [
+      "Bartertown"
+    ]
+  },
+  {
+    "name": "Devil's Canyon",
+    "adjective": [
+      "Devil's Canyon"
+    ],
+    "cityStateType": "Research",
+    "style": "Corporate",
+    "uniques": [
+      "Starts with [Writing]",
+      "Starts with [Electronics]"
+    ],
+    "declaringWar": "You leave us no choice. War it must be.",
+    "attacked": "Very well, this shall not be forgotten.",
+    "defeated": "We never fully trusted you from the start.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      224,
+      224,
+      50
+    ],
+    "cities": [
+      "Devil's Canyon NPP"
+    ]
+  },
+  {
+    "name": "Almaty",
+    "adjective": [
+      "Almaty"
+    ],
+    "cityStateType": "Weapons",
+    "startBias": [
+      "Hill"
+    ],
+    "style": "Military",
+    "uniques": [
+      "[+100]% [Weapons] resource production",
+      "Cannot build [Low Tech] units"
+    ],
+    "declaringWar": "The people of the Almaty Province do not abide the existence of threats.",
+    "attacked": "So be it. Our counteroffensive will bring you to ruin.",
+    "defeated": "The end of Almaty is a terrible day for everyone. Do you not have a heart?!",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      40,
+      135,
+      20
+    ],
+    "cities": [
+      "Alma Base"
+    ]
+  },
+  {
+    "name": "Fo Guang",
+    "adjective": [
+      "Fo Guang"
+    ],
+    "cityStateType": "Prayer",
+    "uniques": [
+      "No damage penalty for wounded units"
+    ],
+    "declaringWar": "You leave us no choice. War it must be.",
+    "attacked": "Your desire for power will only bring you suffering.",
+    "defeated": "Weep not for us, for we shall be reborn.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      250,
+      128,
+      114
+    ],
+    "cities": [
+      "Fo Guang Shan"
+    ]
+  },
+  {
+    "name": "Tellus",
+    "adjective": [
+      "Tellus"
+    ],
+    "cityStateType": "Culture",
+    "startBias": [
+      "Wasteland"
+    ],
+    "uniques": [
+      "[{Military} {Land}] units gain the [Will of Tellus] promotion",
+      "Starts with [Ecology]",
+      "Starts with [Land Remediation]"
+    ],
+    "declaringWar": "The plant has spoken, you must be defeated!",
+    "attacked": "We will not let you destroy our sacred Trees!",
+    "defeated": "The plants must surive... no matter what.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      0,
+      205,
+      102
+    ],
+    "cities": [
+      "Tellus"
+    ]
+  },
+  {
+    "name": "Venice Beach",
+    "adjective": [
+      "Venetian"
+    ],
+    "cityStateType": "Trading",
+    "startBias": [
+      "Coast"
+    ],
+    "style": "Corporate",
+    "uniques": [
+      "Starts with [Sailing]",
+      "Starts with [Navigation]",
+      "Starts with [Trade]"
+    ],
+    "declaringWar": "When you are gone, it will be a great boon for us!",
+    "attacked": "Heh! You revealed your purposes much too early, my friend!",
+    "defeated": "It looks like I miscalculated.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      153,
+      204,
+      255
+    ],
+    "cities": [
+      "Venice Beach"
+    ]
+  },
+  {
+    "name": "Issaquah Nation",
+    "adjective": [
+      "Issaquah"
+    ],
+    "cityStateType": "Prayer",
+    "startBias": [
+      "Coast"
+    ],
+    "style": "Tribal",
+    "uniques": [
+      "Starts with [Sailing]",
+      "Starts with [Iron Working]",
+      "Starts with [Steel]",
+      "[+20]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
+      "[-25]% Culture cost of natural border growth [in all cities]"
+    ],
+    "declaringWar": "Kill! Kill! Kill!",
+    "attacked": "We must make the wastelanders go away!",
+    "defeated": "This is not the end of our people.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      83,
+      99,
+      83
+    ],
+    "cities": [
+      "Issaquah"
+    ]
+  },
+  {
+    "name": "Defiance",
+    "adjective": [
+      "Defiant Few"
+    ],
+    "cityStateType": "Weapons",
+    "startBias": [
+      "Jungle"
+    ],
+    "style": "Military",
+    "uniques": [
+      "[+25]% [Strategic] resource production",
+      "[+25]% Production when constructing [Personnel] units [in all cities]",
+      "Cannot build [Low Tech] units",
+      "Starts with [Mining]",
+      "Starts with [Machinery]"
+    ],
+    "declaringWar": "Down in the ground where the dead men go. That's where you'll be soon.",
+    "attacked": "We're thoroughly unimpressed.",
+    "defeated": "It is what it is... We'll be off to better lands now.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      0,
+      94,
+      171
+    ],
+    "cities": [
+      "Defiance"
+    ]
+  },
+  {
+    "name": "Carbon",
+    "adjective": [
+      "Carbonite"
+    ],
+    "cityStateType": "Farming",
+    "style": "Corporate",
+    "uniques": [
+      "Starts with [Redomestication]",
+      "Starts with [Botany]",
+      "Starts with [Trade]"
+    ],
+    "declaringWar": "You leave us no choice. War it must be.",
+    "attacked": "Very well, this shall not be forgotten.",
+    "defeated": "We never fully trusted you from the start.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      224,
+      224,
+      224
+    ],
+    "cities": [
+      "Carbon"
+    ]
+  },
+  {
+    "name": "The Pax",
+    "adjective": [
+      "Pax"
+    ],
+    "cityStateType": "Research",
+    "startBias": [
+      "Desert"
+    ],
+    "style": "Corporate",
+    "uniques": [
+      "Starts with [Secrets of the Past]",
+      "Starts with [Writing]",
+      "Starts with [Electronics]",
+      "[+20]% growth [in all cities] <when not at war>",
+      "Cannot build [Enslaved] units"
+    ],
+    "declaringWar": "We'd hoped we wouldn't have to compromise our principles to survive.",
+    "attacked": "Your rationale for justifying conflict is what caused the Cataclysm to happen in the first place.",
+    "defeated": "Are our ideals... our dream for peace... meant to die here?",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      177,
+      157,
+      63
+    ],
+    "cities": [
+      "Pax Sanctum"
+    ]
+  },
+  {
+    "name": "Calico",
+    "adjective": [
+      "Cali"
+    ],
+    "cityStateType": "Labor",
+    "style": "Corporate",
+    "uniques": [
+      "Starts with [Machinery]",
+      "Starts with [Manufacturing]"
+    ],
+    "declaringWar": "You leave us no choice. War it must be.",
+    "attacked": "Oi there mate, bit rude to be making that war declaration, innit?",
+    "defeated": "It's a shame. There was so much more we could have done.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      149,
+      63,
+      63
+    ],
+    "cities": [
+      "Calico"
+    ]
+  },
+  {
+    "name": "Hockeytown",
+    "adjective": [
+      "Hockeytownsfolk"
+    ],
+    "cityStateType": "Culture",
+    "startBias": [
+      "Tundra"
+    ],
+    "style": "Gang",
+    "uniques": [
+      "[+1 Food, +1 Culture] from every [Tundra]",
+      "Starts with [Electronics]",
+      "Starts with [Refrigeration]",
+      "Starts with [Social Engineering]"
+    ],
+    "declaringWar": "We went to join a war and then a hockey game broke out.",
+    "attacked": "You were planning a fight, eh? Then let's have a bench-clearing brawl to remember!",
+    "defeated": "That's a game misconduct penalty for us.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      51,
+      102,
+      0
+    ],
+    "cities": [
+      "Hockeytown"
+    ]
+  },
+  {
+    "name": "Izumrydniy Gorod",
+    "adjective": [
+      "Emerald"
+    ],
+    "cityStateType": "Research",
+    "startBias": [
+      "Tundra"
+    ],
+    "style": "Corporate",
+    "uniques": [
+      "Earn [50]% of killed [Military] unit's [Strength] as [Science]",
+      "Starts with [Secrets of the Past]",
+      "Starts with [Writing]",
+      "Starts with [Education]"
+    ],
+    "declaringWar": "Rumors of our continued existence shall be discredited - by destroying their source.",
+    "attacked": "This trespass against us will not be forgotten nor forgiven.",
+    "defeated": "We should have doubled our efforts to stay hidden from the outside world.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      66,
+      189,
+      74
+    ],
+    "cities": [
+      "Izumrydniy Gorod"
+    ]
+  },
+  {
+    "name": "Trudograd",
+    "adjective": [
+      "Trudogradian"
+    ],
+    "cityStateType": "Trading",
+    "startBias": [
+      "Tundra"
+    ],
+    "declaringWar": "Our paradise already has enough problems as it is. We don't need you becoming one of them.",
+    "attacked": "Very well, this shall not be forgotten.",
+    "defeated": "We were right to fear you...",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      0,
+      102,
+      102
+    ],
+    "cities": [
+      "Trudograd"
+    ]
+  },
+  {
+    "name": "Powderhorn Autonomous Zone",
+    "adjective": [
+      "Powderhorner"
+    ],
+    "cityStateType": "Culture",
+    "startBias": [
+      "Lakes"
+    ],
+    "style": "Gang",
+    "uniques": [
+      "[+1 Food, +2 Gold] from all [Culture] buildings"
+    ],
+    "declaringWar": "We won't stand for your injustice!",
+    "attacked": "Lookin' to cause trouble? You're about to run into a lot more than you can handle.",
+    "defeated": "We were never terrorists. It was you and your kind who brought terror here.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      232,
+      95,
+      221
+    ],
+    "cities": [
+      "Powderhorn"
+    ]
+  },
+  {
+    "name": "Tự Do",
+    "adjective": [
+      "Tự Do"
+    ],
+    "cityStateType": "Weapons",
+    "startBias": [
+      "Coast"
+    ],
+    "style": "",
+    "uniques": [
+      "All newly-trained [relevant] units [in all cities] receive the [Reconnaissance I] promotion",
+      "All newly-trained [relevant] units [in all cities] receive the [Urban Warfare I] promotion",
+      "All newly-trained [relevant] units [in all cities] receive the [Urban Warfare II] promotion"
+    ],
+    "declaringWar": "You are at war with freedom itself. You cannot hold back the forces of liberation.",
+    "attacked": "Today begins the war that will end in your destruction.",
+    "defeated": "You think you have defeated us? The spirit of resistance is immortal and will haunt your people for the rest of their days.",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      51,
+      51,
+      255
+    ],
+    "cities": [
+      "Tự Do"
+    ]
+  },
+  {
+    "name": "Barbarians",
+    "style": "Barbarians",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      185,
+      12,
+      12
+    ],
+    "uniques": [
+      "[-33]% Strength <vs cities> <before discovering [Steam Power]>",
+      "[Water] units gain the [Unable to pillage tiles] promotion",
+      "[+1] Sight <for [Scout] units>",
+      "[+1] Movement <for [Scout] units>",
+      "[+33]% Strength <vs [Military] units> <when attacking>",
+      "[+33]% Strength <within [2] tiles of a [Barbarian encampment]>"
+    ]
+  }
 ]
